@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.glowing {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ff6b35 0%, #ffb563 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
