@@ -4,7 +4,7 @@ import { Code2, Flame, Terminal, Zap } from "lucide-react";
 
 function App() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-orange-900 via-red-800 to-red-900">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-gray-500 to bg-black">
       <ParticlesBackground />
       <div className="min-h-screen bg-gradient text-white overflow-hidden">
         {/* Hero Section */}
@@ -21,19 +21,19 @@ function App() {
             <nav className="flex justify-between items-center mb-16">
               <div className="flex items-center space-x-2">
                 <Terminal className="w-8 h-8 text-tango" />
-                <span className="text-xl font-bold">CSEC</span>
+                <span className="text-3xl font-bold">CSEC</span>
               </div>
               <div className="flex space-x-8">
-                <button className="hover:text-indian-tan transition-colors">
+                <button className="hover:text-indian-tan text-lg transition-colors">
                   About
                 </button>
-                <button className="hover:text-indian-tan transition-colors">
+                <button className="hover:text-indian-tan text-lg transition-colors">
                   Schedule
                 </button>
-                <button className="hover:text-indian-tan transition-colors">
+                <button className="hover:text-indian-tan text-lg transition-colors">
                   Sponsors
                 </button>
-                <button className="px-6 py-2 bg-tango rounded-lg hover:bg-fire transition-colors">
+                <button className="bg-tango text-lg rounded-lg hover:bg-fire transition-colors">
                   Register Now
                 </button>
               </div>
@@ -53,11 +53,10 @@ function App() {
                   cutting-edge technology.
                 </p>
                 <div className="flex space-x-6">
-                  <button className="px-8 py-3 bg-tango rounded-lg hover:bg-fire transition-colors flex items-center space-x-2">
-                    <Flame className="w-5 h-5" />
+                  <button className="px-8 py-3 bg-tango border border-indian-tan rounded-lg hover:bg-fire transition-colors flex items-center space-x-2">
                     <span>Join the Saga</span>
                   </button>
-                  <button className="px-8 py-3 border border-indian-tan rounded-lg hover:bg-indian-tan/10 transition-colors flex items-center space-x-2">
+                  <button className="px-8 py-3 border border-indian-tan bg-orange-800 rounded-lg hover:bg-indian-tan/10 transition-colors flex items-center space-x-2">
                     <Code2 className="w-5 h-5" />
                     <span>Learn More</span>
                   </button>
@@ -71,7 +70,7 @@ function App() {
                     <div className="absolute inset-0 bg-gradient-to-r from-tango to-fire rounded-full blur-3xl opacity-20"></div>
                     <div className="absolute inset-10 bg-sepia-black rounded-full"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <Zap className="w-32 h-32 text-tango glowing" />
+                      <Zap className="w-64 h-64 text-tango glowing" />
                     </div>
                   </div>
                 </div>
