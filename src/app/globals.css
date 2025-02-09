@@ -14,6 +14,12 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+  scrollbar-color: orange;
+  scrollbar-width: thin;
+}
+
 @keyframes glow {
   0% {
     filter: brightness(1);

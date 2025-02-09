@@ -4,7 +4,7 @@ import { ParticlesBackground } from '@/components/ui/ParticleBackground';
 import { Code2, Flame, Terminal, Zap } from "lucide-react";
 const Landing = () => {
     return (
-        <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-gray-500 to bg-black">
+        <div className="relative min-h-screen snap-center overflow-hidden bg-gradient-to-b from-gray-500 to bg-black">
             <ParticlesBackground />
             <div className="min-h-screen bg-gradient text-white overflow-hidden">
                 {/* Hero Section */}

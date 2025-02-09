@@ -10,7 +10,7 @@ import React from 'react';
 
 function App() {
   return (
-    <main>
+    <main className='snap-y h-screen w-screen overflow-y-scroll'>
       <Landing/>
       <Timing/>
       <About/>

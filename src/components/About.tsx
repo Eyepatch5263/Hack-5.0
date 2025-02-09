@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className='h-screen w-screen flex justify-between items-center bg-gradient-to-br from-gray-900 to-amber-900/90'>
+        <div className='h-screen w-screen snap-center flex justify-between items-center bg-gradient-to-br from-gray-900 to-amber-900/90'>
             <div className='flex flex-col ml-10 space-y-10 w-1/2 my-10'>
                 <h1 className=' text-3xl text-white md:text-5xl font-bold'>
                     ABOUT HACK 5.0
