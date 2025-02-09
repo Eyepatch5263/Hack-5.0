@@ -4,7 +4,7 @@ import React from 'react'
 
 const Sponsors = () => {
     return (
-        <div className="snap-center px-16 bg-gradient-to-br from-gray-600 via-slate-900 to bg-amber-900">
+        <div className="snap-start px-16 bg-gradient-to-br from-gray-600 via-slate-900 to bg-amber-900">
             <div className="text-center mb-16">
                 <h2 className="font-bold pt-16 mb-4 text-3xl text-white md:text-5xl">Our Sponsors</h2>
                 <p className=" text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto">
