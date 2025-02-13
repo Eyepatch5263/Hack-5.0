@@ -48,11 +48,11 @@ const Landing = () => {
                                 future through code, collaboration, and cutting-edge technology.
                             </p>
                             <div className="flex justify-center md:justify-start space-x-6 mt-8">
-                                <button className="px-8 py-3 bg-[#2E2E2E] border border-[#E63946] rounded-lg hover:bg-[#E63946] hover:text-white transition-colors flex items-center space-x-2">
+                                <button className="px-8 py-3 bg-[#19171B] border border-[#E63946] rounded-lg hover:bg-[#E63946] hover:text-white transition-colors flex items-center space-x-2">
                                     <Flame className="w-5 h-5" />
                                     <span>Join the Saga</span>
                                 </button>
-                                <button className="px-8 py-3 border border-[#19171B] bg-[#75020F] rounded-lg hover:bg-[#51080D] transition-colors flex items-center space-x-2">
+                                <button className="px-8 py-3 border border-[#E63946] bg-[#75020F] rounded-lg hover:bg-[#51080D] transition-colors flex items-center space-x-2">
                                     <Code2 className="w-5 h-5" />
                                     <span>Learn More</span>
                                 </button>
