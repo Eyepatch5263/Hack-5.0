@@ -122,7 +122,7 @@ const PrizePool = () => {
                     {prize.icon}
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2">{prize.title}</h3>
-                  <div className="text-3xl font-bold text-[#75020F] mb-4">
+                  <div className="text-3xl font-bold text-[#E63946] mb-4">
                     &#8377; {prize.amount}
                   </div>
                   <p className="text-[#C4A7A7]">{prize.description}</p>

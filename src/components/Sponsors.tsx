@@ -15,7 +15,7 @@ const Sponsors = () => {
 
       {/* Sponsors Section */}
       {[
-        { title: "Platinum Partners", color: "text-[#75020F]", icon: <Diamond className="w-6 h-6 text-[#75020F]" />, sponsors: 2, grid: "grid-cols-1 md:grid-cols-2" },
+        { title: "Platinum Partners", color: "text-[#E63946]", icon: <Diamond className="w-6 h-6 text-[#75020F]" />, sponsors: 2, grid: "grid-cols-1 md:grid-cols-2" },
         { title: "Gold Sponsors", color: "text-yellow-500", icon: <Award className="w-6 h-6 text-yellow-500" />, sponsors: 3, grid: "grid-cols-1 md:grid-cols-3" },
         { title: "Silver Sponsors", color: "text-gray-400", icon: <Medal className="w-6 h-6 text-gray-400" />, sponsors: 4, grid: "grid-cols-2 md:grid-cols-4" },
       ].map((tier, index) => (

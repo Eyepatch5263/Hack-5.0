@@ -33,7 +33,7 @@ const Timeline = () => {
                 <div className="absolute left-1/2 md:left-auto transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#75020F] rounded-full border-2 border-[#51080D] shadow-md shadow-[#75020F]"></div>
 
                 {/* Event Content */}
-                <span className="text-[#75020F] font-bold">{item.year}</span>
+                <span className="text-[#E63946] font-bold">{item.year}</span>
                 <h4 className="text-xl font-semibold mt-2 text-white">{item.title}</h4>
                 <p className="text-[#C4A7A7] mt-2">{item.description}</p>
               </div>

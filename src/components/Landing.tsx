@@ -52,7 +52,7 @@ const Landing = () => {
                                     <Flame className="w-5 h-5" />
                                     <span>Join the Saga</span>
                                 </button>
-                                <button className="px-8 py-3 border border-[#E63946] bg-[#75020F] rounded-lg hover:bg-[#51080D] transition-colors flex items-center space-x-2">
+                                <button className="px-8 py-3 border border-[#19171B] bg-[#75020F] rounded-lg hover:bg-[#51080D] transition-colors flex items-center space-x-2">
                                     <Code2 className="w-5 h-5" />
                                     <span>Learn More</span>
                                 </button>
