@@ -14,41 +14,41 @@ const Timeline = () => {
       title: "First Edition",
       description: "Started with 100 participants",
       icon: <Milestone className="w-6 h-6" />,
-      color: "#a85011"
+      color: "#E63946"
     },
     {
       year: "2021",
       title: "Going Global",
       description: "Expanded to 20+ countries",
       icon: <Globe className="w-6 h-6" />,
-      color: "#a85011"
+      color: "#E63946"
     },
     {
       year: "2022",
       title: "Major Growth",
       description: "500+ participants, 5 tracks introduced",
       icon: <Users className="w-6 h-6" />,
-      color: "#a85011"
+      color: "#E63946"
     },
     {
       year: "2023",
       title: "Industry Partnership",
       description: "50+ company partnerships established",
       icon: <Building className="w-6 h-6" />,
-      color: "#a85011"
+      color: "#E63946"
     },
     {
       year: "2024",
       title: "Innovation Hub",
       description: "Became the largest student-run hackathon",
       icon: <Award className="w-6 h-6" />,
-      color: "#a85011"
+      color: "#E63946"
     }
   ];
 
   return (
-    <div className="pt-12 px-4 pb-12 bg-gradient-to-b from-gray-700/70 to-gray-900">
-      <h3 className="md:text-5xl text-3xl text-white font-bold text-center mb-4">
+    <div className="pt-12 px-4 pb-12 bg-gradient-to-b bg-[#19171B]">
+      <h3 className="md:text-5xl text-3xl text-[#E63946] font-bold text-center mb-4">
         Timeline
       </h3>
       <p className="text-lg text-gray-200 text-center mb-12 max-w-2xl mx-auto">
