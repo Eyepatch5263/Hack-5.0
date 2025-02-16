@@ -14,35 +14,35 @@ const Timeline = () => {
       title: "First Edition",
       description: "Started with 100 participants",
       icon: <Milestone className="w-6 h-6" />,
-      color: "#FF6B00"
+      color: "#a85011"
     },
     {
       year: "2021",
       title: "Going Global",
       description: "Expanded to 20+ countries",
       icon: <Globe className="w-6 h-6" />,
-      color: "#FF6B00"
+      color: "#a85011"
     },
     {
       year: "2022",
       title: "Major Growth",
       description: "500+ participants, 5 tracks introduced",
       icon: <Users className="w-6 h-6" />,
-      color: "#FF6B00"
+      color: "#a85011"
     },
     {
       year: "2023",
       title: "Industry Partnership",
       description: "50+ company partnerships established",
       icon: <Building className="w-6 h-6" />,
-      color: "#FF6B00"
+      color: "#a85011"
     },
     {
       year: "2024",
       title: "Innovation Hub",
       description: "Became the largest student-run hackathon",
       icon: <Award className="w-6 h-6" />,
-      color: "#FF6B00"
+      color: "#a85011"
     }
   ];
 
