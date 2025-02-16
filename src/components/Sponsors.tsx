@@ -38,16 +38,7 @@ const Sponsors = () => {
       ))}
 
       {/* Sponsorship CTA */}
-      <div className="mt-24 text-center">
-        <h3 className="text-2xl text-white font-bold mb-4">Become a Sponsor</h3>
-        <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-          Join us in shaping the future of technology. Partner with HACK 5.0 and connect with the brightest minds in tech.
-        </p>
-        <button className="px-8 py-3 bg-[#75020F] rounded-lg hover:bg-[#51080D] transition-colors flex items-center space-x-2 text-white shadow-lg">
-          <Diamond className="w-5 h-5 text-gray-200" />
-          <span>View Sponsorship Deck</span>
-        </button>
-      </div>
+      
     </div>
   );
 };
