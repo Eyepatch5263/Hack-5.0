@@ -8,6 +8,7 @@ import Success from '@/components/Success';
 import Timeline from '@/components/Timeline';
 import Timing from '@/components/Timing';
 import React from 'react';
+import FAQs from './faq/page';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       <PrizePool/>
       <Sponsors/>
       <Success/>
+      <FAQs/>
+      
       <Contact/>
       <Footer/>
       </main>
