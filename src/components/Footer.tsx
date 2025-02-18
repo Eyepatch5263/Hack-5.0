@@ -45,12 +45,7 @@ const Footer = () => {
                     <div>
                         <h3 className="text-2xl font-semibold mb-4 text-white">Resources</h3>
                         <ul className="space-y-3">
-                            <li><a onClick={() => {
-                                const link = document.createElement("a");
-                                link.href = "Brochure.pdf"; // Replace with the actual path to your PDF
-                                link.download = "Hack-Brochure-5.0.pdf"; // Replace with the desired file name
-                                link.click();
-                            }} className="text-gray-400 cursor-pointer text-lg hover:text-red-400 transition-colors">Getting Started</a></li>
+                            <li><a className="text-gray-400 cursor-pointer text-lg hover:text-red-400 transition-colors">Getting Started</a></li>
                             <li><a href="https://discord.com/invite/GUSdHK8x" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Discord</a></li>
                         </ul>
                     </div>
