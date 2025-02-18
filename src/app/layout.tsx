@@ -19,7 +19,7 @@ const sansita=Sansita({
 
 export const metadata: Metadata = {
   title: "Hack 5.0",
-  description: "Obsidian Saga",
+  description: "From Obsidian Roots to Digital Frontiers",
 };
 
 export default function RootLayout({
@@ -30,7 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="hack.png" />
       </head>
       <body
         className={`${sansita.className}`}

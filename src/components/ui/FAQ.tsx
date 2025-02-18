@@ -88,7 +88,7 @@ const FAQ = () => {
                             style={{ opacity: 0, transform: "translateY(20px)" }}
                         >
                             <div className="relative bg-[#19171B] rounded-2xl shadow-xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 border border-[#51080D]">
-                                <div className="p-8 h-[16rem] md:h-[10rem]">
+                                <div className="p-8 h-[18rem] md:h-[10rem]">
                                     <h3 className="text-xl font-semibold text-[#E63946] mb-4">
                                         {fact.title}
                                     </h3>
