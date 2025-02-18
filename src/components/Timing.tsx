@@ -17,7 +17,12 @@ const FlipUnit: React.FC<{ value: string; label: string }> = ({ value, label }) 
 // ⏳ Countdown Timer Component
 const CountdownTimer: React.FC = () => {
   const targetDate = new Date("2025-03-01T00:00:00").getTime();
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState({
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  });
 
   function calculateTimeLeft() {
     const now = new Date().getTime();

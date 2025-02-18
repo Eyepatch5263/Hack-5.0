@@ -2,6 +2,7 @@
 import React from "react";
 import { ParticlesBackground } from "@/components/ui/ParticleBackground";
 import { Code2, Flame, Terminal, Zap } from "lucide-react";
+import Link from "next/link";
 
 const Landing = () => {
     return (
@@ -23,14 +24,22 @@ const Landing = () => {
                             <span className="text-3xl font-bold">CSEC</span>
                         </div>
                         <div className="hidden md:flex space-x-8">
-                            {["About", "Schedule", "Sponsors"].map((item, index) => (
-                                <button key={index} className="hover:text-[#E63946] text-lg transition-colors">
+                            {["About", "Schedule", "Sponsors", "FAQs"].map((item, index) => (
+                                <button
+                                id={item}
+                                    key={index}
+                                    className="hover:text-[#E63946] text-lg transition-colors"
+                                    onClick={() => {
+                                        const section = document.getElementById(item.toLowerCase());
+                                        console.log(section);
+                                        if (section) {
+                                            section.scrollIntoView({ behavior: "smooth", inline: "start" });
+                                        }
+                                    }}
+                                >
                                     {item}
                                 </button>
                             ))}
-                            <button className="px-6 py-2 bg-[#75020F] text-lg rounded-lg hover:bg-[#51080D] transition-colors">
-                                Register Now
-                            </button>
                         </div>
                     </nav>
 
@@ -48,11 +57,19 @@ const Landing = () => {
                                 future through code, collaboration, and cutting-edge technology.
                             </p>
                             <div className="flex justify-center md:justify-start space-x-6 mt-8">
-                                <button className="px-8 py-3 bg-[#19171B] border border-[#E63946] rounded-lg hover:bg-[#E63946] hover:text-white transition-colors flex items-center space-x-2">
+                                <button className="px-8 py-3 bg-[#262323] border border-[#E63946] rounded-lg hover:bg-[#E63946] hover:text-white transition-colors flex items-center space-x-2">
                                     <Flame className="w-5 h-5" />
-                                    <span>Join the Saga</span>
+                                    <Link href="https://hack-1158.devfolio.co/">Join The Saga</Link>
                                 </button>
-                                <button className="px-8 py-3 border border-[#E63946] bg-[#75020F] rounded-lg hover:bg-[#51080D] transition-colors flex items-center space-x-2">
+                                <button
+                                    className="px-8 py-3 border border-[#E63946] bg-[#75020F] rounded-lg hover:bg-[#51080D] transition-colors flex items-center space-x-2"
+                                    onClick={() => {
+                                        const link = document.createElement("a");
+                                        link.href = "Brochure.pdf"; // Replace with the actual path to your PDF
+                                        link.download = "Hack-Brochure-5.0.pdf"; // Replace with the desired file name
+                                        link.click();
+                                    }}
+                                >
                                     <Code2 className="w-5 h-5" />
                                     <span>Learn More</span>
                                 </button>

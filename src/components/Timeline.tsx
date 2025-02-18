@@ -1,7 +1,4 @@
-
-
-'use client'; // Add this line to mark the component as a Client Component
-
+'use client';
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -10,44 +7,51 @@ import { Milestone, Clock, Globe, Users, Building, Award } from 'lucide-react';
 const Timeline = () => {
   const timelineData = [
     {
-      year: "2020",
-      title: "First Edition",
-      description: "Started with 100 participants",
+      year: "21 Feb 2025",
+      title: "Regestration Opens",
+      description: "Register yourself for the Hack-5.0",
       icon: <Milestone className="w-6 h-6" />,
       color: "#E63946"
     },
     {
-      year: "2021",
-      title: "Going Global",
-      description: "Expanded to 20+ countries",
-      icon: <Globe className="w-6 h-6" />,
+      year: "21 Feb 2025",
+      title: "Regestration Closes",
+      description: "Last date to register yourself fot the Hack-5.0",
+      icon: <Milestone className="w-6 h-6" />,
       color: "#E63946"
     },
     {
-      year: "2022",
-      title: "Major Growth",
-      description: "500+ participants, 5 tracks introduced",
+      year: "22 Mar 2025",
+      title: "Screening Round",
+      description: "Screening round for the Hack-5.0",
       icon: <Users className="w-6 h-6" />,
       color: "#E63946"
     },
     {
-      year: "2023",
-      title: "Industry Partnership",
-      description: "50+ company partnerships established",
-      icon: <Building className="w-6 h-6" />,
+      year: "4 Apr 2025",
+      title: "Day-0",
+      description: "Hack-5.0 starts",
+      icon: <Award className="w-6 h-6" />,
       color: "#E63946"
     },
     {
-      year: "2024",
-      title: "Innovation Hub",
-      description: "Became the largest student-run hackathon",
+      year: "5 Apr 2025",
+      title: "Day-1",
+      description: "Hack-5.0 continues | Day-1 of Hack-5.0",
+      icon: <Award className="w-6 h-6" />,
+      color: "#E63946"
+    },
+    {
+      year: "6 Apr 2025",
+      title: "Day-2",
+      description: "Hack-5.0 continues | Day-2 of Hack-5.0",
       icon: <Award className="w-6 h-6" />,
       color: "#E63946"
     }
   ];
 
   return (
-    <div className="pt-12 px-4 pb-12 bg-gradient-to-b bg-[#19171B]">
+    <div id='schedule' className="pt-12 px-4 pb-12 bg-gradient-to-b bg-[#19171B]">
       <h3 className="md:text-5xl text-3xl text-[#E63946] font-bold text-center mb-4">
         Timeline
       </h3>
