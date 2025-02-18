@@ -134,9 +134,13 @@ const Contact = () => {
                 <div className="space-y-6">
                     {[
                         { Icon: Mail, title: "Email Us", text: "Questions? Drop us a line", link: "mailto:hack.csec.nith25@gmail.com", linkText: "hack.csec.nith25@gmail.com" },
-                        { Icon: MapPin, title: "Location", text: "Join us at the venue", linkText: "NIT Hamirpur" },
-                        { Icon: Phone, title: "Call Us", text: "Mon-Fri, 9am-5pm", link: "tel: +91 6267 531 322 | +91 70233 26128 | +91 97675 92787", linkText: "+91 6267 531 322 | +91 70233 26128 | +91 97675 92787" }
-                    ].map(({ Icon, title, text, link, linkText }, index) => (
+                        { Icon: MapPin, title: "Location", text: "Join us at the venue", link: "https://www.google.co.in/maps/place/National+Institute+of+Technology,+Hamirpur/@31.7091849,76.5245713,17z/data=!4m10!1m2!2m1!1sNIT+Hamirpur!3m6!1s0x3904d5487e12c4a1:0x395f92d3a202a7d0!8m2!3d31.7084291!4d76.5273526!15sCgxOSVQgSGFtaXJwdXKSAQNpdXTgAQA!16zL20vMGNybnJ4?entry=ttu&g_ep=EgoyMDI1MDIxNy4wIKXMDSoASAFQAw%3D%3D", linkText: "NIT Hamirpur" },
+                        { Icon: Phone, title: "Call Us", text: "Mon-Fri, 9am-5pm", links: [
+                            { link: "tel:+916267531322", linkText: "+91 6267 531 322" },
+                            { link: "tel:+917023326128", linkText: "+91 70233 26128" },
+                            { link: "tel:+919767592787", linkText: "+91 97675 92787" }
+                        ] }
+                    ].map(({ Icon, title, text, link, linkText, links }, index) => (
                         <div
                             key={index}
                             className="bg-[#2B0307]/50 backdrop-blur-md border border-[#75020F]/50 shadow-lg rounded-xl p-8 text-center transition-all hover:scale-105"
@@ -148,6 +152,14 @@ const Contact = () => {
                                 <a href={link} className="text-gray-200 hover:text-[#E63946] transition-all">
                                     {linkText}
                                 </a>
+                            ) : links ? (
+                                <div className="space-x-5 flex justify-center items-center ">
+                                    {links.map(({ link, linkText }, idx) => (
+                                        <a key={idx} href={link} className="block text-gray-200 hover:text-[#E63946] transition-all">
+                                            {linkText}
+                                        </a>
+                                    ))}
+                                </div>
                             ) : (
                                 <span className="text-gray-200">{linkText}</span>
                             )}

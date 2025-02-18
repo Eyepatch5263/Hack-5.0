@@ -59,7 +59,7 @@ const Landing = () => {
                             <div className="flex justify-center md:justify-start space-x-6 mt-8">
                                 <button className="px-8 py-3 bg-[#262323] border border-[#E63946] rounded-lg hover:bg-[#E63946] hover:text-white transition-colors flex items-center space-x-2">
                                     <Flame className="w-5 h-5" />
-                                    <Link href="https://hack-1158.devfolio.co/">Join The Saga</Link>
+                                    <Link href="https://hack-1158.devfolio.co/">JRegister</Link>
                                 </button>
                                 <button
                                     className="px-8 py-3 border border-[#E63946] bg-[#75020F] rounded-lg hover:bg-[#51080D] transition-colors flex items-center space-x-2"
@@ -85,9 +85,9 @@ const Landing = () => {
                     {/* Stats Section */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 text-center">
                         {[
-                            { label: "Prize Pool", value: "$10,000+" },
+                            { label: "Prize Pool", value: "$1,707" },
                             { label: "Hours", value: "48" },
-                            { label: "Tracks", value: "5" },
+                            { label: "Tracks", value: "6" },
                             { label: "Participants", value: "500+" },
                         ].map((stat, index) => (
                             <div key={index} className="flex flex-col items-center">
