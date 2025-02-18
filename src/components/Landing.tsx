@@ -85,7 +85,7 @@ const Landing = () => {
                     {/* Stats Section */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 text-center">
                         {[
-                            { label: "Prize Pool", value: "1,50,000" },
+                            { label: "Prize Pool", value: "1,5a0,000" },
                             { label: "Hours", value: "48" },
                             { label: "Tracks", value: "6" },
                             { label: "Participants", value: "500+" },
