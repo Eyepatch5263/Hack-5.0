@@ -6,34 +6,31 @@ const FAQs = () => {
 
     const facts = [
         {
-            title: "What is Hack 5.0?",
+            title: " What exactly is Hack 5.0-Obsidian Saga?",
             description:
-                "Hack 5.0 is a 24-hour hackathon where developers, designers, and innovators collaborate to build innovative solutions to real-world problems.",
+                " It’s not just a hackathon—it’s an epic fusion of creativity, caffeine, and code! Think of it as a 48-hour sprint where brilliant minds come together to solve real problems, build cool stuff, and maybe win some brag-worthy prizes.",
         },
         {
-            title: "Who can participate?",
+            title: " Who can participate?",
             description:
-                "Hack 5.0 is open to students, professionals, and tech enthusiasts of all experience levels. Whether you're a beginner or an expert, you're welcome to join!",
+                " Whether you're a coding ninja, a design wizard, or just someone with crazy ideas—everyone’s welcome! Students, beginners, pros… if you’ve got the passion, you’ve got a spot here.",
         },
         {
-            title: "Do I need prior hackathon experience?",
+            title: "How do I register?",
             description:
-                "Not at all! Hack 5.0 is designed for everyone, from beginners to seasoned hackers.",
+                "Just click that big, shiny “Register Now” button on our website, fill in your details, and boom—you’re in! Don’t wait too long though; spots fill up fast!",
         },
         {
-            title: "How can I register?",
+            title: "What if I don’t have a team?",
             description:
-                "You can register by visiting our official website and filling out the registration form. Make sure to join before the deadline!",
+                "No worries! We’ve got a team formation session before the hackathon kicks off. So, you’ll find your crew and maybe your next best friends.",
         },
         {
-            title: "Can I participate solo?",
+            title: "Who do I contact if I have more questions?",
             description:
-                "Yes, but we encourage teams (2-4 members). We’ll help you find teammates if needed!",
+                "Hit us up at [email]. We promise we’re super friendly (and quick to respond)!",
         },
-        {
-            title: "Is there a registration fee?",
-            description: "No, Hack 5.0 is completely free! Just register and you’re in.",
-        },
+        
     ];
 
     useEffect(() => {

@@ -7,8 +7,11 @@ const Success = () => {
                 <h2 className="md:text-5xl text-3xl font-bold text-[#E63946]">
                     Success Stories
                 </h2>
+                <h2 className="md:text-2xl text-3xl font-bold text-[#ff1a1ae7]">
+                From Vision to Victory
+                </h2>
                 <p className="text-lg text-gray-300 mt-2 max-w-2xl mx-auto">
-                    See what others have to say about us
+                Celebrating the triumphs that pushed the boundaries of what's possible.
                 </p>
             </div>
 

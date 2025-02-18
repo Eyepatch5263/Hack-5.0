@@ -9,7 +9,7 @@ const Timeline = () => {
         Timeline
       </h3>
       <p className="text-lg text-[#C4A7A7] text-center mb-12 max-w-2xl mx-auto">
-        Follow the timeline of Hack 5.0 from its inception to becoming the largest hackathon
+      A Saga Through Time: Every Hack That Led Us Here
       </p>
 
       {/* Timeline Structure */}
@@ -20,11 +20,11 @@ const Timeline = () => {
         {/* Timeline Events */}
         <div className="space-y-12">
           {[
-            { year: "2020", title: "First Edition", description: "Started with 100 participants" },
-            { year: "2021", title: "Going Global", description: "Expanded to 20+ countries" },
-            { year: "2022", title: "Major Growth", description: "500+ participants, 5 tracks introduced" },
-            { year: "2023", title: "Industry Partnership", description: "50+ company partnerships established" },
-            { year: "2024", title: "Innovation Hub", description: "Became the largest student-run hackathon" },
+            { year: "2020", title: "The Spark Ignites", description: "Our journey began with a bang! Over 100+ fearless innovators joined forces, turning ideas into reality" },
+            { year: "2021", title: "Going Global", description: "20+ countries, one massive community. Hack 5.0 went global, connecting innovators across the world and expanding the Obsidian Saga beyond borders. Our reach grew, and so did the excitement." },
+            { year: "2022", title: "The Surge", description: "We took things up a notch with 500+ participants and 5 exciting new tracks. The challenge grew bigger, the competition fiercer, and the hacks even more groundbreaking. It was a year of rapid expansion, and the Obsidian Saga was ready to make its mark on the tech world." },
+            { year: "2023", title: "Industry Unleashed", description: "50+ industry partnerships? You bet! Hack 5.0 went from a coding competition to a powerhouse of collaboration, bringing together the brightest minds and top companies. With real-world opportunities and epic partnerships, the Obsidian Saga became a serious force in the tech world" },
+            { year: "2024", title: "Innovation powerhouse", description: "Largest student-run hackathon? Absolutely. Hack 5.0 has officially become the go-to spot for fresh ideas and tech game-changers. More challenges, more talent, and a whole lot of innovation. The Obsidian Saga just keeps getting bigger—are you ready to be part of it?" },
           ].map((item, index) => (
             <div key={index} className={`relative ${index % 2 === 0 ? "md:ml-auto md:pl-32" : "md:mr-auto md:pr-32"} md:w-1/2`}>
               {/* Event Card */}
