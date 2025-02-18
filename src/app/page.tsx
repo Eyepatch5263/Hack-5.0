@@ -7,7 +7,7 @@ import Sponsors from '@/components/Sponsors';
 import Success from '@/components/Success';
 import Timeline from '@/components/Timeline';
 import Timing from '@/components/Timing';
-import FAQ from '@/components/ui/Faq';
+import FAQ from '../components/ui/FAQ';
 import React from 'react';
 
 
