@@ -1,6 +1,7 @@
 "use client"
-import { Github, Linkedin, Twitter } from "lucide-react"
+import { Github, Instagram, Linkedin, Twitter } from "lucide-react"
 import React from 'react'
+import { FaDiscord } from "react-icons/fa"
 
 const Footer = () => {
     return (
@@ -10,18 +11,18 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="space-y-4">
                         <div className="flex items-center space-x-2">
-                            <img src="csec.png" width={48} className="rounded-lg shadow-lg"/>
+                            <img src="csec.png" width={48} className="rounded-lg shadow-lg" />
                             <span className="text-2xl font-bold text-white">CSEC</span>
                         </div>
                         <p className="text-gray-400 text-lg leading-relaxed">
                             Empowering innovation through code, creativity, and collaboration.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
-                                <Github className="w-6 h-6" />
+                            <a href="https://discord.com/invite/GUSdHK8x" className="text-gray-400 hover:text-red-400 transition-colors">
+                                <FaDiscord className="w-6 h-6" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
-                                <Linkedin className="w-6 h-6" />
+                            <a href="https://www.instagram.com/hacknith?igsh=N3VtczNwa3pjNjNo" className="text-gray-400 hover:text-red-400 transition-colors">
+                                <Instagram className="w-6 h-6" />
                             </a>
                             <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                                 <Twitter className="w-6 h-6" />
@@ -33,10 +34,10 @@ const Footer = () => {
                     <div>
                         <h3 className="text-2xl font-semibold mb-4 text-white">Quick Links</h3>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-gray-400 text-lg hover:text-red-400 transition-colors">About Us</a></li>
-                            <li><a href="#" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Schedule</a></li>
-                            <li><a href="#" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Sponsors</a></li>
-                            <li><a href="/faq" className="text-gray-400 text-lg hover:text-red-400 transition-colors">FAQs</a></li>
+                            <li><a href="#about" className="text-gray-400 text-lg hover:text-red-400 transition-colors">About Us</a></li>
+                            <li><a href="#schedule" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Schedule</a></li>
+                            <li><a href="#sponsors" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Sponsors</a></li>
+                            <li><a href="#faqs" className="text-gray-400 text-lg hover:text-red-400 transition-colors">FAQs</a></li>
                         </ul>
                     </div>
 
@@ -44,10 +45,13 @@ const Footer = () => {
                     <div>
                         <h3 className="text-2xl font-semibold mb-4 text-white">Resources</h3>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Getting Started</a></li>
-                            <li><a href="#" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Code of Conduct</a></li>
-                            <li><a href="#" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Rules</a></li>
-                            <li><a href="#" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Discord</a></li>
+                            <li><a onClick={() => {
+                                const link = document.createElement("a");
+                                link.href = "Brochure.pdf"; // Replace with the actual path to your PDF
+                                link.download = "Hack-Brochure-5.0.pdf"; // Replace with the desired file name
+                                link.click();
+                            }} className="text-gray-400 cursor-pointer text-lg hover:text-red-400 transition-colors">Getting Started</a></li>
+                            <li><a href="https://discord.com/invite/GUSdHK8x" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Discord</a></li>
                         </ul>
                     </div>
 
@@ -71,15 +75,10 @@ const Footer = () => {
 
             {/* Bottom Footer */}
             <div className="border-t border-red-900 py-8 px-10 bg-[#19171B]">
-                <div className="flex flex-col md:flex-row justify-between items-center">
+                <div className="flex justify-center items-center">
                     <p className="text-gray-400 text-lg">
                         © 2025 HACK 5.0. All rights reserved.
                     </p>
-                    <div className="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" className="text-gray-400 hover:text-red-400 transition-colors text-lg">Privacy Policy</a>
-                        <a href="#" className="text-gray-400 hover:text-red-400 transition-colors text-lg">Terms of Service</a>
-                        <a href="#" className="text-gray-400 hover:text-red-400 transition-colors text-lg">Cookie Policy</a>
-                    </div>
                 </div>
             </div>
         </footer>

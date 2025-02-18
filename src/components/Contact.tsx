@@ -1,6 +1,8 @@
 "use client";
 import { Mail, MapPin, Phone } from "lucide-react";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -10,8 +12,25 @@ const Contact = () => {
         subject: "",
     });
 
+    const form = useRef<HTMLFormElement>(null)
+
+    const sendEmail = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        if (form.current) {
+            emailjs
+                .sendForm('service_td08y99', 'template_l4lxqnr', form.current, {publicKey:"3CF_8jifTQV-loMu_"})
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+            (e.currentTarget as HTMLFormElement);
+        }
+    };
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+        sendEmail(e);
         console.log("Form submitted", formData);
     };
 
@@ -34,7 +53,7 @@ const Contact = () => {
                 {/* Contact Form */}
                 <div className="bg-[#2B0307]/50 backdrop-blur-md border border-[#75020F]/50 shadow-lg rounded-xl p-10">
                     <h3 className="text-2xl text-gray-200 font-semibold mb-6">Send us a Message</h3>
-                    <form onSubmit={handleSubmit} className="space-y-6">
+                    <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                         <div className="grid grid-cols-2 gap-6">
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">
@@ -46,7 +65,7 @@ const Contact = () => {
                                     name="name"
                                     value={formData.name}
                                     onChange={handleChange}
-                                    className="w-full bg-[#19171B] rounded-lg px-4 py-2 border border-gray-700 focus:ring-2 focus:ring-[#E63946] transition-all"
+                                    className="w-full bg-[#19171B] text-white rounded-lg px-4 py-2 border border-gray-700 focus:ring-2 focus:ring-[#E63946] transition-all"
                                     required
                                 />
                             </div>
@@ -60,7 +79,7 @@ const Contact = () => {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-full bg-[#19171B] rounded-lg px-4 py-2 border border-gray-700 focus:ring-2 focus:ring-[#E63946] transition-all"
+                                    className="w-full text-white bg-[#19171B] rounded-lg px-4 py-2 border border-gray-700 focus:ring-2 focus:ring-[#E63946] transition-all"
                                     required
                                 />
                             </div>
@@ -75,14 +94,14 @@ const Contact = () => {
                                 name="subject"
                                 value={formData.subject}
                                 onChange={handleChange}
-                                className="w-full bg-[#19171B] rounded-lg px-4 py-2 border border-gray-700 focus:ring-2 focus:ring-[#E63946] transition-all"
+                                className="w-full bg-[#19171B] text-white rounded-lg px-4 py-2 border border-gray-700 focus:ring-2 focus:ring-[#E63946] transition-all"
                                 required
                             >
-                                <option value="">Select a subject</option>
-                                <option value="general">General Inquiry</option>
-                                <option value="sponsorship">Sponsorship</option>
-                                <option value="registration">Registration</option>
-                                <option value="technical">Technical Support</option>
+                                <option className="text-white" value="">Select a subject</option>
+                                <option className="text-white" value="general">General Inquiry</option>
+                                <option className="text-white" value="sponsorship">Sponsorship</option>
+                                <option className="text-white" value="registration">Registration</option>
+                                <option className="text-white" value="technical">Technical Support</option>
                             </select>
                         </div>
 
@@ -96,7 +115,7 @@ const Contact = () => {
                                 value={formData.message}
                                 onChange={handleChange}
                                 rows={4}
-                                className="w-full bg-[#19171B] rounded-lg px-4 py-2 border border-gray-700 focus:ring-2 focus:ring-[#E63946] transition-all"
+                                className="w-full bg-[#19171B] text-white rounded-lg px-4 py-2 border border-gray-700 focus:ring-2 focus:ring-[#E63946] transition-all"
                                 required
                             ></textarea>
                         </div>
@@ -114,9 +133,9 @@ const Contact = () => {
                 {/* Contact Cards */}
                 <div className="space-y-6">
                     {[
-                        { Icon: Mail, title: "Email Us", text: "Questions? Drop us a line", link: "mailto:hack@csec.com", linkText: "hack@csec.com" },
-                        { Icon: MapPin, title: "Location", text: "Join us at the venue", linkText: "University Campus, Tech Block" },
-                        { Icon: Phone, title: "Call Us", text: "Mon-Fri, 9am-5pm", link: "tel:+1234567890", linkText: "+1 (234) 567-890" }
+                        { Icon: Mail, title: "Email Us", text: "Questions? Drop us a line", link: "mailto:hack.csec.nith25@gmail.com", linkText: "hack.csec.nith25@gmail.com" },
+                        { Icon: MapPin, title: "Location", text: "Join us at the venue", linkText: "NIT Hamirpur" },
+                        { Icon: Phone, title: "Call Us", text: "Mon-Fri, 9am-5pm", link: "tel: +91 6267 531 322 | +91 70233 26128 | +91 97675 92787", linkText: "+91 6267 531 322 | +91 70233 26128 | +91 97675 92787" }
                     ].map(({ Icon, title, text, link, linkText }, index) => (
                         <div
                             key={index}

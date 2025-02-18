@@ -7,8 +7,8 @@ import Sponsors from '@/components/Sponsors';
 import Success from '@/components/Success';
 import Timeline from '@/components/Timeline';
 import Timing from '@/components/Timing';
+import FAQ from '../components/ui/FAQ';
 import React from 'react';
-import FAQs from './faq/page';
 
 
 function App() {
@@ -21,8 +21,7 @@ function App() {
       <PrizePool/>
       <Sponsors/>
       <Success/>
-      <FAQs/>
-      
+      <FAQ/>
       <Contact/>
       <Footer/>
       </main>

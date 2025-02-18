@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 
 const Success = () => {
@@ -17,16 +18,27 @@ const Success = () => {
                 {[
                     {
                         quote:
-                            "HACK 5.0 was the perfect launchpad for our startup. The mentorship and resources we received were invaluable.",
-                        name: "Sarah Chen",
-                        role: "Winner, AI/ML Track 2024",
+                            "It was an amazing experience. We had a lot of fun and learned a lot of new things. The mentors were very helpful and the workshops were very informative.",
+                        name: "Team Celebral",
+                        role: "Innovation, 2020 Hack-4.0",
                     },
                     {
                         quote:
                             "The collaborative environment and technical challenges helped us push our limits and create something truly innovative.",
-                        name: "Alex Rivera",
-                        role: "Winner, Web3 Track 2024",
+                        name: "Team theBugBusters",
+                        role: "Technology, 2020 Hack-4.0",
                     },
+                    {
+                        quote:"We had the opportunity to work on a real-world problem and create a solution that could potentially impact millions of lives. It was a great learning experience.",
+                        name:"Team PentaForce",
+                        role:"Innovation, 2020 Hack-3.0",
+                    },
+                    {
+                        quote:
+                            "We were able to work together and create something that could make a significant difference in the lives of the people around us.",
+                        name: "Team boring",
+                        role: "Innovation, 2020 Hack-3.0",
+                    }
                 ].map((story, index) => (
                     <div
                         key={index}
