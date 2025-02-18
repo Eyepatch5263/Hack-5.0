@@ -52,7 +52,7 @@ const Timeline = () => {
 
   return (
     <div id='schedule' className="pt-12 px-4 pb-12 bg-gradient-to-b bg-[#19171B]">
-      <h3 className="md:text-5xl text-3xl text-[#E63946] font-bold text-center mb-4">
+      <h3 className="md:text-5xl text-3xl text-[#E63946] mt-10 md:mt-0 font-bold text-center mb-4">
         Timeline
       </h3>
       <p className="text-lg text-gray-200 text-center mb-12 max-w-2xl mx-auto">
