@@ -56,13 +56,13 @@ const Landing = () => {
                                 Embark on an epic journey of innovation and creativity. Join us in forging the
                                 future through code, collaboration, and cutting-edge technology.
                             </p>
-                            <div className="flex justify-center md:justify-start space-x-6 mt-8">
-                                <button className="px-8 py-3 bg-[#262323] border border-[#E63946] rounded-lg hover:bg-[#E63946] hover:text-white transition-colors flex items-center space-x-2">
+                            <div className="flex flex-col justify-center gap-8 md:flex-row md:justify-start md:space-x-6 mt-8">
+                                <button className="px-8 py-3 bg-[#262323] border border-[#E63946] rounded-lg hover:bg-[#E63946] hover:text-white transition-colors flex justify-center items-center space-x-2">
                                     <Flame className="w-5 h-5" />
                                     <Link href="https://hack-1158.devfolio.co/">JRegister</Link>
                                 </button>
                                 <button
-                                    className="px-8 py-3 border border-[#E63946] bg-[#75020F] rounded-lg hover:bg-[#51080D] transition-colors flex items-center space-x-2"
+                                    className="px-8 py-3 border border-[#E63946] bg-[#75020F] rounded-lg hover:bg-[#51080D] transition-colors flex justify-center items-center space-x-2"
                                 >
                                     <Code2 className="w-5 h-5" />
                                     <span>Learn More</span>
@@ -71,7 +71,7 @@ const Landing = () => {
                         </div>
 
                         {/* Hero Visual */}
-                        <div className="relative w-72 h-72 md:w-96 md:h-96 mt-12 md:mt-0">
+                        <div className="hidden md:block relative w-72 h-72 md:w-96 md:h-96 mt-12 md:mt-0">
                             <div className="absolute inset-0 animate-pulse">
                                 <div className="absolute inset-0 bg-[#E63946]/30 rounded-full blur-3xl opacity-30"></div>
                                 <div className="absolute inset-10 rounded-full"></div>
