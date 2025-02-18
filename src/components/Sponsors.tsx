@@ -26,10 +26,6 @@ const Sponsors = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center gap-2 mb-8">
-        <div className="flex items-center gap-4 mb-5">
-          <Medal className="w-6 h-6 text-amber-700" />
-          <h3 className={`text-2xl font-semibold text-amber-700`}>Bronze Sponsors</h3>
-        </div>
         {
             <div className={`grid grid-cols-2 md:grid-cols-4 gap-6`}>
             {Sponsor.map((item, index) => (

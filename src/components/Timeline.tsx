@@ -8,14 +8,14 @@ const Timeline = () => {
   const timelineData = [
     {
       year: "21 Feb 2025",
-      title: "Regestration Opens",
+      title: "Registration Opens",
       description: "Register yourself for the Hack-5.0",
       icon: <Milestone className="w-6 h-6" />,
       color: "#E63946"
     },
     {
-      year: "21 Feb 2025",
-      title: "Regestration Closes",
+      year: "20 Mar 2025",
+      title: "Registration Closes",
       description: "Last date to register yourself fot the Hack-5.0",
       icon: <Milestone className="w-6 h-6" />,
       color: "#E63946"

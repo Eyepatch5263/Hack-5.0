@@ -63,12 +63,6 @@ const Landing = () => {
                                 </button>
                                 <button
                                     className="px-8 py-3 border border-[#E63946] bg-[#75020F] rounded-lg hover:bg-[#51080D] transition-colors flex items-center space-x-2"
-                                    onClick={() => {
-                                        const link = document.createElement("a");
-                                        link.href = "Brochure.pdf"; // Replace with the actual path to your PDF
-                                        link.download = "Hack-Brochure-5.0.pdf"; // Replace with the desired file name
-                                        link.click();
-                                    }}
                                 >
                                     <Code2 className="w-5 h-5" />
                                     <span>Learn More</span>
