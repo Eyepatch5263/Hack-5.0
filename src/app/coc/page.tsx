@@ -95,7 +95,7 @@ function Page() {
                         Code of <span className="text-gradient">Conduct</span>
                     </h1>
                     <p className="text-xl text-gray-300 w-full text-balance mb-2">
-                        We, as members of the Computer Science and Engineer's Community (CSEC) at NIT Hamirpur, pledge to create an inclusive, respectful, and secure environment for all participants of HACK 5.0. We are committed to ensuring that involvement in our community is free from harassment and is based on mutual dignity and respect.
+                        We, as members of the Computer Science and Engineers' Community (CSEC) at NIT Hamirpur, pledge to create an inclusive, respectful, and secure environment for all participants of HACK 5.0. We are committed to ensuring that involvement in our community is free from harassment and is based on mutual dignity and respect.
                     </p>
                     <p className="text-xl text-gray-300 w-full text-balance">    
                         This commitment applies to everyone, regardless of age, expertise, educational background, nationality, race, ethnicity, religion, political beliefs, disabilities (visible or invisible), gender identity, gender expression, or sexual orientation.
@@ -139,14 +139,14 @@ function Page() {
                                 If you have any questions about our Code of Conduct or need to report an incident, please don't hesitate to reach out to our team.
                             </p>
                             <div className="flex gap-6">
-                                <a
+                                <p
                                     className=" py-3 bg-tango rounded-lg hover:bg-tango-dark transition-colors inline-flex items-center gap-2"
                                 >
                                     <Phone className="w-5 h-5" />
                                     <a className='cursor-pointer' href='tel:+9162675 31322'>Tanishq Verma | +91 62675 31322 </a>
                                     <a className='cursor-pointer' href='tel:+9170233 26128'>Prince Jaiswal | +91 70233 26128</a>
                                     <a className='cursor-pointer' href='tel:+9197675 92787'>Harshal Sakhare | +91 97675 92787</a>
-                                </a>
+                                </p>
                             </div>
                         </div>
                     </div>

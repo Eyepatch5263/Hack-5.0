@@ -12,7 +12,7 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="space-y-4">
                         <div className="flex items-center space-x-2">
-                            <Link  href="https://csec.nith.ac.in/">
+                            <Link target="_blank"  href="https://csec.nith.ac.in/">
                             <img src="csec.png" width={48} className="rounded-lg shadow-lg" />
                             </Link>
                             <span className="text-2xl font-bold text-white">CSEC</span>
@@ -21,16 +21,16 @@ const Footer = () => {
                             Empowering innovation through code, creativity, and collaboration.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="https://discord.com/invite/GUSdHK8x" className="text-gray-400 hover:text-red-400 transition-colors">
+                            <a target="_blank" href="https://discord.com/invite/GUSdHK8x" className="text-gray-400 hover:text-red-400 transition-colors">
                                 <FaDiscord className="w-6 h-6" />
                             </a>
-                            <a href="https://www.instagram.com/hacknith?igsh=N3VtczNwa3pjNjNo" className="text-gray-400 hover:text-red-400 transition-colors">
+                            <a target="_blank" href="https://www.instagram.com/hacknith?igsh=N3VtczNwa3pjNjNo" className="text-gray-400 hover:text-red-400 transition-colors">
                                 <Instagram className="w-6 h-6" />
                             </a>
                             <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                                 <Twitter className="w-6 h-6" />
                             </a>
-                            <a href="https://www.linkedin.com/company/csecnith/" className="text-gray-400 hover:text-red-400 transition-colors">
+                            <a target="_blank" href="https://www.linkedin.com/company/csecnith/" className="text-gray-400 hover:text-red-400 transition-colors">
                                 <Linkedin className="w-6 h-6" />
                             </a>
                             
@@ -53,9 +53,9 @@ const Footer = () => {
                         <h3 className="text-2xl font-semibold mb-4 text-white">Resources</h3>
                         <ul className="space-y-3">
                             <li><a className="text-gray-400 cursor-pointer text-lg hover:text-red-400 transition-colors">Getting Started</a></li>
-                            <li><a href="https://discord.com/invite/GUSdHK8x" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Discord</a></li>
+                            <li><a target="_blank" href="https://discord.com/invite/GUSdHK8x" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Discord</a></li>
                             <li><a href="/coc" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Code of Conduct</a></li>
-                            <li><a href="https://dot-puma-97f.notion.site/Hack-5-0-Hacker-s-Guide-19f095b2daf980058a2de1c0691aef59?pvs=74" className="text-gray-400 text-lg cursor-pointer hover:text-red-400 transition-colors">Hacker's Guide</a></li>
+                            <li><a target="_blank" href="https://dot-puma-97f.notion.site/Hack-5-0-Hacker-s-Guide-19f095b2daf980058a2de1c0691aef59?pvs=74" className="text-gray-400 text-lg cursor-pointer hover:text-red-400 transition-colors">Hacker's Guide</a></li>
                         </ul>
                     </div>
 

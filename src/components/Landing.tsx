@@ -83,12 +83,11 @@ const Landing = () => {
                     </div>
 
                     {/* Stats Section */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 text-center">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-20 text-center">
                         {[
                             { label: "Prize Pool", value: "1,50,000" },
                             { label: "Hours", value: "48" },
                             { label: "Tracks", value: "3" },
-                            { label: "Participants", value: "500+" },
                         ].map((stat, index) => (
                             <div key={index} className="flex flex-col items-center">
                                 <span className="text-4xl font-extrabold text-[#E63946] mb-2">

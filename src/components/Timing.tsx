@@ -50,7 +50,7 @@ const CountdownTimer: React.FC = () => {
 
   return (
     <div className="w-screen h-[16rem] flex flex-col items-center justify-center bg-gradient-to-b from-[#75020F] to-[#2B0307] shadow-lg">
-      <h1 className="font-bold text-2xl md:text-5xl text-center text-[#C4A7A7] tracking-widest mb-6">TIME LEFT</h1>
+      <h1 className="font-bold text-2xl md:text-5xl text-center text-[#C4A7A7] tracking-wide mb-6">Registeration Opens In</h1>
       <div className="flex justify-center space-x-6">
         <FlipUnit value={timeLeft.days} label="Days" />
         <FlipUnit value={timeLeft.hours} label="Hours" />
