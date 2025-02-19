@@ -1,5 +1,6 @@
 "use client"
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react"
+import Link from "next/link"
 import React from 'react'
 import { FaDiscord } from "react-icons/fa"
 
@@ -11,7 +12,9 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="space-y-4">
                         <div className="flex items-center space-x-2">
+                            <Link  href="https://csec.nith.ac.in/">
                             <img src="csec.png" width={48} className="rounded-lg shadow-lg" />
+                            </Link>
                             <span className="text-2xl font-bold text-white">CSEC</span>
                         </div>
                         <p className="text-gray-400 text-lg leading-relaxed">
@@ -27,7 +30,7 @@ const Footer = () => {
                             <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                                 <Twitter className="w-6 h-6" />
                             </a>
-                            <a href="https://www.linkedin.com/company/nith-csec/posts/?feedView=all" className="text-gray-400 hover:text-red-400 transition-colors">
+                            <a href="https://www.linkedin.com/company/csecnith/" className="text-gray-400 hover:text-red-400 transition-colors">
                                 <Linkedin className="w-6 h-6" />
                             </a>
                             
@@ -52,7 +55,7 @@ const Footer = () => {
                             <li><a className="text-gray-400 cursor-pointer text-lg hover:text-red-400 transition-colors">Getting Started</a></li>
                             <li><a href="https://discord.com/invite/GUSdHK8x" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Discord</a></li>
                             <li><a href="/coc" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Code of Conduct</a></li>
-                            <li><a className="text-gray-400 text-lg hover:text-red-400 transition-colors">Hacker's Guide</a></li>
+                            <li><a href="https://dot-puma-97f.notion.site/Hack-5-0-Hacker-s-Guide-19f095b2daf980058a2de1c0691aef59?pvs=74" className="text-gray-400 text-lg cursor-pointer hover:text-red-400 transition-colors">Hacker's Guide</a></li>
                         </ul>
                     </div>
 

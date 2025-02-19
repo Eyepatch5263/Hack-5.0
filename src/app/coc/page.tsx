@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { Terminal, Shield, AlertCircle, Heart, Users, MessageSquare, Scale, Gavel, Phone } from 'lucide-react';
 import Link from 'next/link';
@@ -80,7 +81,7 @@ function Page() {
             <ParticlesBackground />
             {/* Header */}
             <nav className="container mx-auto px-6 py-8 flex justify-between items-center">
-                <Link href="/" className="flex items-center space-x-2">
+                <Link href="/" className="flex cursor-pointer items-center space-x-2">
                     <Terminal className="w-8 h-8 text-tango" />
                     <span className="text-xl font-bold">CSEC</span>
                 </Link>
