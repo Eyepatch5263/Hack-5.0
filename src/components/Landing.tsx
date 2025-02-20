@@ -5,6 +5,16 @@ import { Code2, Flame, Terminal, Zap } from "lucide-react";
 import Link from "next/link";
 
 const Landing = () => {
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+}, []);
   return (
     <div className="relative min-h-screen snap-start overflow-hidden bg-[#19171B]">
       <ParticlesBackground />
@@ -59,36 +69,18 @@ const Landing = () => {
                   Obsidian Saga
                 </span>
               </h1>
-              <p className="mt-6 text-lg md:text-2xl text-gray-300">
+              <div className="mt-6 text-lg md:text-2xl text-gray-300">
                 Embark on an epic journey of innovation and creativity. Join us
                 in forging the future through code, collaboration, and
                 cutting-edge technology.
-              </p>
-              <div className="flex flex-col justify-center gap-8 md:flex-row md:justify-start md:space-x-6 mt-8">
-              <button className="px-8 py-3 bg-[#3770FF] border border-[#3770FF] rounded-lg hover:bg-[#3990FF] hover:text-white hover:scale-105 transition-all duration-200 ease-in-out flex justify-center items-center space-x-2">
-                  <svg
-                    className="w-6 h-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 115.46 123.46"
-                    fill="white"
-                  >
-                    <path
-                      d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 
-    12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 
-    13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 
-    2.18.08 3.34z"
-                    ></path>
-                    <path
-                      d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 
-    104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 
-    55.41 0 0 1 50.58 55.34z"
-                    ></path>
-                  </svg>
-                  <Link href="https://hack-1158.devfolio.co/">
-                    Apply with Devfolio
-                  </Link>
-                </button>
               </div>
+              <div 
+	className="apply-button z-[100] mt-12" 
+	data-hackathon-slug="hack-1508" 
+	data-button-theme="light"
+	style={{height: "44px", width: "312px"}}
+>Apply With Devfolio</div>
+            
             </div>
 
             {/* Hero Visual */}
