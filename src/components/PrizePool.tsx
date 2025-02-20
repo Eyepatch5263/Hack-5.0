@@ -37,6 +37,13 @@ const PrizePool = () => {
     },
     {
       icon: <Gift className="w-8 h-8" />,
+      title: "Ethereum",
+      amount: "8,500+",
+      description: "Innovative solutions and projects built on Ethereum",
+      color: "from-[#75020F] to-[#51080D]",
+    },
+    {
+      icon: <Gift className="w-8 h-8" />,
       title: "Open Innovation",
       amount: "30,000",
       description: "Innovative solutions and creative problem-solving",
@@ -94,13 +101,17 @@ const PrizePool = () => {
 
   return (
     <div className="snap-start pt-10 pb-10 flex flex-col w-screen min-h-screen bg-[#2B0307]">
-      <div ref={sectionRef} className="transition-all duration-1000 ease-out mx-10">
+      <div
+        ref={sectionRef}
+        className="transition-all duration-1000 ease-out mx-10"
+      >
         {/* Title */}
         <h2 className="md:text-5xl text-3xl font-bold text-center mb-4 text-white">
           Prize Pool
         </h2>
         <p className="text-lg text-[#C4A7A7] text-center mb-12 max-w-2xl mx-auto">
-          Celebrating excellence with substantial rewards for groundbreaking achievements
+          Celebrating excellence with substantial rewards for groundbreaking
+          achievements
         </p>
 
         {/* Prize Cards */}
@@ -108,7 +119,11 @@ const PrizePool = () => {
           {prizeData.map((prize, index) => (
             <div
               key={index}
-              className="prize-card transition-all duration-700 ease-out"
+              className={`${
+                prize.title === "Grand Prize"
+                  ? " md:col-span-3 md:col-start-1 md:col-end-4 flex justify-center"
+                  : ""
+              } prize-card transition-all duration-700 ease-out`}
               style={{ opacity: 0, transform: "translateY(20px)" }}
             >
               <div className="relative bg-[#19171B] rounded-2xl shadow-xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 border border-[#51080D]">
@@ -121,7 +136,9 @@ const PrizePool = () => {
                   >
                     {prize.icon}
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">{prize.title}</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">
+                    {prize.title}
+                  </h3>
                   <div className="text-3xl font-bold text-[#E63946] mb-4">
                     &#8377; {prize.amount}
                   </div>
