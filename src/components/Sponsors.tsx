@@ -27,7 +27,7 @@ const Sponsors = () => {
 
       <div className="flex flex-col items-center justify-center gap-2 mb-8">
         {
-            <div className={`grid grid-cols-2 md:grid-cols-4 gap-6`}>
+            <div className={`grid grid-cols-1 md:grid-cols-4 gap-6`}>
             {Sponsor.map((item, index) => (
               <div
                 key={index}
@@ -35,7 +35,7 @@ const Sponsors = () => {
               >
                 <div className="w-full p-16 flex items-center justify-center h-20 md:h-24 bg-gradient-to-br from-[#b83c44] to-[#2c0004] rounded-lg animate-pulse">
                 <img src={item.image}/>
-                <p className="md:hidden text-lg text-gray-300">{item.name}</p>
+                <p className="hidden text-lg text-gray-300">{item.name}</p>
                 </div>
               </div>
             ))}
