@@ -6,15 +6,15 @@ import Link from "next/link";
 
 const Landing = () => {
   React.useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    }
-}, []);
+    };
+  }, []);
   return (
     <div className="relative min-h-screen snap-start overflow-hidden bg-[#19171B]">
       <ParticlesBackground />
@@ -30,9 +30,13 @@ const Landing = () => {
           {/* Navbar */}
           <nav className="flex justify-between items-center mb-16">
             <div className="flex items-center space-x-2">
-            <Link  href="/">
-            <img src="csec.png" width={48} className="rounded-lg shadow-lg" />
-            </Link>
+              <Link href="/">
+                <img
+                  src="csec.png"
+                  width={48}
+                  className="rounded-lg shadow-lg"
+                />
+              </Link>
               <span className="text-3xl font-bold">CSEC</span>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -62,25 +66,28 @@ const Landing = () => {
           <div className="flex flex-col md:flex-row items-center justify-between mt-16">
             {/* Hero Text */}
             <div className="max-w-2xl text-center md:text-left">
-              <h1 className="text-6xl md:text-7xl font-extrabold leading-tight tracking-wider">
+              <div className="text-6xl md:text-7xl font-extrabold leading-tight tracking-wider">
                 <span className="text-[#E63946]">HACK 5.0</span>
                 <br />
-                <span className="text-4xl md:text-5xl text-[#C4A7A7]">
+                <div className="text-4xl md:text-5xl text-[#C4A7A7]">
                   Obsidian Saga
-                </span>
-              </h1>
+                </div>
+              </div>
               <div className="mt-6 text-lg md:text-2xl text-gray-300">
                 Embark on an epic journey of innovation and creativity. Join us
                 in forging the future through code, collaboration, and
                 cutting-edge technology.
               </div>
-              <div 
-	className="apply-button z-[100] mt-12" 
-	data-hackathon-slug="hack-1508" 
-	data-button-theme="light"
-	style={{height: "44px", width: "312px"}}
->Apply With Devfolio</div>
-            
+              <div className="mt-8 w-full flex justify-center md:justify-start">
+                <div
+                  className="apply-button z-[100]"
+                  data-hackathon-slug="hack-1508"
+                  data-button-theme="dark-inverted"
+                  style={{ height: "44px", width: "312px" }}
+                >
+                  Apply With Devfolio
+                </div>
+              </div>
             </div>
 
             {/* Hero Visual */}
