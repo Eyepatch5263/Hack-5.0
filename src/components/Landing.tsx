@@ -82,7 +82,7 @@ const Landing = () => {
                 <div
                   className="apply-button z-[100]"
                   data-hackathon-slug="hack-1158"
-                  data-button-theme="light"
+                  data-button-theme="dark-inverted"
                   style={{ height: "44px", width: "312px" }}
                 >
                   Apply With Devfolio
@@ -110,7 +110,7 @@ const Landing = () => {
               { label: "Tracks", value: "3" },
             ].map((stat, index) => (
               <div key={index} className="flex flex-col items-center">
-                <span className="text-4xl font-extrabold text-[#E63946] mb-2">
+                <span className="text-3xl md:text-4xl font-extrabold text-[#E63946] mb-2">
                   {stat.label === "Prize Pool" ? `₹ ${stat.value}` : stat.value}
                 </span>
                 <span className="text-gray-400 text-lg">{stat.label}</span>
