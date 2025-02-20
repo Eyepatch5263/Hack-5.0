@@ -38,6 +38,7 @@ export default function RootLayout({
         className={`${sansita.className}`}
       >
         {children}
+       
       </body>
     </html>
   );
