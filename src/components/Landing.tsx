@@ -82,7 +82,7 @@ const Landing = () => {
                 <div
                   className="apply-button z-[100]"
                   data-hackathon-slug="hack-1158"
-                  data-button-theme="dark-inverted"
+                  data-button-theme="light"
                   style={{ height: "44px", width: "312px" }}
                 >
                   Apply With Devfolio

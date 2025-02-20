@@ -31,7 +31,7 @@ const Sponsors = () => {
             {Sponsor.map((item, index) => (
               <div
                 key={index}
-                className={`${item.name === "Devfolio" ? "col-start-2" : ""} rounded-xl flex items-center justify-center border border-[#222222] hover:border-[#75020F] transition-colors shadow-md`}
+                className={`${item.name === "Devfolio" ? "md:col-start-2" : ""} rounded-xl flex items-center justify-center border border-[#222222] hover:border-[#75020F] transition-colors shadow-md`}
               >
                 <div className="w-full p-16 flex items-center justify-center h-20 md:h-24 bg-gradient-to-br from-[#b83c44] to-[#2c0004] rounded-lg animate-pulse">
                 <img src={item.image}/>
