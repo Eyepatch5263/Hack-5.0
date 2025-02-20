@@ -81,7 +81,7 @@ const Landing = () => {
               <div className="mt-8 w-full flex justify-center md:justify-start">
                 <div
                   className="apply-button z-[100]"
-                  data-hackathon-slug="hack-1508"
+                  data-hackathon-slug="hack-1158"
                   data-button-theme="dark-inverted"
                   style={{ height: "44px", width: "312px" }}
                 >
