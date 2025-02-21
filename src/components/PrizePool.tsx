@@ -22,13 +22,6 @@ const PrizePool = () => {
       color: "from-[#75020F] to-[#51080D]",
     },
     {
-      icon: <Gift className="w-8 h-8" />,
-      title: "Ethereum",
-      amount: "8,500+",
-      description: "Innovative solutions and projects built on Ethereum",
-      color: "from-[#75020F] to-[#51080D]",
-    },
-    {
       icon: <Medal className="w-8 h-8" />,
       title: "AI/ML Track",
       amount: "30,000",
@@ -62,6 +55,13 @@ const PrizePool = () => {
       amount: "5,000",
       description: "Best hack by a beginner team",
       color: "from-[#75020F] to-[#2B0307]",
+    },
+    {
+      icon: <Gift className="w-8 h-8" />,
+      title: "Ethereum",
+      amount: "8,500+",
+      description: "Innovative solutions and projects built on Ethereum",
+      color: "from-[#75020F] to-[#51080D]",
     },
   ];
 
