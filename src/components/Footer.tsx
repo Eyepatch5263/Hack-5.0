@@ -52,10 +52,11 @@ const Footer = () => {
                     <div>
                         <h3 className="text-2xl font-semibold mb-4 text-white">Resources</h3>
                         <ul className="space-y-3">
-                            <li><a className="text-gray-400 cursor-pointer text-lg hover:text-red-400 transition-colors">Getting Started</a></li>
-                            <li><a target="_blank" href="https://discord.com/invite/GUSdHK8x" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Discord</a></li>
-                            <li><a href="/coc" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Code of Conduct</a></li>
+                            <li><a target="_blank" href="https://dot-puma-97f.notion.site/Hack-5-0-Venue-19f095b2daf9809e86e5f0a3fcb7d3df" className="text-gray-400 cursor-pointer text-lg hover:text-red-400 transition-colors">Venue Guide</a></li>
                             <li><a target="_blank" href="https://dot-puma-97f.notion.site/Hack-5-0-Hacker-s-Guide-19f095b2daf980058a2de1c0691aef59?pvs=74" className="text-gray-400 text-lg cursor-pointer hover:text-red-400 transition-colors">Hacker's Guide</a></li>
+                            <li><a href="/coc" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Code of Conduct</a></li>
+                            <li><a target="_blank" href="https://discord.com/invite/GUSdHK8x" className="text-gray-400 text-lg hover:text-red-400 transition-colors">Discord</a></li>
+
                         </ul>
                     </div>
 

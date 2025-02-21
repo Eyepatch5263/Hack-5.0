@@ -22,6 +22,13 @@ const PrizePool = () => {
       color: "from-[#75020F] to-[#51080D]",
     },
     {
+      icon: <Gift className="w-8 h-8" />,
+      title: "Ethereum",
+      amount: "8,500+",
+      description: "Innovative solutions and projects built on Ethereum",
+      color: "from-[#75020F] to-[#51080D]",
+    },
+    {
       icon: <Medal className="w-8 h-8" />,
       title: "AI/ML Track",
       amount: "30,000",
@@ -33,13 +40,6 @@ const PrizePool = () => {
       title: "Blockchain & DeFi Track",
       amount: "30,000",
       description: "Excellence in execution of Blockchain & DeFi",
-      color: "from-[#75020F] to-[#51080D]",
-    },
-    {
-      icon: <Gift className="w-8 h-8" />,
-      title: "Ethereum",
-      amount: "8,500+",
-      description: "Innovative solutions and projects built on Ethereum",
       color: "from-[#75020F] to-[#51080D]",
     },
     {
