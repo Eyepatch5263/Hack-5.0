@@ -27,10 +27,10 @@ const Footer = () => {
                             <a target="_blank" href="https://www.instagram.com/hacknith?igsh=N3VtczNwa3pjNjNo" className="text-gray-400 hover:text-red-400 transition-colors">
                                 <Instagram className="w-6 h-6" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+                            <a target="_blank" href="https://x.com/csec_nith?t=Ubyv6_7SLUkdaxtBS8MUew&s=09" className="text-gray-400 hover:text-red-400 transition-colors">
                                 <Twitter className="w-6 h-6" />
                             </a>
-                            <a target="_blank" href="https://www.linkedin.com/company/csecnith/" className="text-gray-400 hover:text-red-400 transition-colors">
+                            <a target="_blank" href="https://www.linkedin.com/company/nith-csec/" className="text-gray-400 hover:text-red-400 transition-colors">
                                 <Linkedin className="w-6 h-6" />
                             </a>
                             
