@@ -11,7 +11,7 @@ const About = () => {
                 </h1>
                 <p className="md:text-2xl text-lg text-gray-300 leading-relaxed">
                     Welcome to <span className="text-[#E63946] font-semibold">Hack 5.0 - Obsidian Saga</span>, where
-                    Welcome to Hack 5.0 - Obsidian Saga, where ancient resilience meets the pulse of modern tech. This isn't just a hackathon—it's a realm where bold ideas, sharp minds, and cutting-edge code come together to build what's next.
+                    ancient resilience meets the pulse of modern tech. This isn't just a hackathon—it's a realm where bold ideas, sharp minds, and cutting-edge code come together to build what's next.
                     Step into the arena with fellow innovators to tackle real-world challenges and push the limits of what technology can do.
                 </p>
                 
