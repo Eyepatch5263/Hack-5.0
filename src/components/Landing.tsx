@@ -92,18 +92,19 @@ const Landing = () => {
 
                         {/* Hero Visual */}
                         <div className="hidden md:block relative w-72 h-72 md:w-96 md:h-96 mt-12 md:mt-0">
-                            <div className="absolute inset-0 animate-pulse">
+                            <div className="absolute inset-0 animate-hack">
                                 <div className="absolute inset-0 bg-[#E63946]/30 rounded-full blur-3xl opacity-30"></div>
                                 <div className="absolute inset-10 rounded-full"></div>
                                 <div className="absolute inset-0 flex items-center justify-center">
-                                    <Zap className="w-48 md:w-64 h-48 md:h-64 text-[#E63946] drop-shadow-glow" />
+                                    {/* <Zap className="w-48 md:w-64 h-48 md:h-64 text-[#E63946] drop-shadow-glow" /> */}
+                                    <img src="hack.png" alt="image"/>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     {/* Stats Section */}
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-20 text-center">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 md:mt-20 text-center">
                         {[
                             { label: "Prize Pool", value: "1,50,000" },
                             { label: "Hours", value: "48" },
