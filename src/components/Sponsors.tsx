@@ -7,7 +7,7 @@ const Sponsors = () => {
     {
       name: "Devfolio",
       partner: "Bronze Sponsor",
-      image: "Devfolio_Logo-Colored.png",
+      image: "Devfolio_Logo-White@2x.png",
       alt: "DEVFOLIO LOGO",
     },
     {
@@ -35,7 +35,7 @@ const Sponsors = () => {
                 key={index}
                 className={`${item.name === "Devfolio" ? "md:col-start-2" : ""} rounded-xl flex items-center justify-center border border-[#222222] hover:border-[#75020F] transition-colors shadow-md`}
               >
-                <div className="w-full p-16 flex items-center justify-center h-20 md:h-24 bg-gradient-to-br from-[#b83c44] to-[#2c0004] rounded-lg animate-pulse">
+                <div className="w-full p-16 flex items-center justify-center h-20 md:h-24 bg-gradient-to-br from-[#b83c44] to-[#2c0004] rounded-lg">
                 <img src={item.image} alt={item.alt} />
                 <p className="hidden text-lg text-gray-300">{item.name}</p>
                 </div>
