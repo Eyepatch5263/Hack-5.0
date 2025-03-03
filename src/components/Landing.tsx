@@ -26,7 +26,7 @@ const Landing = () => {
         </div>
 
         {/* Main Content */}
-        <div className="relative container mx-auto px-10 py-12">
+        <div className="relative container mx-auto px-20 py-12">
           {/* Navbar */}
           <nav className="flex justify-between items-center mb-16">
             <div className="flex items-center space-x-2">
