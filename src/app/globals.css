@@ -49,3 +49,8 @@ html{
   animation: float 6s ease-in-out infinite;
 }
 
+
+
+::-webkit-scrollbar{
+  display: none;
+}

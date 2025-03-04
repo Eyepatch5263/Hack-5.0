@@ -13,7 +13,7 @@ import React from 'react';
 
 function App() {
   return (
-    <main className='snap-y h-screen w-screen overflow-y-scroll overflow-x-hidden'>
+    <main className='h-screen w-screen overflow-y-scroll overflow-x-hidden'>
       <Landing/>
       <Timing/>
       <About/>

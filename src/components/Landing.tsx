@@ -16,7 +16,7 @@ const Landing = () => {
     };
   }, []);
   return (
-    <div className="relative min-h-screen snap-start overflow-hidden bg-[#19171B]">
+    <div className="relative min-h-screen  overflow-hidden bg-[#19171B]">
       <ParticlesBackground />
       <div className="min-h-screen text-white overflow-hidden relative">
         {/* Glowing Background Effects */}

@@ -39,7 +39,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="snap-start pt-16 pb-16 bg-[#19171B]">
+        <div className=" pt-16 pb-16 bg-[#19171B]">
 
 
             <div className="text-center pb-16">

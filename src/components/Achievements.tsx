@@ -36,7 +36,7 @@ const achievements = [
 const Achievements = () => {
     return (
         <div className='w-screen min-h-screen border-gray-600 bg-gradient-to-b from-gray-800 to bg-black text-white'>
-            <div className="snap-start  container mx-auto px-6 py-24 bg-sepia-black/30">
+            <div className="  container mx-auto px-6 py-24 bg-sepia-black/30">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4">Our Achievements</h2>
                     <p className="text-gray-300 max-w-2xl mx-auto">

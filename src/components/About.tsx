@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
     return (
-        <div id="about" className="h-screen w-screen snap-start flex flex-col md:flex-row justify-between items-center bg-[#19171B] px-6 md:px-20">
+        <div id="about" className="h-screen w-screen  flex flex-col md:flex-row justify-between items-center bg-[#19171B] px-6 md:px-20">
             {/* Left Content */}
             <div className="flex flex-col space-y-8 w-full md:w-1/2 text-white">
                 <h1 className="text-4xl md:text-5xl font-bold pt-4 text-[#E63946]">
