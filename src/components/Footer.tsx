@@ -6,7 +6,7 @@ import { FaDiscord } from "react-icons/fa"
 
 const Footer = () => {
     return (
-        <footer className="snap-start border-t border-gray-700 bg-gradient-to-b from-[#2B0307] to-[#19171B] text-gray-300">
+        <footer className=" border-t border-gray-700 bg-gradient-to-b from-[#2B0307] to-[#19171B] text-gray-300">
             <div className="py-16 px-12">
                 <div className="grid md:grid-cols-4 gap-12">
                     {/* Brand Column */}

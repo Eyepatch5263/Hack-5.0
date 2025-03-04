@@ -18,7 +18,7 @@ const Sponsors = () => {
     }
   ]
   return (
-    <div id="sponsors" className="snap-start px-10 md:px-16 bg-gradient-to-br from-[#19171B] via-[#2B0307] to-[#51080D] py-20">
+    <div id="sponsors" className=" px-10 md:px-16 bg-gradient-to-br from-[#19171B] via-[#2B0307] to-[#51080D] py-20">
       {/* Header */}
       <div className="text-center mb-16">
         <h2 className="font-bold text-3xl md:text-5xl text-white">Our Sponsors</h2>

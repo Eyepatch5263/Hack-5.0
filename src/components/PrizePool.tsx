@@ -99,7 +99,7 @@ const PrizePool = () => {
       description: "Innovative solutions and projects built on Ethereum",
       color: "from-[#75020F] to-[#51080D]",
       distribution: [
-        { position: "1st Place", reward: "8,500" },
+        { position: "1st Place", reward: "8,500+" },
         { position: "2nd Place", reward: "" },
         { position: "3rd Place", reward: "" },
       ],
@@ -131,7 +131,7 @@ const PrizePool = () => {
   }, []);
 
   return (
-    <div className="snap-start pt-10 pb-10 flex flex-col w-screen min-h-screen bg-[#2B0307]">
+    <div className=" pt-10 pb-10 flex flex-col w-screen min-h-screen bg-[#2B0307]">
       <div ref={sectionRef} className="transition-all duration-1000 ease-out mx-10">
         {/* Title */}
         <h2 className="md:text-5xl text-3xl font-bold text-center mb-4 text-white">
@@ -151,7 +151,7 @@ const PrizePool = () => {
                 className={`${prize.title === "Grand Prize"
                   ? " md:col-span-3 md:col-start-1 md:col-end-4 flex justify-center"
                   : ""
-                  } prize-card transition-all duration-700 ease-out`}
+                  } prize-card transition-all duration-700 ease-out transform `}
               >
                 <div className="relative bg-[#19171B] rounded-2xl shadow-xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 border border-[#51080D]">
                   <div className={`absolute inset-0 bg-gradient-to-br ${prize.color} opacity-10 group-hover:opacity-15 transition-opacity`}></div>
@@ -169,7 +169,7 @@ const PrizePool = () => {
                   {/* Prize Distribution (only show on hover) */}
                   <div
                     className={`p-4 bg-[#2B0307] text-white border-t border-[#51080D] 
-                    transition-all duration-300 ease-in-out rounded-b-2xl shadow-md 
+                    transition-all duration-300 ease-in-out rounded-b-2xl shadow-md pl-8
                     ${isOpen ? "opacity-100 scale-105" : "opacity-0"} 
                     group-hover:opacity-100 group-hover:scale-105`}
                     // onClick={() => setIsOpen(!isOpen)}
