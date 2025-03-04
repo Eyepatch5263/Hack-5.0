@@ -106,7 +106,6 @@ const PrizePool = () => {
     },
   ];
 
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -132,7 +131,10 @@ const PrizePool = () => {
 
   return (
     <div className=" pt-10 pb-10 flex flex-col w-screen min-h-screen bg-[#2B0307]">
-      <div ref={sectionRef} className="transition-all duration-1000 ease-out mx-10">
+      <div
+        ref={sectionRef}
+        className="transition-all duration-1000 ease-out mx-10"
+      >
         {/* Title */}
         <h2 className="md:text-5xl text-3xl font-bold text-center mb-4 text-white">
           Prize Pool
@@ -148,22 +150,31 @@ const PrizePool = () => {
             prizeData.map((prize, index) => (
               <div
                 key={index}
-                className={`${prize.title === "Grand Prize"
-                  ? " md:col-span-3 md:col-start-1 md:col-end-4 flex justify-center"
-                  : ""
-                  } prize-card transition-all duration-700 ease-out transform `}
+                className={`${
+                  prize.title === "Grand Prize"
+                    ? " md:col-span-3 md:col-start-1 md:col-end-4 flex justify-center"
+                    : ""
+                } prize-card transition-all duration-700 ease-out transform `}
               >
                 <div className="relative bg-[#19171B] rounded-2xl shadow-xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 border border-[#51080D]">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${prize.color} opacity-10 group-hover:opacity-15 transition-opacity`}></div>
-                  <div className="p-8">
-                    <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${prize.color} flex items-center justify-center text-white shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-br ${prize.color} opacity-10 group-hover:opacity-15 transition-opacity`}
+                  ></div>
+                  <div className="p-8 transition-all duration-300 ease-in-out flex flex-col gap-1 group-hover:flex-row group-hover:gap-8 group-hover:items-end">
+                    <div
+                      className={`w-16 h-16 rounded-xl bg-gradient-to-br ${prize.color} flex items-center justify-center text-white shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300`}
+                    >
                       {prize.icon}
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-2">{prize.title}</h3>
-                    <div className="text-3xl font-bold text-[#E63946] mb-4">
-                      &#8377; {prize.amount}
+                    <div className="flex flex-col gap-0">
+                      <h3 className="text-2xl font-bold text-white mb-2">
+                        {prize.title}
+                      </h3>
+                      <div className="text-3xl font-bold text-[#E63946] mb-4">
+                        &#8377; {prize.amount}
+                      </div>
+                      <p className="text-[#C4A7A7]">{prize.description}</p>
                     </div>
-                    <p className="text-[#C4A7A7]">{prize.description}</p>
                   </div>
 
                   {/* Prize Distribution (only show on hover) */}
@@ -171,14 +182,17 @@ const PrizePool = () => {
                     className={`p-4 bg-[#2B0307] text-white border-t border-[#51080D] 
                     transition-all duration-300 ease-in-out rounded-b-2xl shadow-md pl-8
                     ${isOpen ? "opacity-100 scale-105" : "opacity-0"} 
-                    group-hover:opacity-100 group-hover:scale-105`}
+                    group-hover:opacity-100 group-hover:scale-105 hidden group-hover:block`}
                     // onClick={() => setIsOpen(!isOpen)}
                   >
-                    <h4 className="text-lg font-bold text-[#E63946]">Prize Distribution</h4>
+                    <h4 className="text-lg font-bold text-[#E63946]">
+                      Prize Distribution
+                    </h4>
                     <ul className="mt-2">
                       {prize.distribution.map((dist, idx) => (
                         <li key={idx} className="text-sm text-[#C4A7A7]">
-                          {dist.position}: {dist.reward ? `₹${dist.reward}` : "None"}
+                          {dist.position}:{" "}
+                          {dist.reward ? `₹${dist.reward}` : "None"}
                         </li>
                       ))}
                     </ul>

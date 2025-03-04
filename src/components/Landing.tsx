@@ -3,6 +3,7 @@ import React from "react";
 import { ParticlesBackground } from "@/components/ui/ParticleBackground";
 import { Code2, Flame, Terminal, Zap } from "lucide-react";
 import Link from "next/link";
+import Timing from "./Timing";
 
 const Landing = () => {
   React.useEffect(() => {
@@ -26,7 +27,7 @@ const Landing = () => {
         </div>
 
         {/* Main Content */}
-        <div className="relative container mx-auto px-20 py-12">
+        <div className="relative container mx-auto px-20 py-6">
           {/* Navbar */}
           <nav className="flex justify-between items-center mb-16">
             <div className="flex items-center space-x-2">
@@ -63,21 +64,21 @@ const Landing = () => {
           </nav>
 
           {/* Hero Section */}
-          <div className="flex flex-col md:flex-row items-center justify-between mt-16">
+          <div className="flex flex-col items-center justify-between mt-16">
             {/* Hero Text */}
             <div className="max-w-2xl text-center md:text-left">
               <div className="text-6xl md:text-7xl font-extrabold leading-tight tracking-wider">
-                <span className="text-[#E63946]">HACK 5.0</span>
-                <br />
-                <div className="text-4xl md:text-5xl text-[#C4A7A7]">
+                <h1 className="text-[#E63946] text-center">HACK 5.0</h1>
+
+                <div className="text-4xl md:text-5xl text-gray-300">
                   Obsidian Saga
                 </div>
               </div>
-              <div className="mt-6 text-lg md:text-2xl text-gray-300">
+              {/* <div className="mt-6 text-lg md:text-2xl text-gray-300">
                 Embark on an epic journey of innovation and creativity. Join us
                 in forging the future through code, collaboration, and
                 cutting-edge technology.
-              </div>
+              </div> */}
               <div className="mt-8 w-full flex justify-center md:justify-start">
                 <div
                   className="apply-button z-[100]"
@@ -91,15 +92,8 @@ const Landing = () => {
             </div>
 
             {/* Hero Visual */}
-            <div className="hidden md:block relative w-72 h-72 md:w-96 md:h-96 mt-12 md:mt-0">
-              <div className="absolute inset-0 animate-hack">
-                <div className="absolute inset-0 bg-[#E63946]/30 rounded-full blur-3xl opacity-30"></div>
-                <div className="absolute inset-10 rounded-full"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  {/* <Zap className="w-48 md:w-64 h-48 md:h-64 text-[#E63946] drop-shadow-glow" /> */}
-                  <img src="hack.png" alt="image" />
-                </div>
-              </div>
+            <div className="flex flex-row justify-center items-center mt-12 md:mt-0">
+              <Timing />
             </div>
           </div>
 
