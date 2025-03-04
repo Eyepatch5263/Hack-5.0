@@ -172,7 +172,7 @@ const PrizePool = () => {
                     transition-all duration-300 ease-in-out rounded-b-2xl shadow-md 
                     ${isOpen ? "opacity-100 scale-105" : "opacity-0"} 
                     group-hover:opacity-100 group-hover:scale-105`}
-                    onClick={() => setIsOpen(!isOpen)}
+                    // onClick={() => setIsOpen(!isOpen)}
                   >
                     <h4 className="text-lg font-bold text-[#E63946]">Prize Distribution</h4>
                     <ul className="mt-2">
