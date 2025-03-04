@@ -57,7 +57,7 @@ const CountdownTimer: React.FC = () => {
   }, []);
 
   return (
-    <div className="h-[10rem] flex flex-col items-center justify-center mt-12 ">
+    <div className="h-[10rem] flex flex-col items-center justify-center mt-16 ">
       <h1 className="font-bold text-2xl md:text-5xl text-center text-gray-300 tracking-wide mb-6">
         Registeration Closes In
       </h1>

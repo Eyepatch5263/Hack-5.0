@@ -27,7 +27,7 @@ const Landing = () => {
         </div>
 
         {/* Main Content */}
-        <div className="relative container mx-auto px-20 py-6">
+        <div className="relative container mx-auto px-20 py-12">
           {/* Navbar */}
           <nav className="flex justify-between items-center mb-16">
             <div className="flex items-center space-x-2">
@@ -79,7 +79,7 @@ const Landing = () => {
                 in forging the future through code, collaboration, and
                 cutting-edge technology.
               </div> */}
-              <div className="mt-8 w-full flex justify-center md:justify-start">
+              <div className="mt-16 w-full flex justify-center md:justify-start">
                 <div
                   className="apply-button z-[100]"
                   data-hackathon-slug="hack-1158"
