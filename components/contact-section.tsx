@@ -187,16 +187,16 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="relative">
+              <div className="relative text-gray-600">
                 <label
                   htmlFor="subject"
-                  className={`absolute left-4 bg-gray-900 px-2 transition-all duration-300 z-10 ${
+                  className={`absolute left-4 bg-gray-900 text-gray-600 px-2 transition-all duration-300 z-10 ${
                     focusedField === "subject" || formData.subject
                       ? "-top-2.5 text-xs text-primary"
                       : "top-3 text-gray-400"
                   }`}
                 >
-                  Subject
+                  
                 </label>
                 <select
                   id="subject"
@@ -205,14 +205,14 @@ export default function ContactSection() {
                   onChange={handleChange}
                   onFocus={() => handleFocus("subject")}
                   onBlur={handleBlur}
-                  className="w-full bg-gray-900/50 text-white rounded-lg px-4 py-3 border border-gray-700 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all appearance-none"
+                  className="w-full bg-gray-900/50 text-gray-400  rounded-lg px-4 py-3 border border-gray-700 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all appearance-none"
                   required
                 >
-                  <option value="">Select a subject</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="sponsorship">Sponsorship</option>
-                  <option value="registration">Registration</option>
-                  <option value="technical">Technical Support</option>
+                  <option className="text-white" value="">Select a subject</option>
+                  <option className="text-white" value="general">General Inquiry</option>
+                  <option className="text-white" value="sponsorship">Sponsorship</option>
+                  <option className="text-white" value="registration">Registration</option>
+                  <option className="text-white" value="technical">Technical Support</option>
                 </select>
                 <div className="absolute right-4 top-3.5 pointer-events-none">
                   <svg

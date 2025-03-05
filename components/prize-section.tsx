@@ -215,29 +215,42 @@ export default function PrizeSection() {
         </div>
 
         {/* Special Category Prizes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
           {[
             {
               icon: Gift,
               title: "Best All Girls Team",
               amount: "₹5,000",
               description: "Outstanding performance by an all-girls team",
+              distribution:"The team should be composed entirely of girls, ensuring full female representation."
             },
             {
               icon: Gift,
               title: "Best Beginners Hack",
               amount: "₹5,000",
               description: "Best hack by a beginner team",
+              distribution:"The team should consist entirely of first-year students, ensuring equal experience among members."
             },
           ].map((prize, index) => (
             <motion.div key={index} variants={item} className="h-full">
-              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700 p-6 md:p-8 text-center transform transition-all hover:-translate-y-2 duration-300 shadow-lg h-full">
-                <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6">
-                  <prize.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
+              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700 p-6 md:p-8 text-center transform transition-all hover:-translate-y-2 duration-300 shadow-lg relative group overflow-hidden h-full">
+                <div className="transition-all duration-300 group-hover:opacity-0">
+                  <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6">
+                    <prize.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">{prize.title}</h3>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">{prize.amount}</div>
+                  <p className="text-gray-300">{prize.description}</p>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">{prize.title}</h3>
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">{prize.amount}</div>
-                <p className="text-gray-300">{prize.description}</p>
+
+                {/* Prize distribution on hover */}
+                <div className="absolute inset-0 bg-background/90 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-2xl font-bold mb-4 text-primary">{prize.title}</h3>
+                  <div className="space-y-4 w-full">
+                  <span className="text-lg font-bold text-primary">{prize.distribution}</span>
+                  </div>
+                  <p className="mt-4 text-sm text-gray-400">Total: {prize.amount}</p>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -249,7 +262,7 @@ export default function PrizeSection() {
             Sponsor <span className="text-primary">Tracks</span>
           </h2>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
           {[
             {
               icon: Gift,
@@ -258,7 +271,7 @@ export default function PrizeSection() {
               description: "Innovative solutions and projects built on Ethereum",
             },
           ].map((prize, index) => (
-            <motion.div key={index} variants={item} className={`${prize.title == "Ethereum"?"col-span-3 col-start-2 col-end-3 ":""} h-full`}>
+            <motion.div key={index} variants={item} className={`${prize.title == "Ethereum" ? "col-span-3 col-start-2 col-end-3 " : ""} h-full`}>
               <div className={`bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700 p-6 md:p-8 text-center transform transition-all hover:-translate-y-2 duration-300 shadow-lg h-full`}>
                 <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6">
                   <prize.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
