@@ -41,7 +41,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://discord.com/invite/GUSdHK8x"
+                href="https://discord.com/invite/kneqCFxKHY"
                 target="_blank"
                 className="text-gray-400 hover:text-primary transition-colors"
                 rel="noreferrer"
