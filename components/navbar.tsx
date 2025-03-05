@@ -100,72 +100,76 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          {/* CSEC Logo - Link to external site */}
-          {!showHackText && <>
-            <motion.a
-            href="https://csec.nith.ac.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative w-[48px] h-[48px] mr-3" // Increased by 40% from 9px
-            whileHover={{ rotate: 360 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
-          >
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/csec-RitzmBrgdmOMfzaijUqHFSmOVA4LzO.png"
-              alt="CSEC Logo"
-              fill
-              className="object-contain"
-              style={{
-                filter: "drop-shadow(0 0 5px rgba(255, 255, 255, 0.5))",
-              }}
-            />
-          </motion.a>
-
-          {/* Separator */}
-          <div className="h-7 w-px bg-gray-500 mx-3"></div>
-
-          {/* HACK Logo - Link to home section */}
-          <motion.a
-            href="#home"
-            onClick={(e) => handleNavLinkClick(e, "#home")}
-            className="relative w-[48px] h-[48px] mr-3" // Increased by 40% from 9px
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.3 }}
-          >
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image%20%2816%29_20250208_222328_0000-50pdDbAwyrTeA1mMlMT3c72vROO2oA.png"
-              alt="HACK Logo"
-              fill
-              className="object-contain"
-              style={{
-                filter: "drop-shadow(0 0 5px rgba(117, 2, 15, 0.5))",
-              }}
-            />
-          </motion.a>
-
-          </>}
-
-          {/* HACK 5.0 Text - Only visible when scrolled away from hero */}
-          {/* <AnimatePresence> */}
-            {showHackText && (
+          <AnimatePresence mode="wait">
+            {!showHackText ? (
               <motion.div
-                initial={{ opacity: 0, width: 0 }}
-                animate={{ opacity: 1, width: "auto" }}
-                exit={{ opacity: 0, width: 0 }}
+                key="logos"
+                className="flex items-center"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                {/* CSEC Logo - Link to external site */}
+                <motion.a
+                  href="https://csec.nith.ac.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative w-[48px] h-[48px] mr-3"
+                  whileHover={{ rotate: 360 }}
+                  transition={{ duration: 2, ease: "easeInOut" }}
+                >
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/csec-RitzmBrgdmOMfzaijUqHFSmOVA4LzO.png"
+                    alt="CSEC Logo"
+                    fill
+                    className="object-contain"
+                    style={{
+                      filter: "drop-shadow(0 0 5px rgba(255, 255, 255, 0.5))",
+                    }}
+                  />
+                </motion.a>
+
+                {/* Separator */}
+                <div className="h-7 w-px bg-gray-500 mx-3"></div>
+
+                {/* HACK Logo - Link to home section */}
+                <motion.a
+                  href="#home"
+                  onClick={(e) => handleNavLinkClick(e, "#home")}
+                  className="relative w-[48px] h-[48px] mr-3"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image%20%2816%29_20250208_222328_0000-50pdDbAwyrTeA1mMlMT3c72vROO2oA.png"
+                    alt="HACK Logo"
+                    fill
+                    className="object-contain"
+                    style={{
+                      filter: "drop-shadow(0 0 5px rgba(117, 2, 15, 0.5))",
+                    }}
+                  />
+                </motion.a>
+              </motion.div>
+            ) : (
+              <motion.div
+                key="hacktext"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.3 }}
-                className={`overflow-hidden ${Hacked_KerX.className}`}
+                className={`${Hacked_KerX.className} whitespace-nowrap`}
               >
                 <a
                   href="#home"
                   onClick={(e) => handleNavLinkClick(e, "#home")}
                   className="text-2xl md:text-5xl font-bold text-primary drop-shadow-glow ml-1"
                 >
-                  HACK 
-                  <span className="text-white"> 5.0</span>
+                  HACK<span className="text-white"> 5.0</span>
                 </a>
               </motion.div>
             )}
-          {/* </AnimatePresence> */}
+          </AnimatePresence>
         </div>
 
         {/* Desktop Navigation */}
