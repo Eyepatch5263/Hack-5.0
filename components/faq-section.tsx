@@ -33,11 +33,11 @@ const faqs = [
   },
   {
     question: "Can I participate solo?",
-    answer: "Yes, but we encourage teams (2-4 members). We will help you find teammates if needed!",
+    answer: "No, teams must have a minimum of 2 members (maximum 4). We will help you find teammates if needed!",
   },
   {
     question: "Is there a registration fee?",
-    answer: "No, Hack 5.0 is completely free! Just register and you are in.",
+    answer: "No, Hack 5.0 is completely free! Just register and you are in. There are no registration fees or hidden charges.",
   },
 ]
 
