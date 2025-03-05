@@ -134,7 +134,7 @@ export default function HeroSection() {
               <div
                 className="apply-button"
                 data-hackathon-slug="hack-1158" 
-                data-button-theme="light"
+                data-button-theme="dark-inverted"
                 style={{ height: "44px", width: "312px" }}
               >Apply with Devfolio</div>
             </motion.div>
