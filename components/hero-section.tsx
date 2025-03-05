@@ -129,7 +129,7 @@ export default function HeroSection() {
               </h1>
             </motion.div>
 
-            <motion.div variants={item} className="flex justify-center mt-12 ">
+            <div className="flex justify-center mt-12 ">
               {/* Devfolio button */}
               <div
                   className="apply-button z-[100000]"
@@ -139,7 +139,7 @@ export default function HeroSection() {
                 >
                   Apply With Devfolio
                 </div>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
 
