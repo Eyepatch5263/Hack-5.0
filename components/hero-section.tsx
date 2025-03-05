@@ -46,11 +46,11 @@ export default function HeroSection() {
     const now = new Date().getTime();
     const difference = targetDate - now;
 
-    if (difference <= 0) return { 
-      days: "00", 
-      hours: "00", 
-      minutes: "00", 
-      seconds: "00" 
+    if (difference <= 0) return {
+      days: "00",
+      hours: "00",
+      minutes: "00",
+      seconds: "00"
     };
 
     return {
@@ -109,12 +109,8 @@ export default function HeroSection() {
 
         {/* Main content - absolute center of the screen height */}
         <div className="flex-1 flex items-center justify-center">
-          <motion.div
-            className="container mx-auto px-4 z-10 text-center"
-            variants={container}
-            initial="hidden"
-            animate="show"
-          >
+          <div
+            className="container mx-auto px-4 z-10 text-center"         >
             <motion.div variants={item} className="relative">
               {/* Red blur effect below the text */}
               <div className="absolute w-full h-24 md:h-72 bg-primary/10 rounded-full filter blur-[60px] top-[90%] left-0 z-0 opacity-60"></div>
@@ -132,15 +128,13 @@ export default function HeroSection() {
             <div className="flex justify-center mt-12 ">
               {/* Devfolio button */}
               <div
-                  className="apply-button z-[100000]"
-                  data-hackathon-slug="hack-1158"
-                  data-button-theme="dark-inverted"
-                  style={{ height: "44px", width: "312px" }}
-                >
-                  Apply With Devfolio
-                </div>
+                className="apply-button"
+                data-hackathon-slug="hack-1158"
+                data-button-theme="light"
+                style={{ height: "44px", width: "312px" }}
+              >Apply with Devfolio</div>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* Countdown timer - positioned at bottom with proper spacing */}
@@ -173,7 +167,7 @@ export default function HeroSection() {
               ))}
             </div>
 
-            
+
           </motion.div>
         </div>
       </div>
