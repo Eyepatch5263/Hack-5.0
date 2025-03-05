@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 260 10% 10%;
+  --foreground: 0 0% 98%;
+
+  --card: 260 10% 10%;
+  --card-foreground: 0 0% 98%;
+
+  --popover: 260 10% 10%;
+  --popover-foreground: 0 0% 98%;
+
+  --primary: 354 77% 56%; /* Updated to match E63946 */
+  --primary-foreground: 0 0% 98%;
+
+  --secondary: 355 82% 41%; /* Updated to match c1121f */
+  --secondary-foreground: 0 0% 98%;
+
+  --muted: 0 100% 24%; /* Updated to match 780000 */
+  --muted-foreground: 0 0% 70%;
+
+  --accent: 355 82% 41%;
+  --accent-foreground: 0 0% 98%;
+
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 354 77% 56%;
+  --input: 354 77% 56%;
+  --ring: 354 77% 56%;
+
+  --radius: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #19171b;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  overflow: hidden;
+}
+
+/* Add glow effects */
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.5);
+}
+
+.shadow-glow-sm {
+  box-shadow: 0 0 10px rgba(230, 57, 70, 0.3);
+}
+
+.drop-shadow-glow {
+  filter: drop-shadow(0 0 8px rgba(230, 57, 70, 0.7));
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Improved transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Scroll effects */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Better backdrop blur */
+.backdrop-blur-md {
+  backdrop-filter: blur(16px);
+}
+
+
+/* Responsive text utilities */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* Improved touch targets for mobile */
+@media (max-width: 640px) {
+  button,
+  a {
+    cursor: default; /* Better for touch devices */
+  }
+
+  /* Ensure minimum touch target size */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Responsive spacing */
+.space-y-responsive > * + * {
+  margin-top: clamp(1rem, 5vw, 2rem);
+}
+
+.space-x-responsive > * + * {
+  margin-left: clamp(1rem, 5vw, 2rem);
+}
+
