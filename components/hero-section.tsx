@@ -18,7 +18,7 @@ export default function HeroSection() {
     shake: false,
   })
 
-  const targetDate = new Date("2025-03-20T00:00:00").getTime();
+  const targetDate = new Date("2025-03-21T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
     days: "00",
     hours: "00",
@@ -109,8 +109,12 @@ export default function HeroSection() {
 
         {/* Main content - absolute center of the screen height */}
         <div className="flex-1 flex items-center justify-center">
-          <div
-            className="container mx-auto px-4 z-10 text-center"         >
+          <motion.div
+            className="container mx-auto px-4 z-10 text-center"
+            variants={container}
+            initial="hidden"
+            animate="show"
+          >
             <motion.div variants={item} className="relative">
               {/* Red blur effect below the text */}
               <div className="absolute w-full h-24 md:h-72 bg-primary/10 rounded-full filter blur-[60px] top-[90%] left-0 z-0 opacity-60"></div>
@@ -125,17 +129,19 @@ export default function HeroSection() {
               </h1>
             </motion.div>
 
-            <div className="flex justify-center mt-12 ">
+            <motion.div variants={item} className="flex justify-center mt-12 ">
               {/* Devfolio button */}
               <div
                 className="apply-button"
-                data-hackathon-slug="hack-1158"
+                data-hackathon-slug="hack-1158" 
                 data-button-theme="light"
                 style={{ height: "44px", width: "312px" }}
               >Apply with Devfolio</div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
+
+
 
         {/* Countdown timer - positioned at bottom with proper spacing */}
         <div className="w-full px-4 pb-12 sm:pb-16">
