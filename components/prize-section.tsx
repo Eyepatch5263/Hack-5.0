@@ -160,9 +160,9 @@ export default function PrizeSection() {
               amount: "₹30,000",
               description: "Outstanding performance and creative solutions in AI/ML",
               distribution: [
-                { icon: LuMedal, amount: "₹15,000" },
-                { icon: IoMedalOutline, amount: "₹10,000" },
-                { icon: CiMedal, amount: "₹5,000" },
+                { icon: LuMedal, position: "1st", amount: "₹15,000" },
+                { icon: IoMedalOutline, position: "2nd", amount: "₹10,000" },
+                { icon: CiMedal, position: "3rd", amount: "₹5,000" },
               ],
             },
             {
@@ -171,9 +171,9 @@ export default function PrizeSection() {
               amount: "₹30,000",
               description: "Excellence in execution of Blockchain & DeFi",
               distribution: [
-                { icon: LuMedal, amount: "₹15,000" },
-                { icon: IoMedalOutline, amount: "₹10,000" },
-                { icon: CiMedal, amount: "₹5,000" },
+                { icon: LuMedal, position: "1st", amount: "₹15,000" },
+                { icon: IoMedalOutline, position: "2nd", amount: "₹10,000" },
+                { icon: CiMedal, position: "3rd", amount: "₹5,000" },
               ],
             },
             {
@@ -182,9 +182,9 @@ export default function PrizeSection() {
               amount: "₹30,000",
               description: "Innovative solutions and creative problem-solving",
               distribution: [
-                { icon: LuMedal, amount: "₹15,000" },
-                { icon: IoMedalOutline, amount: "₹10,000" },
-                { icon: CiMedal, amount: "₹5,000" },
+                { icon: LuMedal, position: "1st", amount: "₹15,000" },
+                { icon: IoMedalOutline, position: "2nd", amount: "₹10,000" },
+                { icon: CiMedal, position: "3rd", amount: "₹5,000" },
               ],
             },
           ].map((prize, index) => (
@@ -205,8 +205,8 @@ export default function PrizeSection() {
                   <div className="space-y-4 w-full">
                     {prize.distribution.map((item, i) => (
                       <div key={i} className="flex justify-between items-center border-b border-primary/20 pb-2">
-                        <item.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
-                        <span className="text-xl font-bold text-primary">{item.amount}</span>
+                        <span className="text-sm md:text-lg font-bold text-primary"> <item.icon className="w-4 h-4 md:w-6 md:h-6 text-primary" />{item.position}</span>
+                        <span className="text-sm md:text-lg font-bold text-primary">{item.amount}</span>
                       </div>
                     ))}
                   </div>
