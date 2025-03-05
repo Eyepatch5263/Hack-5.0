@@ -129,14 +129,16 @@ export default function HeroSection() {
               </h1>
             </motion.div>
 
-            <motion.div variants={item} className="flex justify-center mt-12">
+            <motion.div variants={item} className="flex justify-center mt-12 ">
               {/* Devfolio button */}
               <div
-                className="apply-button"
-                data-hackathon-slug="hack-1158"
-                data-button-theme="dark-inverted"
-                style={{ height: "44px", width: "312px" }}
-              ></div>
+                  className="apply-button z-[100000]"
+                  data-hackathon-slug="hack-1158"
+                  data-button-theme="dark-inverted"
+                  style={{ height: "44px", width: "312px" }}
+                >
+                  Apply With Devfolio
+                </div>
             </motion.div>
           </motion.div>
         </div>
