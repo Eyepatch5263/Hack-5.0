@@ -10,6 +10,8 @@ import { cn } from "@/lib/utils"
 import { motion, AnimatePresence } from "framer-motion"
 import { scrollToSection } from "@/lib/scroll-utils"
 import localFont from "next/font/local"
+import { useGlitch } from "react-powerglitch"
+
 
 const Hacked_KerX = localFont({
   src: "../public/fonts/Hacked-KerX.ttf",
@@ -27,6 +29,13 @@ const navLinks = [
 ]
 
 export default function Navbar() {
+  const glitch = useGlitch({
+    timing: {
+      duration: 3950,
+    },
+    shake: false,
+  })
+
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState("home")
@@ -152,6 +161,7 @@ export default function Navbar() {
                 </motion.a>
               </motion.div>
             ) : (
+            
               <motion.div
                 key="hacktext"
                 initial={{ opacity: 0, x: -20 }}
