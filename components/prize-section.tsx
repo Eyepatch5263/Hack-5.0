@@ -1,7 +1,10 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Trophy, Gift, Lightbulb } from "lucide-react"
+import { Trophy, Gift, Lightbulb, Hexagon, Gem, GraduationCap, Wallet } from "lucide-react"
+import { LuMedal } from "react-icons/lu";
+import { IoMedalOutline } from "react-icons/io5";
+import { CiMedal } from "react-icons/ci";
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import localFont from "next/font/local"
@@ -157,20 +160,20 @@ export default function PrizeSection() {
               amount: "₹30,000",
               description: "Outstanding performance and creative solutions in AI/ML",
               distribution: [
-                { place: "1st Place", amount: "₹15,000" },
-                { place: "2nd Place", amount: "₹10,000" },
-                { place: "3rd Place", amount: "₹5,000" },
+                { icon: LuMedal, amount: "₹15,000" },
+                { icon: IoMedalOutline, amount: "₹10,000" },
+                { icon: CiMedal, amount: "₹5,000" },
               ],
             },
             {
-              icon: Gift,
+              icon: Hexagon,
               title: "Blockchain & DeFi Track",
               amount: "₹30,000",
               description: "Excellence in execution of Blockchain & DeFi",
               distribution: [
-                { place: "1st Place", amount: "₹15,000" },
-                { place: "2nd Place", amount: "₹10,000" },
-                { place: "3rd Place", amount: "₹5,000" },
+                { icon: LuMedal, amount: "₹15,000" },
+                { icon: IoMedalOutline, amount: "₹10,000" },
+                { icon: CiMedal, amount: "₹5,000" },
               ],
             },
             {
@@ -179,9 +182,9 @@ export default function PrizeSection() {
               amount: "₹30,000",
               description: "Innovative solutions and creative problem-solving",
               distribution: [
-                { place: "1st Place", amount: "₹15,000" },
-                { place: "2nd Place", amount: "₹10,000" },
-                { place: "3rd Place", amount: "₹5,000" },
+                { icon: LuMedal, amount: "₹15,000" },
+                { icon: IoMedalOutline, amount: "₹10,000" },
+                { icon: CiMedal, amount: "₹5,000" },
               ],
             },
           ].map((prize, index) => (
@@ -202,7 +205,7 @@ export default function PrizeSection() {
                   <div className="space-y-4 w-full">
                     {prize.distribution.map((item, i) => (
                       <div key={i} className="flex justify-between items-center border-b border-primary/20 pb-2">
-                        <span className="font-medium">{item.place}</span>
+                        <item.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
                         <span className="text-xl font-bold text-primary">{item.amount}</span>
                       </div>
                     ))}
@@ -218,18 +221,18 @@ export default function PrizeSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
           {[
             {
-              icon: Gift,
+              icon: Gem,
               title: "Best All Girls Team",
               amount: "₹5,000",
               description: "Outstanding performance by an all-girls team",
-              distribution:"The team should be composed entirely of girls, ensuring full female representation."
+              distribution: "The team should be composed entirely of girls, ensuring full female representation."
             },
             {
-              icon: Gift,
+              icon: GraduationCap,
               title: "Best Beginners Hack",
               amount: "₹5,000",
               description: "Best hack by a beginner team",
-              distribution:"The team should consist entirely of first-year students, ensuring equal experience among members."
+              distribution: "The team should consist entirely of first-year students, ensuring equal experience among members."
             },
           ].map((prize, index) => (
             <motion.div key={index} variants={item} className="h-full">
@@ -247,7 +250,7 @@ export default function PrizeSection() {
                 <div className="absolute inset-0 bg-background/90 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h3 className="text-2xl font-bold mb-4 text-primary">{prize.title}</h3>
                   <div className="space-y-4 w-full">
-                  <span className="text-lg font-bold text-primary">{prize.distribution}</span>
+                    <span className="text-lg font-bold text-white">{prize.distribution}</span>
                   </div>
                   <p className="mt-4 text-sm text-gray-400">Total: {prize.amount}</p>
                 </div>
@@ -265,7 +268,7 @@ export default function PrizeSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
           {[
             {
-              icon: Gift,
+              icon: Wallet,
               title: "Ethereum",
               amount: "₹8,500+",
               description: "Innovative solutions and projects built on Ethereum",
