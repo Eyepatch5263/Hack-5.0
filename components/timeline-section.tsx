@@ -26,37 +26,37 @@ export default function TimelineSection() {
 
   const timelineEvents = [
     {
-      date: "March 15, 2025",
+      date: "February 21, 2025",
       title: "Registration Opens",
       description: "Sign up and secure your spot for HACK 5.0",
     },
     {
-      date: "April 10, 2025",
+      date: "March 20, 2025",
       title: "Registration Closes",
       description: "Last day to register for the hackathon",
     },
     {
-      date: "April 15, 2025",
-      title: "Team Formation",
-      description: "Find teammates and start brainstorming ideas",
+      date: "March 22, 2025",
+      title: "Screening Round",
+      description: "Screening round for the Hack-5.0",
     },
     {
-      date: "April 20, 2025",
+      date: "April 4, 2025",
       title: "Hackathon Kickoff",
       description: "Opening ceremony and problem statement release",
     },
     {
-      date: "April 21-22, 2025",
+      date: "April 4-5, 2025",
       title: "Hacking Period",
       description: "48 hours of coding, building, and innovation",
     },
     {
-      date: "April 22, 2025",
+      date: "April 5, 2025",
       title: "Project Submission",
       description: "Submit your projects for evaluation",
     },
     {
-      date: "April 23, 2025",
+      date: "April 6, 2025",
       title: "Judging & Results",
       description: "Project evaluation and winner announcement",
     },

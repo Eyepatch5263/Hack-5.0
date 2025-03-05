@@ -215,7 +215,7 @@ export default function PrizeSection() {
         </div>
 
         {/* Special Category Prizes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
           {[
             {
               icon: Gift,
@@ -228,12 +228,6 @@ export default function PrizeSection() {
               title: "Best Beginners Hack",
               amount: "₹5,000",
               description: "Best hack by a beginner team",
-            },
-            {
-              icon: Gift,
-              title: "Ethereum",
-              amount: "₹8,500+",
-              description: "Innovative solutions and projects built on Ethereum",
             },
           ].map((prize, index) => (
             <motion.div key={index} variants={item} className="h-full">
@@ -248,6 +242,35 @@ export default function PrizeSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Sponsor Tracks Prizes*/}
+        <motion.div variants={item} className="text-center mb-16">
+          <h2 className={`text-3xl md:text-5xl  mb-4 ${Hacked_KerX.className}`}>
+            Sponsor <span className="text-primary">Tracks</span>
+          </h2>
+        </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {[
+            {
+              icon: Gift,
+              title: "Ethereum",
+              amount: "₹8,500+",
+              description: "Innovative solutions and projects built on Ethereum",
+            },
+          ].map((prize, index) => (
+            <motion.div key={index} variants={item} className={`${prize.title == "Ethereum"?"col-span-3 col-start-2 col-end-3 ":""} h-full`}>
+              <div className={`bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700 p-6 md:p-8 text-center transform transition-all hover:-translate-y-2 duration-300 shadow-lg h-full`}>
+                <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6">
+                  <prize.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">{prize.title}</h3>
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">{prize.amount}</div>
+                <p className="text-gray-300">{prize.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
       </motion.div>
     </section>
   )
