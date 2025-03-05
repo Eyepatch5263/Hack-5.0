@@ -31,7 +31,7 @@ export default function TimelineSection() {
       description: "Sign up and secure your spot for HACK 5.0",
     },
     {
-      date: "March 20, 2025",
+      date: "March 21, 2025",
       title: "Registration Closes",
       description: "Last day to register for the hackathon",
     },
