@@ -67,19 +67,19 @@ export default function PrizeSection() {
   const ref = useRef(null)
 
   // Effect to handle initial confetti animation - with cleanup
-  useEffect(() => {
-    if (sectionInView && !hasTriggeredInitialConfetti) {
-      setShowGrandPrizeConfetti(true)
-      setHasTriggeredInitialConfetti(true)
+  // useEffect(() => {
+  //   if (sectionInView && !hasTriggeredInitialConfetti) {
+  //     setShowGrandPrizeConfetti(true)
+  //     setHasTriggeredInitialConfetti(true)
 
-      // Hide confetti after exactly 2 seconds
-      const timer = setTimeout(() => {
-        setShowGrandPrizeConfetti(false)
-      }, 2000)
+  //     // Hide confetti after exactly 2 seconds
+  //     const timer = setTimeout(() => {
+  //       setShowGrandPrizeConfetti(false)
+  //     }, 2000)
 
-      return () => clearTimeout(timer)
-    }
-  }, [sectionInView, hasTriggeredInitialConfetti])
+  //     return () => clearTimeout(timer)
+  //   }
+  // }, [sectionInView, hasTriggeredInitialConfetti])
 
   // Handle hover confetti separately with debounce
   const handleHoverStart = () => {
