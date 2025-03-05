@@ -117,7 +117,7 @@ export default function HeroSection() {
           >
             <motion.div variants={item} className="relative">
               {/* Red blur effect below the text */}
-              <div className="absolute w-full h-24 md:h-72 bg-primary/10 rounded-full filter blur-[60px] top-[90%] left-0 z-0 opacity-60"></div>
+              <div className="absolute w-full h-24 md:h-72 bg-primary/10 rounded-full filter blur-[60px] top-[90%] left-0 z-[-1000] opacity-60"></div>
 
               <h1
                 className={`relative z-10 text-7xl sm:text-9xl md:text-9xl font-bold mb-4 md:mb-8 text-white ${Hacked_KerX.className}`}
