@@ -141,3 +141,8 @@ section {
   margin-left: clamp(1rem, 5vw, 2rem);
 }
 
+
+
+::-webkit-scrollbar{
+  display: none ;
+}
