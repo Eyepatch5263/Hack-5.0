@@ -224,7 +224,7 @@ function Page() {
                                 team.
                             </p>
                             <div className="flex gap-6">
-                                <p className=" py-3 flex-col md:flex-row bg-tango rounded-lg justify-between hover:bg-tango-dark transition-colors inline-flex items-center gap-6">
+                                <div className=" py-3 flex-col md:flex-row bg-tango rounded-lg justify-between hover:bg-tango-dark transition-colors inline-flex items-center gap-6">
                                     <Phone className="w-5 h-5 hidden md:inline-block" />
                                     <div className="flex flex-col items-center justify-center">
                                         <a className="cursor-pointer" href="tel:+9162675 31322">
@@ -250,7 +250,7 @@ function Page() {
                                         +91 97675 92787
                                     </a>
                                     </div>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
