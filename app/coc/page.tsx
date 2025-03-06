@@ -224,17 +224,32 @@ function Page() {
                                 team.
                             </p>
                             <div className="flex gap-6">
-                                <p className=" py-3 bg-tango rounded-lg hover:bg-tango-dark transition-colors inline-flex items-center gap-2">
-                                    <Phone className="w-5 h-5" />
-                                    <a className="cursor-pointer" href="tel:+9162675 31322">
-                                        Tanishq Verma | +91 62675 31322{" "}
-                                    </a>
-                                    <a className="cursor-pointer" href="tel:+9170233 26128">
-                                        Prince Jaiswal | +91 70233 26128
+                                <p className=" py-3 flex-col md:flex-row bg-tango rounded-lg justify-between hover:bg-tango-dark transition-colors inline-flex items-center gap-6">
+                                    <Phone className="w-5 h-5 hidden md:inline-block" />
+                                    <div className="flex flex-col items-center justify-center">
+                                        <a className="cursor-pointer" href="tel:+9162675 31322">
+                                            Tanishq Verma
+                                        </a>
+                                        <a className="cursor-pointer" href="tel:+9162675 31322">
+                                            +91 62675 31322{" "}
+                                        </a>
+                                    </div>
+                                    <div className="flex flex-col items-center justify-center">
+                                        <a className="cursor-pointer" href="tel:+9170233 26128">
+                                            Prince Jaiswal
+                                        </a>
+                                        <a className="cursor-pointer" href="tel:+9170233 26128">
+                                           +91 70233 26128
+                                        </a>
+                                    </div>
+                                    <div className="flex flex-col items-center justify-center">
+                                    <a className="cursor-pointer" href="tel:+9197675 92787">
+                                        Harshal Sakhare
                                     </a>
                                     <a className="cursor-pointer" href="tel:+9197675 92787">
-                                        Harshal Sakhare | +91 97675 92787
+                                        +91 97675 92787
                                     </a>
+                                    </div>
                                 </p>
                             </div>
                         </div>
