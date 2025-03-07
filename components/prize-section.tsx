@@ -2,9 +2,9 @@
 
 import { useState, useEffect, useRef } from "react"
 import { Trophy, Gift, Lightbulb, Hexagon, Gem, GraduationCap, Wallet } from "lucide-react"
-import { LuMedal } from "react-icons/lu";
-import { IoMedalOutline } from "react-icons/io5";
-import { CiMedal } from "react-icons/ci";
+import { LuMedal } from "react-icons/lu"
+import { IoMedalOutline } from "react-icons/io5"
+import { CiMedal } from "react-icons/ci"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import localFont from "next/font/local"
@@ -13,6 +13,7 @@ const Hacked_KerX = localFont({
   src: "../public/fonts/Hacked-KerX.ttf",
   variable: "--custom-font",
 })
+
 // Optimized Confetti component for mobile performance
 const Confetti = () => {
   // Significantly reduced number of confetti pieces for mobile
@@ -60,29 +61,42 @@ const Confetti = () => {
 }
 
 export default function PrizeSection() {
+  // Modified InView configuration with lower threshold and root margin
   const [sectionRef, sectionInView] = useInView({
     triggerOnce: true,
-    threshold: 0.3,
+    threshold: 0.1, // Reduced threshold for more reliable triggering
+    rootMargin: "50px 0px", // Added margin to trigger earlier
   })
 
+  // Fallback state to ensure rendering even if InView fails
+  const [forcedVisible, setForcedVisible] = useState(false)
   const [showGrandPrizeConfetti, setShowGrandPrizeConfetti] = useState(false)
   const [hasTriggeredInitialConfetti, setHasTriggeredInitialConfetti] = useState(false)
   const ref = useRef(null)
 
+  // Force visibility after a delay as a fallback
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setForcedVisible(true)
+    }, 1000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
   // Effect to handle initial confetti animation - with cleanup
-  // useEffect(() => {
-  //   if (sectionInView && !hasTriggeredInitialConfetti) {
-  //     setShowGrandPrizeConfetti(true)
-  //     setHasTriggeredInitialConfetti(true)
+  useEffect(() => {
+    if ((sectionInView || forcedVisible) && !hasTriggeredInitialConfetti) {
+      setShowGrandPrizeConfetti(true)
+      setHasTriggeredInitialConfetti(true)
 
-  //     // Hide confetti after exactly 2 seconds
-  //     const timer = setTimeout(() => {
-  //       setShowGrandPrizeConfetti(false)
-  //     }, 2000)
+      // Hide confetti after exactly 2 seconds
+      const timer = setTimeout(() => {
+        setShowGrandPrizeConfetti(false)
+      }, 2000)
 
-  //     return () => clearTimeout(timer)
-  //   }
-  // }, [sectionInView, hasTriggeredInitialConfetti])
+      return () => clearTimeout(timer)
+    }
+  }, [sectionInView, hasTriggeredInitialConfetti, forcedVisible])
 
   // Handle hover confetti separately with debounce
   const handleHoverStart = () => {
@@ -118,10 +132,11 @@ export default function PrizeSection() {
         className="container mx-auto px-4"
         variants={container}
         initial="hidden"
-        animate={sectionInView ? "visible" : "hidden"}
+        // Use forcedVisible as a fallback if sectionInView fails
+        animate={sectionInView || forcedVisible ? "visible" : "hidden"}
       >
         <motion.div variants={item} className="text-center mb-16">
-          <h2 className={`text-3xl md:text-5xl  mb-4 ${Hacked_KerX.className}`}>
+          <h2 className={`text-3xl md:text-5xl mb-4 ${Hacked_KerX.className}`}>
             Prize <span className="text-primary">Pool</span>
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
@@ -205,7 +220,11 @@ export default function PrizeSection() {
                   <div className="space-y-4 w-full">
                     {prize.distribution.map((item, i) => (
                       <div key={i} className="flex justify-between items-center border-b border-primary/20 pb-2">
-                        <span className="text-sm md:text-lg font-bold text-primary"> <item.icon className="w-4 h-4 md:w-6 md:h-6 text-primary" />{item.position}</span>
+                        <span className="text-sm md:text-lg font-bold text-primary">
+                          {" "}
+                          <item.icon className="w-4 h-4 md:w-6 md:h-6 text-primary" />
+                          {item.position}
+                        </span>
                         <span className="text-sm md:text-lg font-bold text-primary">{item.amount}</span>
                       </div>
                     ))}
@@ -225,14 +244,15 @@ export default function PrizeSection() {
               title: "Best All Girls Team",
               amount: "₹5,000",
               description: "Outstanding performance by an all-girls team",
-              distribution: "The team should be composed entirely of girls, ensuring full female representation."
+              distribution: "The team should be composed entirely of girls, ensuring full female representation.",
             },
             {
               icon: GraduationCap,
               title: "Best Beginners Hack",
               amount: "₹5,000",
               description: "Best hack by a beginner team",
-              distribution: "The team should consist entirely of first-year students, ensuring equal experience among members."
+              distribution:
+                "The team should consist entirely of first-year students, ensuring equal experience among members.",
             },
           ].map((prize, index) => (
             <motion.div key={index} variants={item} className="h-full">
@@ -261,7 +281,7 @@ export default function PrizeSection() {
 
         {/* Sponsor Tracks Prizes*/}
         <motion.div variants={item} className="text-center mb-16">
-          <h2 className={`text-3xl md:text-5xl  mb-4 ${Hacked_KerX.className}`}>
+          <h2 className={`text-3xl md:text-5xl mb-4 ${Hacked_KerX.className}`}>
             Sponsor <span className="text-primary">Tracks</span>
           </h2>
         </motion.div>
@@ -274,8 +294,14 @@ export default function PrizeSection() {
               description: "Innovative solutions and projects built on Ethereum",
             },
           ].map((prize, index) => (
-            <motion.div key={index} variants={item} className={`${prize.title == "Ethereum" ? "col-span-3 col-start-2 col-end-3 " : ""} h-full`}>
-              <div className={`bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700 p-6 md:p-8 text-center transform transition-all hover:-translate-y-2 duration-300 shadow-lg h-full`}>
+            <motion.div
+              key={index}
+              variants={item}
+              className={`${prize.title === "Ethereum" ? "col-span-3 col-start-2 col-end-3 " : ""} h-full`}
+            >
+              <div
+                className={`bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700 p-6 md:p-8 text-center transform transition-all hover:-translate-y-2 duration-300 shadow-lg h-full`}
+              >
                 <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6">
                   <prize.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
                 </div>
@@ -286,7 +312,6 @@ export default function PrizeSection() {
             </motion.div>
           ))}
         </div>
-
       </motion.div>
     </section>
   )
