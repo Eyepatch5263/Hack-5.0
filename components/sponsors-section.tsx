@@ -47,7 +47,7 @@ export default function SponsorsSection() {
       ],
     },
     {
-      tier: "Silver Sponsor",
+      tier: "Silver Sponsors",
       sponsors: [
         {
           name: "ETHIndia",

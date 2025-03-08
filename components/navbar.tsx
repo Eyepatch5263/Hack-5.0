@@ -1,22 +1,21 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
-import { motion, AnimatePresence } from "framer-motion"
-import { scrollToSection } from "@/lib/scroll-utils"
-import localFont from "next/font/local"
-import { useGlitch } from "react-powerglitch"
-
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "framer-motion";
+import { scrollToSection } from "@/lib/scroll-utils";
+import localFont from "next/font/local";
+import { useGlitch } from "react-powerglitch";
 
 const Hacked_KerX = localFont({
   src: "../public/fonts/Hacked-KerX.ttf",
   variable: "--custom-font", // Optional: for CSS variables
-})
+});
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -26,7 +25,7 @@ const navLinks = [
   { name: "Sponsors", href: "#sponsors" },
   { name: "FAQ", href: "#faq" },
   { name: "Contact", href: "#contact" },
-]
+];
 
 export default function Navbar() {
   const glitch = useGlitch({
@@ -34,47 +33,50 @@ export default function Navbar() {
       duration: 3950,
     },
     shake: false,
-  })
+  });
 
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const [activeSection, setActiveSection] = useState("home")
-  const [showHackText, setShowHackText] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
+  const [showHackText, setShowHackText] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 10
-      setScrolled(isScrolled)
+      const isScrolled = window.scrollY > 10;
+      setScrolled(isScrolled);
 
       // Show HACK 5.0 text only when scrolled away from hero section
-      const heroSection = document.getElementById("home")
+      const heroSection = document.getElementById("home");
       if (heroSection) {
-        const heroHeight = heroSection.offsetHeight
-        setShowHackText(window.scrollY > heroHeight * 0.5)
+        const heroHeight = heroSection.offsetHeight;
+        setShowHackText(window.scrollY > heroHeight * 0.5);
       }
 
       // Update active section based on scroll position
-      const sections = navLinks.map((link) => link.href.substring(1))
+      const sections = navLinks.map((link) => link.href.substring(1));
 
       for (const section of sections.reverse()) {
-        const element = document.getElementById(section)
+        const element = document.getElementById(section);
         if (element && window.scrollY >= element.offsetTop - 200) {
-          setActiveSection(section)
-          break
+          setActiveSection(section);
+          break;
         }
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault()
-    const sectionId = href.substring(1) // Remove the # from the href
-    scrollToSection(sectionId)
-    setIsOpen(false) // Close mobile menu if open
-  }
+  const handleNavLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    const sectionId = href.substring(1); // Remove the # from the href
+    scrollToSection(sectionId);
+    setIsOpen(false); // Close mobile menu if open
+  };
 
   const navbarVariants = {
     hidden: { y: -100, opacity: 0 },
@@ -83,7 +85,7 @@ export default function Navbar() {
       opacity: 1,
       transition: { duration: 0.5, ease: "easeOut" },
     },
-  }
+  };
 
   const linkVariants = {
     hidden: { opacity: 0, y: -10 },
@@ -95,7 +97,7 @@ export default function Navbar() {
         duration: 0.5,
       },
     }),
-  }
+  };
 
   return (
     <motion.nav
@@ -104,7 +106,9 @@ export default function Navbar() {
       variants={navbarVariants}
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled ? "bg-background/90 backdrop-blur-md py-3 shadow-lg" : "bg-transparent py-5",
+        scrolled
+          ? "bg-background/90 backdrop-blur-md py-3 shadow-lg"
+          : "bg-transparent py-5"
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -161,7 +165,6 @@ export default function Navbar() {
                 </motion.a>
               </motion.div>
             ) : (
-            
               <motion.div
                 key="hacktext"
                 initial={{ opacity: 0, x: -20 }}
@@ -192,7 +195,7 @@ export default function Navbar() {
                   onClick={(e) => handleNavLinkClick(e, link.href)}
                   className={cn(
                     "text-lg font-medium text-foreground hover:text-primary transition-colors relative",
-                    activeSection === link.href.substring(1) && "text-primary",
+                    activeSection === link.href.substring(1) && "text-primary"
                   )}
                 >
                   {link.name}
@@ -212,7 +215,11 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <a href="https://hack-1158.devfolio.co/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://hack-1158.devfolio.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button className="bg-primary hover:bg-primary/90 text-white shadow-glow-sm text-base px-6 py-2.5 h-auto">
                 Apply Now
               </Button>
@@ -255,7 +262,8 @@ export default function Navbar() {
                       onClick={(e) => handleNavLinkClick(e, link.href)}
                       className={cn(
                         "text-lg font-medium text-foreground hover:text-primary transition-colors block py-3",
-                        activeSection === link.href.substring(1) && "text-primary",
+                        activeSection === link.href.substring(1) &&
+                          "text-primary"
                       )}
                     >
                       {link.name}
@@ -267,7 +275,11 @@ export default function Navbar() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: navLinks.length * 0.05 }}
                 >
-                  <a href="https://hack-1158.devfolio.co/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://hack-1158.devfolio.co/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Button className="bg-primary hover:bg-primary/90 text-white w-full mt-2 shadow-glow-sm text-base py-2.5">
                       Apply Now
                     </Button>
@@ -279,6 +291,5 @@ export default function Navbar() {
         )}
       </AnimatePresence>
     </motion.nav>
-  )
+  );
 }
-
