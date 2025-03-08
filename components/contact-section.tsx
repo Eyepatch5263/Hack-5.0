@@ -386,7 +386,7 @@ export default function ContactSection() {
             {/* First Row: Email & Location */}
             <motion.div
               variants={item}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
+              // whileHover={{ y: -10, transition: { duration: 0.3 } }}
               className="bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-md border border-gray-700 shadow-lg rounded-xl p-6 md:p-8 text-center transition-all"
             >
               <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center mx-auto mb-3 md:mb-4 shadow-lg">
@@ -408,7 +408,7 @@ export default function ContactSection() {
 
             <motion.div
               variants={item}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
+              // whileHover={{ y: -10, transition: { duration: 0.3 } }}
               className="bg-gradient-to-br from-gray-800/40 to-gray-900/80 backdrop-blur-md border border-gray-700 shadow-lg rounded-xl p-6 md:p-8 text-center transition-all"
             >
               <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center mx-auto mb-3 md:mb-4 shadow-lg">
@@ -433,7 +433,7 @@ export default function ContactSection() {
             {/* Second Row: Call Us (full width) */}
             <motion.div
               variants={item}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
+              // whileHover={{ y: -10, transition: { duration: 0.3 } }}
               className="bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-md border border-gray-700 shadow-lg rounded-xl p-6 md:p-8 text-center transition-all md:col-span-2"
             >
               <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center mx-auto mb-3 md:mb-4 shadow-lg">
