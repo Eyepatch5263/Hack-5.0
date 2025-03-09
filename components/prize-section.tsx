@@ -1,31 +1,39 @@
-"use client"
+"use client";
 
-import { useState, useEffect, useRef } from "react"
-import { Trophy, Gift, Lightbulb, Hexagon, Gem, GraduationCap, Wallet } from "lucide-react"
-import { LuMedal } from "react-icons/lu"
-import { IoMedalOutline } from "react-icons/io5"
-import { CiMedal } from "react-icons/ci"
-import { motion } from "framer-motion"
-import { useInView } from "react-intersection-observer"
-import localFont from "next/font/local"
+import { useState, useEffect, useRef } from "react";
+import {
+  Trophy,
+  Gift,
+  Lightbulb,
+  Hexagon,
+  Gem,
+  GraduationCap,
+  Wallet,
+} from "lucide-react";
+import { LuMedal } from "react-icons/lu";
+import { IoMedalOutline } from "react-icons/io5";
+import { CiMedal } from "react-icons/ci";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import localFont from "next/font/local";
 
 const Hacked_KerX = localFont({
   src: "../public/fonts/Hacked-KerX.ttf",
   variable: "--custom-font",
-})
+});
 
 // Optimized Confetti component for mobile performance
 const Confetti = () => {
   // Significantly reduced number of confetti pieces for mobile
   const confettiPieces = Array.from({ length: 15 }).map((_, i) => {
-    const size = Math.random() * 6 + 4 // Smaller pieces
-    const left = Math.random() * 100
-    const animationDuration = Math.random() * 1 + 0.5 // Faster animation
-    const animationDelay = Math.random() * 0.2
+    const size = Math.random() * 6 + 4; // Smaller pieces
+    const left = Math.random() * 100;
+    const animationDuration = Math.random() * 1 + 0.5; // Faster animation
+    const animationDelay = Math.random() * 0.2;
 
     // Reduced color palette
-    const colors = ["#E63946", "#c1121f", "#FFD700"]
-    const color = colors[Math.floor(Math.random() * colors.length)]
+    const colors = ["#E63946", "#c1121f", "#FFD700"];
+    const color = colors[Math.floor(Math.random() * colors.length)];
 
     return (
       <motion.div
@@ -54,11 +62,15 @@ const Confetti = () => {
           zIndex: 10,
         }}
       />
-    )
-  })
+    );
+  });
 
-  return <div className="absolute inset-0 overflow-hidden pointer-events-none">{confettiPieces}</div>
-}
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {confettiPieces}
+    </div>
+  );
+};
 
 export default function PrizeSection() {
   // Modified InView configuration with lower threshold and root margin
@@ -66,44 +78,45 @@ export default function PrizeSection() {
     triggerOnce: true,
     threshold: 0.1, // Reduced threshold for more reliable triggering
     rootMargin: "50px 0px", // Added margin to trigger earlier
-  })
+  });
 
   // Fallback state to ensure rendering even if InView fails
-  const [forcedVisible, setForcedVisible] = useState(false)
-  const [showGrandPrizeConfetti, setShowGrandPrizeConfetti] = useState(false)
-  const [hasTriggeredInitialConfetti, setHasTriggeredInitialConfetti] = useState(false)
-  const ref = useRef(null)
+  const [forcedVisible, setForcedVisible] = useState(false);
+  const [showGrandPrizeConfetti, setShowGrandPrizeConfetti] = useState(false);
+  const [hasTriggeredInitialConfetti, setHasTriggeredInitialConfetti] =
+    useState(false);
+  const ref = useRef(null);
 
   // Force visibility after a delay as a fallback
   useEffect(() => {
     const timer = setTimeout(() => {
-      setForcedVisible(true)
-    }, 1000)
+      setForcedVisible(true);
+    }, 1000);
 
-    return () => clearTimeout(timer)
-  }, [])
+    return () => clearTimeout(timer);
+  }, []);
 
   // Effect to handle initial confetti animation - with cleanup
   useEffect(() => {
     if ((sectionInView || forcedVisible) && !hasTriggeredInitialConfetti) {
-      setShowGrandPrizeConfetti(true)
-      setHasTriggeredInitialConfetti(true)
+      setShowGrandPrizeConfetti(true);
+      setHasTriggeredInitialConfetti(true);
 
       // Hide confetti after exactly 2 seconds
       const timer = setTimeout(() => {
-        setShowGrandPrizeConfetti(false)
-      }, 2000)
+        setShowGrandPrizeConfetti(false);
+      }, 2000);
 
-      return () => clearTimeout(timer)
+      return () => clearTimeout(timer);
     }
-  }, [sectionInView, hasTriggeredInitialConfetti, forcedVisible])
+  }, [sectionInView, hasTriggeredInitialConfetti, forcedVisible]);
 
   // Handle hover confetti separately with debounce
   const handleHoverStart = () => {
     if (!hasTriggeredInitialConfetti || !showGrandPrizeConfetti) {
-      setShowGrandPrizeConfetti(true)
+      setShowGrandPrizeConfetti(true);
     }
-  }
+  };
 
   const container = {
     hidden: { opacity: 0 },
@@ -114,15 +127,23 @@ export default function PrizeSection() {
         delayChildren: 0.2,
       },
     },
-  }
+  };
 
   const item = {
     hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } },
-  }
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
 
   return (
-    <section id="prizes" className="py-20 bg-background relative" ref={sectionRef}>
+    <section
+      id="prizes"
+      className="py-20 bg-background relative"
+      ref={sectionRef}
+    >
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 right-1/4 w-72 h-72 rounded-full bg-gray-700/20 filter blur-[120px]"></div>
         <div className="absolute bottom-1/2 left-1/2 w-80 h-80 rounded-full bg-gray-700/20 filter blur-[100px]"></div>
@@ -141,7 +162,8 @@ export default function PrizeSection() {
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl max-w-2xl mx-auto text-gray-300">
-            Celebrating excellence with substantial rewards for groundbreaking achievements
+            Celebrating excellence with substantial rewards for groundbreaking
+            achievements
           </p>
         </motion.div>
 
@@ -157,9 +179,15 @@ export default function PrizeSection() {
             <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6">
               <Trophy className="w-8 h-8 md:w-10 md:h-10 text-primary" />
             </div>
-            <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">Grand Prize</h3>
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">₹40,000</div>
-            <p className="text-gray-300">Grand prize for exceptional achievement and innovation</p>
+            <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">
+              Grand Prize
+            </h3>
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">
+              ₹40,000
+            </div>
+            <p className="text-gray-300">
+              Grand prize for exceptional achievement and innovation
+            </p>
           </div>
 
           {/* Confetti animation - only render when needed */}
@@ -173,7 +201,8 @@ export default function PrizeSection() {
               icon: Lightbulb,
               title: "AI/ML Track",
               amount: "₹30,000",
-              description: "Outstanding performance and creative solutions in AI/ML",
+              description:
+                "Outstanding performance and creative solutions in AI/ML",
               distribution: [
                 { icon: LuMedal, position: "1st", amount: "₹15,000" },
                 { icon: IoMedalOutline, position: "2nd", amount: "₹10,000" },
@@ -209,27 +238,40 @@ export default function PrizeSection() {
                   <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6">
                     <prize.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">{prize.title}</h3>
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">{prize.amount}</div>
+                  <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">
+                    {prize.title}
+                  </h3>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">
+                    {prize.amount}
+                  </div>
                   <p className="text-gray-300">{prize.description}</p>
                 </div>
 
                 {/* Prize distribution on hover */}
                 <div className="absolute inset-0 bg-background/90 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-2xl font-bold mb-4 text-primary">{prize.title}</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-primary">
+                    {prize.title}
+                  </h3>
                   <div className="space-y-4 w-full">
                     {prize.distribution.map((item, i) => (
-                      <div key={i} className="flex justify-between items-center border-b border-primary/20 pb-2">
-                        <span className="text-sm md:text-lg font-bold text-primary">
+                      <div
+                        key={i}
+                        className="flex justify-between items-center border-b border-primary/20 pb-2"
+                      >
+                        <span className="text-sm md:text-lg font-bold text-white">
                           {" "}
-                          <item.icon className="w-4 h-4 md:w-6 md:h-6 text-primary" />
+                          <item.icon className="w-4 h-4 md:w-6 md:h-6 text-white" />
                           {item.position}
                         </span>
-                        <span className="text-sm md:text-lg font-bold text-primary">{item.amount}</span>
+                        <span className="text-sm md:text-lg font-bold text-white">
+                          {item.amount}
+                        </span>
                       </div>
                     ))}
                   </div>
-                  <p className="mt-4 text-sm text-gray-400">Total: {prize.amount}</p>
+                  <p className="mt-4 text-sm text-gray-400">
+                    Total: {prize.amount}
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -244,7 +286,8 @@ export default function PrizeSection() {
               title: "Best All Girls Team",
               amount: "₹5,000",
               description: "Outstanding performance by an all-girls team",
-              distribution: "The team should be composed entirely of girls, ensuring full female representation.",
+              distribution:
+                "The team should be composed entirely of girls, ensuring full female representation.",
             },
             {
               icon: GraduationCap,
@@ -261,18 +304,28 @@ export default function PrizeSection() {
                   <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6">
                     <prize.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">{prize.title}</h3>
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">{prize.amount}</div>
+                  <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">
+                    {prize.title}
+                  </h3>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">
+                    {prize.amount}
+                  </div>
                   <p className="text-gray-300">{prize.description}</p>
                 </div>
 
                 {/* Prize distribution on hover */}
                 <div className="absolute inset-0 bg-background/90 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-2xl font-bold mb-4 text-primary">{prize.title}</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-primary">
+                    {prize.title}
+                  </h3>
                   <div className="space-y-4 w-full">
-                    <span className="text-lg font-bold text-white">{prize.distribution}</span>
+                    <span className="text-lg font-bold text-white">
+                      {prize.distribution}
+                    </span>
                   </div>
-                  <p className="mt-4 text-sm text-gray-400">Total: {prize.amount}</p>
+                  <p className="mt-4 text-sm text-gray-400">
+                    Total: {prize.amount}
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -291,7 +344,8 @@ export default function PrizeSection() {
               icon: Wallet,
               title: "Ethereum",
               amount: "₹8,500+",
-              description: "Innovative solutions and projects built on Ethereum",
+              description:
+                "Innovative solutions and projects built on Ethereum",
             },
           ].map((prize, index) => (
             <motion.div
@@ -305,8 +359,12 @@ export default function PrizeSection() {
                 <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6">
                   <prize.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">{prize.title}</h3>
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">{prize.amount}</div>
+                <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">
+                  {prize.title}
+                </h3>
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">
+                  {prize.amount}
+                </div>
                 <p className="text-gray-300">{prize.description}</p>
               </div>
             </motion.div>
@@ -314,6 +372,5 @@ export default function PrizeSection() {
         </div>
       </motion.div>
     </section>
-  )
+  );
 }
-
