@@ -104,14 +104,13 @@ section {
   backdrop-filter: blur(16px);
 }
 
-
 /* Responsive text utilities */
 @media (max-width: 640px) {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  
+
   section {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -141,8 +140,16 @@ section {
   margin-left: clamp(1rem, 5vw, 2rem);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 
-
-::-webkit-scrollbar{
-  display: none ;
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
