@@ -68,6 +68,15 @@ export default function SponsorsSection() {
         },
       ],
     },
+    {
+      tier: "In-Kind Sponsor",
+      sponsors: [
+        {
+          name: "Appwrite",
+          logo: "https://res.cloudinary.com/dmiq1mtz7/image/upload/f_auto,q_auto/v1/CSEC/sajmu7cc4h2olyrwb14b",
+        },
+      ],
+    },
   ];
 
   return (
