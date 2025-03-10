@@ -9,6 +9,7 @@ import {
   Gem,
   GraduationCap,
   Wallet,
+  Github,
 } from "lucide-react";
 import { LuMedal } from "react-icons/lu";
 import { IoMedalOutline } from "react-icons/io5";
@@ -338,7 +339,7 @@ export default function PrizeSection() {
             Sponsor <span className="text-primary">Tracks</span>
           </h2>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
           {[
             {
               icon: Wallet,
@@ -347,11 +348,18 @@ export default function PrizeSection() {
               description:
                 "Innovative solutions and projects built on Ethereum",
             },
+            {
+              icon: Github,
+              title: "Best use of GitHub",
+              amount: "",
+              description:
+                "Chance to win Exicited Prizes by GitHub",
+            },
           ].map((prize, index) => (
             <motion.div
               key={index}
               variants={item}
-              className={`${prize.title === "Ethereum" ? "col-span-3 col-start-2 col-end-3 " : ""} h-full`}
+              className={`h-full`}
             >
               <div
                 className={`bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700 p-6 md:p-8 text-center transform transition-all hover:-translate-y-2 duration-300 shadow-lg h-full`}
