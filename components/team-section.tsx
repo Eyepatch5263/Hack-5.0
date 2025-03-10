@@ -1,22 +1,12 @@
 "use client";
-import React, { useEffect } from "react";
-import { Users } from "lucide-react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimationControls } from "framer-motion";
-import { useState } from "react";
-
 import localFont from "next/font/local";
+
 const Hacked_KerX = localFont({
   src: "../public/fonts/Hacked-KerX.ttf",
   variable: "--custom-font",
 });
-const item = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 0.8, ease: "easeOut" },
-  },
-};
 
 interface TeamMember {
   name: string;
@@ -31,7 +21,7 @@ interface TeamGroup {
 
 const teamData: TeamGroup[] = [
   {
-    title: "",
+    title: "Group 1",
     members: [
       {
         name: "Prince Jaiswal",
@@ -90,7 +80,7 @@ const teamData: TeamGroup[] = [
     ],
   },
   {
-    title: "",
+    title: "Group 2",
     members: [
       {
         name: "Avinash Sharma",
@@ -140,12 +130,6 @@ const teamData: TeamGroup[] = [
         image:
           "https://res.cloudinary.com/dnbf0uwku/image/upload/v1741533922/DSC_0568_diq1x9.jpg",
       },
-      {
-        name: "Kirti Sharma",
-        role: "Web Lead",
-        image:
-          "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738080065/IMG-20241110-WA0018_1_anaulw.jpg",
-      },
     ],
   },
 ];
@@ -153,15 +137,21 @@ const teamData: TeamGroup[] = [
 const InfiniteScrollingRow = ({ members }: { members: TeamMember[] }) => {
   const controls = useAnimationControls();
   const [isPaused, setIsPaused] = useState(false);
+
+  // Adjust speed dynamically based on member count
+  const baseSpeed = 30; // Base duration for standard row
+  const speedFactor = members.length / 9; // Normalize based on largest row
+  const adjustedDuration = baseSpeed * speedFactor; // Scale duration
+
   const duplicatedMembers = [...members, ...members];
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!isPaused) {
       controls.start({
         x: "-50%",
         transition: {
           repeat: Infinity,
-          duration: 30,
+          duration: adjustedDuration,
           ease: "linear",
           repeatType: "loop",
         },
@@ -169,7 +159,7 @@ const InfiniteScrollingRow = ({ members }: { members: TeamMember[] }) => {
     } else {
       controls.stop();
     }
-  }, [isPaused, controls]);
+  }, [isPaused, controls, adjustedDuration]);
 
   return (
     <div className="relative overflow-hidden py-4">
@@ -217,12 +207,11 @@ export default function TeamSection() {
       transition={{ duration: 0.8 }}
       className="py-24 bg-dark-light/30"
     >
-      <div className="container mx-auto px-6">
-        <motion.div variants={item} className="text-center mb-16">
+      <div id="team-section" className="container mx-auto px-6">
+        <motion.div className="text-center mb-16">
           <h2 className={`text-3xl md:text-5xl mb-4 ${Hacked_KerX.className}`}>
             Lead <span className="text-primary">Organizers</span>
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl max-w-2xl mx-auto text-gray-300">
             Meet the passionate individuals who made HACK 5.0 possible
           </p>

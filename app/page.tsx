@@ -18,10 +18,10 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <TimelineSection />
-      <TeamSection />
       <PrizeSection />
       <SponsorsSection />
       <FaqSection />
+      <TeamSection />
       <ContactSection />
       <Footer />
     </main>

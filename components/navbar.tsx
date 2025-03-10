@@ -24,6 +24,7 @@ const navLinks = [
   { name: "Prizes", href: "#prizes" },
   { name: "Sponsors", href: "#sponsors" },
   { name: "FAQ", href: "#faq" },
+  { name: "Organizers", href: "#team-section" },
   { name: "Contact", href: "#contact" },
 ];
 
