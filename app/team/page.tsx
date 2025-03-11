@@ -650,7 +650,7 @@ export default function Team() {
             </div>
 
             {/* Year Buttons */}
-            <div className="flex gap-2 sm:gap-4 overflow-x-auto sm:overflow-visible w-full sm:w-auto justify-center">
+            <div className="flex flex-col md:flex-row gap-2 sm:gap-4 overflow-x-auto sm:overflow-visible w-full sm:w-auto justify-center">
               {[null, 2021, 2022, 2023, 2024].map((year) => (
                 <button
                   key={year}

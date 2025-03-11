@@ -2,22 +2,31 @@
  * Utility function to handle smooth scrolling to sections
  * Accounts for the fixed navbar height
  */
-export function scrollToSection(sectionId: string) {
-  const section = document.getElementById(sectionId)
-  if (!section) return
 
-  // Get the navbar height to offset the scroll position
-  const navbar = document.querySelector("nav")
-  const navbarHeight = navbar ? navbar.offsetHeight : 0
-
-  // Calculate the position to scroll to
-  const sectionPosition = section.getBoundingClientRect().top
-  const offsetPosition = sectionPosition + window.pageYOffset - navbarHeight - 20 // 20px extra padding
-
-  // Scroll to the section
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  })
+declare global {
+  interface Window {
+    scrollToSection: (sectionId: string) => void;
+  }
 }
 
+export function scrollToSection(sectionId: string) {
+  setTimeout(() => {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+  
+    const navbar = document.querySelector("nav");
+    const navbarHeight = navbar ? navbar.offsetHeight : 0;
+  
+    const offsetPosition = section.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
+  
+    console.log("Scrolling to position:", offsetPosition);
+  
+    window.scrollTo({
+      top: offsetPosition + 250,
+      behavior: "smooth",
+    });
+  }, 100); 
+}
+
+// Correctly attach to `window` outside the function
+window.scrollToSection = scrollToSection;
