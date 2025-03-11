@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { Users, Trophy, Clock, Layers } from "lucide-react"
-import { motion } from "framer-motion"
-import { useInView } from "react-intersection-observer"
-import localFont from "next/font/local"
+import { Users, Trophy, Clock, Layers } from "lucide-react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import localFont from "next/font/local";
 
 const Hacked_KerX = localFont({
   src: "../public/fonts/Hacked-KerX.ttf",
   variable: "--custom-font",
-})
+});
 
 export default function AboutSection() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
-  })
+  });
 
   const container = {
     hidden: { opacity: 0 },
@@ -25,12 +25,12 @@ export default function AboutSection() {
         delayChildren: 0.3,
       },
     },
-  }
+  };
 
   const item = {
     hidden: { y: 30, opacity: 0 },
     show: { y: 0, opacity: 1, transition: { duration: 0.8, ease: "easeOut" } },
-  }
+  };
 
   return (
     <section id="about" className="py-20 bg-background relative">
@@ -56,17 +56,25 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <motion.div variants={item} className="px-5 md:px-0">
             <p className="text-lg mb-6 leading-relaxed text-justify md:text-left">
-              HACK 5.0 is the fifth edition of our flagship hackathon, bringing together the brightest minds in
-              technology to solve real-world problems through innovation and collaboration.
+              HACK 5.0 is the fifth edition of the national-level onsite
+              hackathon organized by the Computer Science Engineers' Community
+              (CSEC) of the Department of Computer Science and Engineering, NIT
+              Hamirpur. This premier event brings together the brightest minds
+              in technology to solve real-world problems through innovation and
+              collaboration.
             </p>
             <p className="text-lg mb-6 leading-relaxed text-justify md:text-left">
-              Over 48 hours, participants will form teams, ideate, build, and present their solutions to a panel of
-              industry experts. With mentorship, workshops, and networking opportunities, HACK 5.0 is more than just a
-              competition—it's a platform for growth and learning.
+              Over 48 hours, participants will form teams, ideate, build, and
+              present their solutions to a panel of industry experts. With
+              mentorship, workshops, and networking opportunities, HACK 5.0 is
+              more than just a competition—it's a platform for growth, learning,
+              and technological advancement.
             </p>
             <p className="text-lg leading-relaxed text-justify md:text-left">
-              Whether you're a seasoned developer or just starting your coding journey, HACK 5.0 welcomes all passionate
-              individuals ready to make an impact.
+              Whether you're a seasoned developer or just starting your coding
+              journey, HACK 5.0 welcomes all passionate individuals ready to
+              make an impact. Join us for this thrilling onsite experience and
+              push the boundaries of innovation!
             </p>
           </motion.div>
 
@@ -86,14 +94,17 @@ export default function AboutSection() {
                 <div className="bg-gray-800/50 p-3 md:p-4 rounded-full mb-3 md:mb-4">
                   <stat.icon className="w-6 h-6 md:w-8 md:h-8 text-primary" />
                 </div>
-                <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2">{stat.title}</h3>
-                <p className="text-sm md:text-base text-gray-300">{stat.text}</p>
+                <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2">
+                  {stat.title}
+                </h3>
+                <p className="text-sm md:text-base text-gray-300">
+                  {stat.text}
+                </p>
               </motion.div>
             ))}
           </div>
         </div>
       </motion.div>
     </section>
-  )
+  );
 }
-
