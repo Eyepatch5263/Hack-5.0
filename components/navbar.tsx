@@ -11,6 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { scrollToSection } from "@/lib/scroll-utils";
 import localFont from "next/font/local";
 import { useGlitch } from "react-powerglitch";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const Hacked_KerX = localFont({
@@ -70,13 +71,18 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  const router = useRouter();
   const handleNavLinkClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
   ) => {
     e.preventDefault();
+    console.log(`handleNavLinkClick triggered with href: ${href}`);
     const sectionId = href.substring(1); // Remove the # from the href
+    console.log(`Extracted section ID: ${sectionId}`);
+    if(sectionId === "team"){
+      router.push("/team");
+    }
     scrollToSection(sectionId);
     setIsOpen(false); // Close mobile menu if open
   };
@@ -266,7 +272,7 @@ export default function Navbar() {
                       className={cn(
                         "text-lg font-medium text-foreground hover:text-primary transition-colors block py-3",
                         activeSection === link.href.substring(1) &&
-                          "text-primary"
+                        "text-primary"
                       )}
                     >
                       {link.name}
