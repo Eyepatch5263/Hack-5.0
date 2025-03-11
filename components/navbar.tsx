@@ -11,6 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { scrollToSection } from "@/lib/scroll-utils";
 import localFont from "next/font/local";
 import { useGlitch } from "react-powerglitch";
+import { href } from "react-router-dom";
 
 const Hacked_KerX = localFont({
   src: "../public/fonts/Hacked-KerX.ttf",
@@ -187,7 +188,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-10">
+        <div className="hidden md:flex items-center space-x-8">
           <ul className="flex space-x-8">
             {navLinks.map((link, i) => (
               <motion.li key={link.name} custom={i} variants={linkVariants}>
@@ -210,6 +211,12 @@ export default function Navbar() {
               </motion.li>
             ))}
           </ul>
+          <a
+            className=" space-x-8 text-lg font-medium text-foreground hover:text-primary transition-colors relative"
+            href="/team"
+          >
+            Team
+          </a>
           <motion.div
             variants={linkVariants}
             custom={navLinks.length}
