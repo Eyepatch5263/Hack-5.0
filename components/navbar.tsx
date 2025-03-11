@@ -11,7 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { scrollToSection } from "@/lib/scroll-utils";
 import localFont from "next/font/local";
 import { useGlitch } from "react-powerglitch";
-import { href } from "react-router-dom";
+import Link from "next/link";
 
 const Hacked_KerX = localFont({
   src: "../public/fonts/Hacked-KerX.ttf",
@@ -27,6 +27,7 @@ const navLinks = [
   { name: "FAQ", href: "#faq" },
   { name: "Organizers", href: "#team-section" },
   { name: "Contact", href: "#contact" },
+  { name: "Team", href: "/team" },
 ];
 
 export default function Navbar() {
@@ -192,9 +193,8 @@ export default function Navbar() {
           <ul className="flex space-x-8">
             {navLinks.map((link, i) => (
               <motion.li key={link.name} custom={i} variants={linkVariants}>
-                <a
+                <Link
                   href={link.href}
-                  onClick={(e) => handleNavLinkClick(e, link.href)}
                   className={cn(
                     "text-lg font-medium text-foreground hover:text-primary transition-colors relative",
                     activeSection === link.href.substring(1) && "text-primary"
@@ -207,16 +207,11 @@ export default function Navbar() {
                       className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary"
                     />
                   )}
-                </a>
+                </Link>
               </motion.li>
             ))}
           </ul>
-          <a
-            className=" space-x-8 text-lg font-medium text-foreground hover:text-primary transition-colors relative"
-            href="/team"
-          >
-            Team
-          </a>
+
           <motion.div
             variants={linkVariants}
             custom={navLinks.length}

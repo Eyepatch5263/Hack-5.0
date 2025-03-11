@@ -574,7 +574,10 @@ export default function Team() {
   });
 
   return (
-    <div className="min-h-screen bg-background text-foreground text-white">
+    <div
+      id="team"
+      className="min-h-screen  bg-background text-foreground text-white"
+    >
       <nav className="container mx-auto px-6 flex items-center justify-between gap-x-4 fixed top-0 left-0 right-0 bg-background/90 backdrop-blur-md py-3 shadow-lg">
         <div className="flex items-center gap-x-4">
           {/* CSEC Logo */}
