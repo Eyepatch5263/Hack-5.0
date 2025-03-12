@@ -1,28 +1,28 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { motion, useScroll, useTransform } from "framer-motion"
-import { useInView } from "react-intersection-observer"
-import localFont from "next/font/local"
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import localFont from "next/font/local";
 
 const Hacked_KerX = localFont({
   src: "../public/fonts/Hacked-KerX.ttf",
   variable: "--custom-font",
-})
+});
 
 export default function TimelineSection() {
   const [ref, inView] = useInView({
     triggerOnce: false,
     threshold: 0.1,
-  })
+  });
 
-  const containerRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null);
 
   // Use scroll progress through the timeline section
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start center", "end center"], // Track when timeline is in center of viewport
-  })
+  });
 
   const timelineEvents = [
     {
@@ -43,7 +43,7 @@ export default function TimelineSection() {
     {
       date: "April 4, 2025",
       title: "Hackathon Kickoff",
-      description: "Opening ceremony and problem statement release",
+      description: "Opening ceremony and hacking begins",
     },
     {
       date: "April 4-5, 2025",
@@ -60,7 +60,7 @@ export default function TimelineSection() {
       title: "Judging & Results",
       description: "Project evaluation and winner announcement",
     },
-  ]
+  ];
 
   const container = {
     hidden: { opacity: 0 },
@@ -70,12 +70,12 @@ export default function TimelineSection() {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const item = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
-  }
+  };
 
   return (
     <section id="timeline" className="py-20 bg-background relative">
@@ -131,9 +131,13 @@ export default function TimelineSection() {
               </motion.div> */}
 
               {/* Event content - stacked on mobile, alternating on desktop */}
-              <div className={`flex flex-col md:flex-row ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
+              <div
+                className={`flex flex-col md:flex-row ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
+              >
                 <div className="hidden md:block md:w-1/2"></div>
-                <div className={`pl-16 md:pl-0 md:w-1/2 ${index % 2 === 0 ? "md:pl-10" : "md:pr-10"}`}>
+                <div
+                  className={`pl-16 md:pl-0 md:w-1/2 ${index % 2 === 0 ? "md:pl-10" : "md:pr-10"}`}
+                >
                   <motion.div
                     initial={{ opacity: 0, x: 0, y: 20 }}
                     whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -141,9 +145,15 @@ export default function TimelineSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     className="bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm p-4 md:p-6 rounded-lg border border-gray-700 shadow-lg"
                   >
-                    <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2 text-primary">{event.title}</h3>
-                    <p className="text-xs md:text-sm text-gray-400 mb-2 md:mb-3">{event.date}</p>
-                    <p className="text-sm md:text-base text-gray-300">{event.description}</p>
+                    <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2 text-primary">
+                      {event.title}
+                    </h3>
+                    <p className="text-xs md:text-sm text-gray-400 mb-2 md:mb-3">
+                      {event.date}
+                    </p>
+                    <p className="text-sm md:text-base text-gray-300">
+                      {event.description}
+                    </p>
                   </motion.div>
                 </div>
               </div>
@@ -152,6 +162,5 @@ export default function TimelineSection() {
         </div>
       </motion.div>
     </section>
-  )
+  );
 }
-
