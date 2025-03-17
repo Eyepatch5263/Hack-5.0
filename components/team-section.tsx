@@ -1,8 +1,7 @@
 "use client";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion, useAnimationControls } from "framer-motion";
 import localFont from "next/font/local";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Hacked_KerX = localFont({
   src: "../public/fonts/Hacked-KerX.ttf",
@@ -54,11 +53,6 @@ const teamData: TeamGroup[] = [
         image:
           "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738080697/e6a54564-6a33-48e1-ac19-e847758fd349_hqfhh8.jpg",
       },
-    ],
-  },
-  {
-    title: "Group 2",
-    members: [
       {
         name: "Antriksh Katna",
         role: "Marketing Head & External Affairs",
@@ -83,6 +77,11 @@ const teamData: TeamGroup[] = [
         image:
           "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945246/IMG_20240414_053937_668_nbxfaq.jpg",
       },
+    ],
+  },
+  {
+    title: "Group 2",
+    members: [
       {
         name: "Avinash Sharma",
         role: "Web Lead",
@@ -135,103 +134,67 @@ const teamData: TeamGroup[] = [
   },
 ];
 
-const TeamRow = ({ members }: { members: TeamMember[] }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const membersPerView = 5;
+const InfiniteScrollingRow = ({ members }: { members: TeamMember[] }) => {
+  const controls = useAnimationControls();
+  const [isPaused, setIsPaused] = useState(false);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + membersPerView >= members.length
-        ? 0
-        : prevIndex + membersPerView
-    );
-  };
+  // Adjust speed dynamically based on member count
+  const baseSpeed = 30; // Base duration for standard row
+  const speedFactor = members.length / 9; // Normalize based on largest row
+  const adjustedDuration = baseSpeed * speedFactor; // Scale duration
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex - membersPerView < 0
-        ? Math.max(0, members.length - membersPerView)
-        : prevIndex - membersPerView
-    );
-  };
+  const duplicatedMembers = [...members, ...members];
 
-  const visibleMembers = members.slice(
-    currentIndex,
-    currentIndex + membersPerView
-  );
+  useEffect(() => {
+    if (!isPaused) {
+      controls.start({
+        x: "-50%",
+        transition: {
+          repeat: Infinity,
+          duration: adjustedDuration,
+          ease: "linear",
+          repeatType: "loop",
+        },
+      });
+    } else {
+      controls.stop();
+    }
+  }, [isPaused, controls, adjustedDuration]);
 
   return (
-    <div className="relative">
-      {/* Show navigation buttons only if more than 5 members */}
-      {members.length > membersPerView && (
-        <>
-          <button
-            onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-primary/20 hover:bg-primary/40 p-2 rounded-full transition-colors z-10"
-            aria-label="Previous slide"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-
-          <button
-            onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-primary/20 hover:bg-primary/40 p-2 rounded-full transition-colors z-10"
-            aria-label="Next slide"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
-        </>
-      )}
-
-      {/* Members Grid */}
-      <div className="grid grid-cols-5 gap-6 justify-center">
-        {visibleMembers.map((member, index) => (
-          <motion.div
-            key={`${member.name}-${index}`}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
-            className="group"
-          >
-            <div className="relative overflow-hidden rounded-xl aspect-square">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <div>
-                  <h4 className="text-xl font-semibold text-white mb-1">
-                    {member.name}
-                  </h4>
-                  <p className="text-primary">{member.role}</p>
+    <div className="relative overflow-hidden py-4">
+      <div className="flex w-full">
+        <motion.div
+          className="flex gap-6 whitespace-nowrap"
+          initial={{ x: 0 }}
+          animate={controls}
+        >
+          {duplicatedMembers.map((member, index) => (
+            <div
+              key={`${member.name}-${index}`}
+              className="flex-none w-64 group"
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
+            >
+              <div className="relative overflow-hidden rounded-xl aspect-square">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-1">
+                      {member.name}
+                    </h4>
+                    <p className="text-primary">{member.role}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </motion.div>
-        ))}
+          ))}
+        </motion.div>
       </div>
-
-      {/* Pagination Dots */}
-      {members.length > membersPerView && (
-        <div className="flex justify-center mt-6 gap-2">
-          {Array.from(
-            { length: Math.ceil(members.length / membersPerView) },
-            (_, i) => (
-              <button
-                key={i}
-                onClick={() => setCurrentIndex(i * membersPerView)}
-                className={`w-2 h-2 rounded-full transition-colors ${
-                  Math.floor(currentIndex / membersPerView) === i
-                    ? "bg-primary"
-                    : "bg-gray-600 hover:bg-gray-500"
-                }`}
-                aria-label={`Go to slide ${i + 1}`}
-              />
-            )
-          )}
-        </div>
-      )}
     </div>
   );
 };
@@ -254,9 +217,9 @@ export default function TeamSection() {
           </p>
         </motion.div>
 
-        <div className="space-y-24">
+        <div className="space-y-12">
           {teamData.map((group, index) => (
-            <TeamRow key={index} members={group.members} />
+            <InfiniteScrollingRow key={index} members={group.members} />
           ))}
         </div>
       </div>

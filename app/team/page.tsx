@@ -23,102 +23,6 @@ const teamMembers: TeamMember[] = [
   // First Years
 
   {
-    name: "Spriha Anand",
-    batch: "2021",
-    linkedin: "https://www.linkedin.com/in/spriha-anand-818672227/",
-    instagram: "https://www.instagram.com/sprihaaaaa/",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738671955/1735050834340_abev1h.jpg",
-  },
-  {
-    name: "Akshun Kuthiala",
-    batch: "2021",
-    linkedin: "https://www.linkedin.com/in/akshun-kuthiala/",
-    instagram: "",
-    imgSrc:
-      "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945521/pfp_berx6f.jpg",
-  },
-  {
-    name: "Shivanshu Thakur",
-    batch: "2021",
-    linkedin: "https://www.linkedin.com/in/shivanshu-thakur/",
-    instagram: "https://www.instagram.com/shivanshu.thakur/",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738079142/1000057046_didqtv.jpg",
-  },
-  {
-    name: "Samadeep Sengupta",
-    batch: "2021",
-    linkedin: "linkedin.com/in/samadeep",
-    instagram: "https://www.instagram.com/samadeep",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738079221/20240814_183427_ewtape.jpg",
-  },
-  {
-    name: "Astitva Dubey",
-    batch: "2021",
-    linkedin: "linkedin.com/in/astitva-dubey",
-    instagram: "",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738682236/1732718585347_xpzies.jpg",
-  },
-  {
-    name: "Tushar Kaushal",
-    batch: "2021",
-    linkedin: "https://in.linkedin.com/in/tushar-kaushal",
-    instagram: "https://www.instagram.com/_tushar._kaushal/",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738079283/20241019_151547_dzqf9k.jpg",
-  },
-  {
-    name: "Shubham Jaswal",
-    batch: "2021",
-    linkedin: "https://www.linkedin.com/in/jaswal-shubham",
-    instagram: "",
-    imgSrc:
-      "https://res.cloudinary.com/dnbf0uwku/image/upload/v1739191092/shubham_lmgjmu_fimptc.webp",
-  },
-  {
-    name: "Arushi Guleria",
-    batch: "2021",
-    linkedin: "https://www.linkedin.com/in/arushi-guleria-5662b122a",
-    instagram: "https://www.instagram.com/arushi_gulerria/",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738079350/github_profile_image_anolqc.jpg",
-  },
-  {
-    name: "Rehan Khan",
-    batch: "2021",
-    linkedin: "https://www.linkedin.com/in/rehan49",
-    instagram: "https://www.instagram.com/reh_an_k/",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738682349/1713621660118_tb08ez.jpg",
-  },
-  {
-    name: "Shreya Dhiman",
-    batch: "2021",
-    linkedin: "https://www.linkedin.com/in/shreya-dhiman-25a753247/",
-    instagram: "https://www.instagram.com/shreya_d30",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738682225/1718310147522_n6cafu.jpg",
-  },
-  {
-    name: "Adarsh Rao",
-    batch: "2021",
-    linkedin: "https://www.linkedin.com/in/adarsh100rao/",
-    instagram: "",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738682231/1722013513960_bwdhha.jpg",
-  },
-  {
-    name: "Rakesh Swami",
-    batch: "2021",
-    linkedin: "https://www.linkedin.com/in/rakesh-swami-635b87222",
-    instagram: "https://www.instagram.com/rakesh_swami/",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738079501/IMG_20241206_142649946_HDR_AE_k17dne.jpg",
-  },
-  {
     name: "Tanishq Verma",
     batch: "2022",
     linkedin: "https://www.linkedin.com/in/tanishq-verma-nith",
@@ -651,7 +555,7 @@ export default function Team() {
 
             {/* Year Buttons */}
             <div className="flex flex-col md:flex-row gap-2 sm:gap-4 overflow-x-auto sm:overflow-visible w-full sm:w-auto justify-center">
-              {[null, 2021, 2022, 2023, 2024].map((year) => (
+              {[null, 2022, 2023, 2024].map((year) => (
                 <button
                   key={year}
                   onClick={() => setSelectedYear(year)}
