@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import localFont from "next/font/local";
+import { title } from "process";
 
 const Hacked_KerX = localFont({
   src: "../public/fonts/Hacked-KerX.ttf",
@@ -77,7 +78,11 @@ export default function SponsorsSection() {
         },
         {
           name: "Proto.io",
-          logo: "https://res.cloudinary.com/dmiq1mtz7/image/upload/f_auto,q_auto/v1/CSEC/n82u8hkbjnxjooepwacv",
+          logo: "https://res.cloudinary.com/dnbf0uwku/image/upload/v1742214136/colored-logo_5_yerfhu.png",
+        },
+        {
+          name: "EaseMyTrip",
+          logo: "https://res.cloudinary.com/dnbf0uwku/image/upload/v1742214348/White_xa7tsz.png",
         },
       ],
     },
@@ -111,9 +116,13 @@ export default function SponsorsSection() {
           <motion.div key={index} variants={item} className="mb-16 last:mb-0">
             <h3 className="text-2xl font-bold mb-8 text-center">{tier.tier}</h3>
             <div
-              className={`grid gap-6 md:gap-8 justify-items-center  ${
-                tier.sponsors.length === 1 ? "md:grid-cols-1" : "md:grid-cols-2"
-              }`}
+              className={`grid gap-6 md:gap-8 justify-items-center grid-cols-1  ${
+                tier.sponsors.length === 1 ? "md:grid-cols-1" : ""
+              }
+${tier.sponsors.length === 2 ? "md:grid-cols-2" : ""}
+${tier.sponsors.length === 3 ? "md:grid-cols-3" : ""}
+
+`}
             >
               {tier.sponsors.map((sponsor, idx) => (
                 <motion.div
