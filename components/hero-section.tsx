@@ -18,7 +18,7 @@ export default function HeroSection() {
     shake: false,
   })
 
-  const targetDate = new Date("2025-03-21T00:00:00").getTime();
+  const targetDate = new Date("2025-03-21T23:59:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
     days: "00",
     hours: "00",
