@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { Filter } from "lucide-react";
-import { Filter } from "lucide-react";
 import { useGlitch } from "react-powerglitch";
 import localFont from "next/font/local";
 import { motion } from "framer-motion";
@@ -22,7 +21,6 @@ const teamMembers: TeamMember[] = [
 
   {
     name: "Tanishq Verma",
-    batch: "2022",
     // linkedin: "https://www.linkedin.com/in/tanishq-verma-nith",
     // instagram:"https://www.instagram.com/tanishq_v010?igsh=MWZxMzh0aTZyZWx6Nw==",
     batch: "2026",
@@ -470,7 +468,6 @@ export default function Team() {
 
   const glitch = useGlitch({
     timing: { duration: 3950 },
-    timing: { duration: 3950 },
     shake: false,
   });
 
@@ -528,8 +525,12 @@ export default function Team() {
           </motion.div>
         </div>
         <div className="flex items-center">
-          <span className={`relative z-10 font-bold text-3xl md:text-5xl lg:text-6xl text-white ${Hacked_KerX.className}`}>
-            <span ref={glitch.ref} className="text-primary inline-block">HACK</span>{" "}
+          <span
+            className={`relative z-10 font-bold text-3xl md:text-5xl lg:text-6xl text-white ${Hacked_KerX.className}`}
+          >
+            <span ref={glitch.ref} className="text-primary inline-block">
+              HACK
+            </span>{" "}
             <span className={Hacked_KerX.className}>5.0</span>
           </span>
         </div>
@@ -555,7 +556,6 @@ export default function Team() {
                   key={year}
                   onClick={() => setSelectedYear(year)}
                   className={`px-4 py-2 text-sm sm:text-base rounded-lg transition-colors whitespace-nowrap ${selectedYear === year ? "bg-primary text-white" : "bg-dark-light/50 text-gray-300 hover:bg-primary/20"}`}
-                  className={`px-4 py-2 text-sm sm:text-base rounded-lg transition-colors whitespace-nowrap ${selectedYear === year ? "bg-primary text-white" : "bg-dark-light/50 text-gray-300 hover:bg-primary/20"}`}
                 >
                   {year === null ? "All Years" : `${year}`}
                 </button>
@@ -565,7 +565,10 @@ export default function Team() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {filteredMembers.map((member, index) => (
-            <div key={index} className="group relative bg-dark-light/50 rounded-xl overflow-hidden transform transition-transform duration-300 hover:-translate-y-2">
+            <div
+              key={index}
+              className="group relative bg-dark-light/50 rounded-xl overflow-hidden transform transition-transform duration-300 hover:-translate-y-2"
+            >
               <div className="aspect-square overflow-hidden">
                 <img
                   src={member.imgSrc}
@@ -588,7 +591,6 @@ export default function Team() {
                         {getRole(member.batch)}
                       </span>
                     </div>
-
                   </div>
                 </div>
               </div>
