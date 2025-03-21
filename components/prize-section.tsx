@@ -10,6 +10,7 @@ import {
   GraduationCap,
   Wallet,
   Github,
+  Bot,
 } from "lucide-react";
 import { LuMedal } from "react-icons/lu";
 import { IoMedalOutline } from "react-icons/io5";
@@ -300,7 +301,7 @@ export default function PrizeSection() {
             },
           ].map((prize, index) => (
             <motion.div key={index} variants={item} className="h-full">
-              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700 p-6 md:p-8 text-center transform transition-all hover:-translate-y-2 duration-300 shadow-lg relative group overflow-hidden h-full">
+              <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700 p-6 md:p-8 text-center transform transition-all hover:-translate-y-2 duration-300 shadow-lg relative group overflow-hidden h-full ">
                 <div className="transition-all duration-300 group-hover:opacity-0">
                   <div className="bg-gray-800/50 p-3 md:p-4 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6">
                     <prize.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
@@ -352,15 +353,10 @@ export default function PrizeSection() {
               icon: Github,
               title: "Best use of GitHub",
               amount: "",
-              description:
-                "Chance to win Exicited Prizes by GitHub",
+              description: "Chance to win Exicited Prizes by GitHub",
             },
           ].map((prize, index) => (
-            <motion.div
-              key={index}
-              variants={item}
-              className={`h-full`}
-            >
+            <motion.div key={index} variants={item} className={`h-full`}>
               <div
                 className={`bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700 p-6 md:p-8 text-center transform transition-all hover:-translate-y-2 duration-300 shadow-lg h-full`}
               >

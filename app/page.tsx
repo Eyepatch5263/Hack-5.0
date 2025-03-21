@@ -9,6 +9,7 @@ import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import ParticleBackground from "@/components/particle-background";
 import TeamSection from "@/components/team-section";
+import MentorsAndJudges from "@/components/mentorJudges";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutSection />
+      {/* <MentorsAndJudges /> */}
       <TimelineSection />
       <PrizeSection />
       <SponsorsSection />

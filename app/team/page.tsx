@@ -4,6 +4,7 @@ import { Filter } from "lucide-react";
 import { useGlitch } from "react-powerglitch";
 import localFont from "next/font/local";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Hacked_KerX = localFont({
   src: "../../public/fonts/Hacked-KerX.ttf",
@@ -20,7 +21,7 @@ const teamMembers: TeamMember[] = [
 
   {
     name: "Tanishq Verma",
-    batch: "2022",
+    batch: "2026",
     // linkedin: "https://www.linkedin.com/in/tanishq-verma-nith",
     // instagram:"https://www.instagram.com/tanishq_v010?igsh=MWZxMzh0aTZyZWx6Nw==",
     imgSrc:
@@ -28,7 +29,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Krishna Narzary",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "https://www.linkedin.com/in/krishna-narzary-32b74a254/",
     // instagram:"https://www.instagram.com/majuuu_/",
     imgSrc:
@@ -36,7 +37,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Tanishq Chauhan",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "www.linkedin.com/in/tanishq-chauhan-936b25258",
     // instagram:"https://www.instagram.com/ii_tanzishh_2603?igsh=YTRwbHM5djl0eTBn",
     imgSrc:
@@ -44,7 +45,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Shryansh",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "https://www.linkedin.com/in/shryansh-chaudhary/",
     // instagram: "https://www.instagram.com/shryansh107/",
     imgSrc:
@@ -52,7 +53,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Harshal",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "https://www.linkedin.com/in/harshal-sakhare-008b93256/",
     // instagram: "https://www.instagram.com/_23harsha.04/",
     imgSrc:
@@ -60,7 +61,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Kirti Sharma",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "https://www.linkedin.com/in/kirti-sharma-687926266/",
     // instagram: "",
     imgSrc:
@@ -68,7 +69,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Arshita",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "https://www.linkedin.com/in/arshita-kango-019917255/",
     // instagram: "https://www.instagram.com/arshitakango/",
     imgSrc:
@@ -76,7 +77,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Prince Jaiswal",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "https://www.linkedin.com/in/prince-jaiswal-6b4b48257/",
     // instagram: "https://www.instagram.com/mrprince__019/",
     imgSrc:
@@ -84,7 +85,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Aditya Kumar",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "https://www.linkedin.com/in/aditya-kumar-405a94256/",
     // instagram: "https://www.instagram.com/rjpt_aditya/",
     imgSrc:
@@ -92,7 +93,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Tanmay Sharma",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "https://www.linkedin.com/in/tanmay-sharma-857137256/",
     // instagram: "https://www.instagram.com/t.a.n.m.a.y..sharma/",
     imgSrc:
@@ -100,7 +101,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Ankush Thakur",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "https://www.linkedin.com/in/ankush-thakur-aa408a273/",
     // instagram:"https://www.instagram.com/invites/contact/?igsh=1q72x61j4qwr0&utm_content=dj1wnz3",
     imgSrc:
@@ -108,7 +109,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Arnav Gupta",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "http://linkedin.com/in/arnav-gupta-32469a228",
     // instagram:"https://www.instagram.com/arnavgupta_ag?igsh=MXF3aWVnenJmcDBkcQ%3D%3D&utm_source=qr",
     imgSrc:
@@ -116,16 +117,16 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Avinash Sharma",
-    batch: "2022",
+    batch: "2026",
     // linkedin:
-      // "https://www.linkedin.com/in/avinash-sharma-97a2b625b/?originalSubdomain=in",
+    // "https://www.linkedin.com/in/avinash-sharma-97a2b625b/?originalSubdomain=in",
     // instagram: "",
     imgSrc:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1739191084/AVIN_exe_uu0yqx_k2wamg.webp",
   },
   {
     name: "Himanshu Gupta",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "https://www.linkedin.com/in/himanshu-g12/",
     // instagram: "",
     imgSrc:
@@ -133,7 +134,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Akash Kanwar",
-    batch: "2022",
+    batch: "2026",
     // // linkedin: "https://www.linkedin.com/in/wosuxh",
     // instagram: "https://www.instagram.com/wosu._.xh",
     imgSrc:
@@ -141,9 +142,9 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Isha",
-    batch: "2023",
+    batch: "2027",
     // linkedin:
-      // "https://www.linkedin.com/in/isha-choudhary-53b6982b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    // "https://www.linkedin.com/in/isha-choudhary-53b6982b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     // instagram:"https://www.instagram.com/iiiiissha?igsh=NG5pZGdkYTFiamI1&utm_source=qr",
     imgSrc:
       "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738080640/IMG_5198_xz4pzl.jpg",
@@ -152,14 +153,14 @@ const teamMembers: TeamMember[] = [
     name: "Chhavi Thakur",
     batch: "2023",
     // linkedin:
-      // "https://www.linkedin.com/in/chhavi-thakur-90ab72290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/chhavi-thakur-90ab72290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram:"https://www.instagram.com/chavvviiii_thakur?igsh=a3NxN3ZqOWZ6cmI2",
     imgSrc:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726944805/IMG-20240308-WA0077_nq107z.jpg",
   },
   {
     name: "Lakshay Lalia",
-    batch: "2023",
+    batch: "2027",
     // // linkedin: "https://www.linkedin.com/in/lakshay-lalia",
     // instagram:"https://www.instagram.com/lakshaylalia?igsh=MWt6bzEwMWd2NXJlcg==",
     imgSrc:
@@ -167,7 +168,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Saksham Chhabra",
-    batch: "2023",
+    batch: "2027",
     // // linkedin: "https://www.linkedin.com/in/saksham-chhabra-2a034a280",
     // instagram: "https://www.instagram.com/sakshamken?igsh=ZXAwZm85OThzaWkw",
     imgSrc:
@@ -175,43 +176,43 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Navdeep Singh",
-    batch: "2023",
+    batch: "2027",
     // linkedin:
-      // "https://www.linkedin.com/in/navdeep-saini-a10536261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/navdeep-saini-a10536261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram:"https://www.instagram.com/_itz.navdeepsaini?igsh=MWdzeHNzNDRwZDVrOQ==",
     imgSrc:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726944985/IMG_4625-1_xkfqoy.jpg",
   },
   {
     name: "Piyush",
-    batch: "2023",
+    batch: "2027",
     // linkedin:
-      // "https://www.linkedin.com/in/piyush-kumar18?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/piyush-kumar18?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram: "https://www.instagram.com/piyusx_1",
     imgSrc:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945016/24-09-20_14-31-12-521_nop1fo.jpg",
   },
   {
     name: "Prince Khandelwal",
-    batch: "2023",
+    batch: "2027",
     // linkedin:
-      // "https://www.linkedin.com/in/prince-khandelwal-06147a1b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/prince-khandelwal-06147a1b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram:"https://www.instagram.com/prince_khandelwal04?igsh=NWl5aDVlOW5hZDR1",
     imgSrc:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945058/IMG-20240920-WA0013_l6p9tg.jpg",
   },
   {
     name: "Piyush Mishra",
-    batch: "2023",
+    batch: "2027",
     // linkedin:
-      // "https://www.linkedin.com/in/piyush-mishra-8b6a4b2b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/piyush-mishra-8b6a4b2b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram: "https://www.instagram.com/piyush_mishra.?igsh=bGFla25qc2V4bzY1",
     imgSrc:
       "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738138149/IMG-20250112-WA0084_akkh6m.jpg",
   },
   {
     name: "Ayush Sharma",
-    batch: "2023",
+    batch: "2027",
     // // linkedin: "https://www.linkedin.com/in/ayush-sharma027",
     // instagram: "https://www.instagram.com/._ayush...?igsh=MmFtaTFuY2NoenNv",
     imgSrc:
@@ -219,25 +220,25 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Avirat Mahajan",
-    batch: "2023",
+    batch: "2027",
     // linkedin:
-      // "https://www.linkedin.com/in/avirat-mahajan-77911a289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/avirat-mahajan-77911a289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram: "https://www.instagram.com/avirat.13?igsh=eGJ4Nmo1dTdqaXNk",
     imgSrc:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945139/IMG-20240410-WA0016_eow17z.jpg",
   },
   {
     name: "Vansh Pal",
-    batch: "2023",
+    batch: "2027",
     // linkedin:
-      // "https://www.linkedin.com/in/vansh-pal-06b88a289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/vansh-pal-06b88a289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram: "https://www.instagram.com/vanshpal921?utm_source=qr",
     imgSrc:
       "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738080858/WIN_20240415_20_11_54_Pro_zw1squ.jpg",
   },
   {
     name: "Sujal Choudhary",
-    batch: "2023",
+    batch: "2027",
     // // linkedin: "http://linkedin.com/in/sujal-choudhary-0391212a2",
     // instagram:"https://www.instagram.com/sujal._781?igsh=NWtvdHZqZmI3bHE3&utm_source=qr",
     imgSrc:
@@ -245,7 +246,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Anshuman Kapoor",
-    batch: "2023",
+    batch: "2027",
     // // linkedin: "http://www.linkedin.com/in/anshuman-singh-kapoor-5002592b8",
     // instagram: "",
     imgSrc:
@@ -253,25 +254,25 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Abhay Chaudhary",
-    batch: "2023",
+    batch: "2027",
     // linkedin:
-      // "https://www.linkedin.com/in/abhay-chaudhary-693b2a329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/abhay-chaudhary-693b2a329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram: "",
     imgSrc:
       "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738081032/IMG-20240920-WA0002_kxrj0r.jpg",
   },
   {
     name: "Aanya Soni",
-    batch: "2023",
+    batch: "2027",
     // linkedin:
-      // "https://www.linkedin.com/in/aanya-soni-8060b32b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    // "https://www.linkedin.com/in/aanya-soni-8060b32b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     // instagram: "",
     imgSrc:
       "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738082046/IMG_5200_uwq9wi.jpg",
   },
   {
     name: "Himanshu Mahajan",
-    batch: "2023",
+    batch: "2027",
     // // linkedin: "http://www.linkedin.com/in/himanshu-mahajan-939b462b1",
     // instagram:"https://www.instagram.com/himanshu._mhjn?igsh=MW82ZDN0c20wYjR1eQ%3D%3D&utm_source=qr",
     imgSrc:
@@ -279,16 +280,16 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Ishan Choudhary",
-    batch: "2023",
+    batch: "2027",
     // linkedin:
-      // "https://www.linkedin.com/in/ishan-choudhary-70470a32a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/ishan-choudhary-70470a32a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram:"https://www.instagram.com/ishan_12_02?igsh=MWw3cHoydDB6NThsMw==",
     imgSrc:
       "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738082088/IMG_20240921_005315_qwh3dd.jpg",
   },
   {
     name: "Harsh Goel",
-    batch: "2023",
+    batch: "2027",
     // // linkedin: "https://www.linkedin.com/in/harsh-goel-90a742280",
     // instagram: "https://www.instagram.com/harsh_.goel?igsh=YnNoeTlqMmR6c2hv",
     imgSrc:
@@ -296,7 +297,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "pratyush pragyey",
-    batch: "2023",
+    batch: "2027",
     // // linkedin: "https://www.linkedin.com/in/pratyush-pragyey-7a95a7258/",
     // instagram: "https://www.instagram.com/eyepatch_5263/",
     imgSrc:
@@ -304,7 +305,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Rudesh Kumar",
-    batch: "2023",
+    batch: "2027",
     // // linkedin: "https://www.linkedin.com/in/rudesh-kumar-40712b280/",
     // instagram: "",
     imgSrc:
@@ -312,7 +313,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Lavish",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "https://www.linkedin.com/in/lavish-awasthi-503259314",
     // instagram:"https://www.instagram.com/lavish_awasthi._?igsh=MWQ4M3l0a2Y1bWgzYg==",
     imgSrc:
@@ -320,7 +321,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Prashant Thakur",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "https://www.linkedin.com/in/prashant-thakur-046678322/",
     // instagram: "https://www.instagram.com/prashantt_2730",
     imgSrc:
@@ -328,7 +329,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Aryan Sharma",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "https://www.linkedin.com/in/aryan-sharma-663278284",
     // instagram: "https://www.instagram.com/5xdayz",
     imgSrc:
@@ -336,7 +337,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Sanket Singh Sameer",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "https://www.linkedin.com/in/sanket-singh-sameer",
     // instagram: "https://www.instagram.com/sanket_singh_sameer",
     imgSrc:
@@ -344,7 +345,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Raman Bansal",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "https://www.linkedin.com/in/-raman-bansal",
     // instagram:"https://www.instagram.com/ramanbansal188?igsh=MXZ2cmJjOGkzdG9kMA==",
     imgSrc:
@@ -352,7 +353,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Utkarsh Shukla",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "https://www.linkedin.com/in/utkarsh-shukla-034313329/",
     // instagram: "https://www.instagram.com/_utkarsh.shukla_238",
     imgSrc:
@@ -360,7 +361,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Anshu Kumari",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "https://www.linkedin.com/in/anshu-kumari-903948324",
     // instagram: "https://www.instagram.com/ansdhiwan298",
     imgSrc:
@@ -368,16 +369,16 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Avadhi",
-    batch: "2024",
+    batch: "2028",
     // linkedin:
-      // "https://www.linkedin.com/in/avadhi-jain-01453b313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/avadhi-jain-01453b313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram: "",
     imgSrc:
       "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738134129/20250128_204711_h36r6t.jpg",
   },
   {
     name: "Anilove",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "https://www.linkedin.com/in/anilove-049a12324",
     // instagram: "https://www.instagram.com/anilove._.5?igsh=YXlqYW95eHMzM2dr",
     imgSrc:
@@ -385,25 +386,25 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Bhola Prasad Sah",
-    batch: "2024",
+    batch: "2028",
     // linkedin:
-      // "https://www.linkedin.com/in/bhola-prasad-sah-869b13349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/bhola-prasad-sah-869b13349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram: "https://www.instagram.com/bholey.1?igsh=MWUxeWx5djdwZ251eA==",
     imgSrc:
       "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738088411/1738076772514_ql73vg.jpg",
   },
   {
     name: "Tanmay Singh",
-    batch: "2024",
+    batch: "2028",
     // linkedin:
-      // "https://www.linkedin.com/in/tanmay-singh-89021b324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // "https://www.linkedin.com/in/tanmay-singh-89021b324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // instagram:"https://www.instagram.com/tanmay_singh_100?igsh=aWJydjA3Nm55eHBw",
     imgSrc:
       "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738134170/IMG-20240818-WA0002_dolerx.jpg",
   },
   {
     name: "Tanisha",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "https://www.linkedin.com/in/tanisha-chandok-77a185349",
     // instagram:"https://www.instagram.com/tanishaa.3006?utm_source=qr&igsh=ZDFkNWwyZXAyd3Nm",
     imgSrc:
@@ -411,7 +412,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Aakriti",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "www.linkedin.com/in/aakriti-rattan-bba62b319",
     // instagram: "https://www.instagram.com/_aakriti.here?igsh=Yng3dnhrY3AwNHlt",
     imgSrc:
@@ -419,7 +420,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Chetna Singh",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "https://www.linkedin.com/in/chetna-singh-97166a322/",
     // instagram: "https://www.instagram.com/mainhoonchetna/?hl=en",
     imgSrc:
@@ -427,7 +428,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Divyam",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "www.linkedin.com/in/divyam-singh-duhoon",
     // instagram: "https://www.instagram.com/btwimdivyam/",
     imgSrc:
@@ -435,7 +436,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Sujal",
-    batch: "2024",
+    batch: "2028",
     // // linkedin: "https://www.linkedin.com/in/sujalzombie01",
     // instagram: "",
     imgSrc:
@@ -445,11 +446,11 @@ const teamMembers: TeamMember[] = [
 
 const getRole = (batch: string) => {
   switch (batch) {
-    case "2024":
+    case "2028":
       return "Member";
-    case "2023":
+    case "2027":
       return "Executive";
-    case "2022":
+    case "2026":
       return "Lead";
     default:
       return "";
@@ -470,34 +471,76 @@ export default function Team() {
 
   return (
     <div id="team" className="min-h-screen bg-background text-white">
-      <nav className="container mx-auto px-6 flex items-center justify-between gap-x-4 fixed top-0 left-0 right-0 bg-background/90 backdrop-blur-md py-3 shadow-lg">
+      <nav className="container mx-auto px-6 flex items-center fixed z-[100] justify-between gap-x-4  top-0 left-0 right-0 bg-background/90 backdrop-blur-md py-3 shadow-lg">
         <div className="flex items-center gap-x-4">
-          <motion.a
-            href="https://csec.nith.ac.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-12 h-12 flex items-center justify-center"
-            whileHover={{ rotate: 360 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+          <motion.div
+            key="logos"
+            className="flex items-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
           >
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/csec-RitzmBrgdmOMfzaijUqHFSmOVA4LzO.png"
-              alt="CSEC Logo"
-              className="w-full h-full object-contain drop-shadow-md"
-            />
-          </motion.a>
+            {/* CSEC Logo - Link to external site */}
+            <motion.a
+              href="https://csec.nith.ac.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative w-[48px] h-[48px] mr-3"
+              whileHover={{ rotate: 360 }}
+              transition={{ duration: 2, ease: "easeInOut" }}
+            >
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/csec-RitzmBrgdmOMfzaijUqHFSmOVA4LzO.png"
+                alt="CSEC Logo"
+                fill
+                className="object-contain"
+                style={{
+                  filter: "drop-shadow(0 0 5px rgba(255, 255, 255, 0.5))",
+                }}
+              />
+            </motion.a>
+
+            {/* Separator */}
+            <div className="h-7 w-px bg-gray-500 mx-3"></div>
+
+            {/* HACK Logo - Link to home section */}
+            <motion.a
+              href="/"
+              className="relative w-[48px] h-[48px] mr-3"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image%20%2816%29_20250208_222328_0000-50pdDbAwyrTeA1mMlMT3c72vROO2oA.png"
+                alt="HACK Logo"
+                fill
+                className="object-contain"
+                style={{
+                  filter: "drop-shadow(0 0 5px rgba(117, 2, 15, 0.5))",
+                }}
+              />
+            </motion.a>
+          </motion.div>
         </div>
         <div className="flex items-center">
-          <span className={`relative z-10 font-bold text-3xl md:text-5xl lg:text-6xl text-white ${Hacked_KerX.className}`}>
-            <span ref={glitch.ref} className="text-primary inline-block">HACK</span>{" "}
+          <span
+            className={`relative z-10 font-bold text-3xl md:text-5xl lg:text-6xl text-white ${Hacked_KerX.className}`}
+          >
+            <span ref={glitch.ref} className="text-primary inline-block">
+              HACK
+            </span>{" "}
             <span className={Hacked_KerX.className}>5.0</span>
           </span>
         </div>
       </nav>
       <div className="container mx-auto px-6 py-32">
         <div className="text-center mb-16">
-          <h2 className={`text-3xl md:text-5xl mb-4 ${Hacked_KerX.className}`}>Team <span className="text-primary">CSEC</span></h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">Meet the talented individuals who make up our diverse team.</p>
+          <h2 className={`text-3xl md:text-5xl mb-4 ${Hacked_KerX.className}`}>
+            Team <span className="text-primary">CSEC</span>
+          </h2>
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            Meet the talented individuals who make up our diverse team.
+          </p>
         </div>
         <div className="mb-12">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
@@ -506,7 +549,7 @@ export default function Team() {
               <span className="text-gray-300">Filter by Year:</span>
             </div>
             <div className="flex flex-col md:flex-row gap-2 sm:gap-4 w-full sm:w-auto justify-center">
-              {[null, 2022, 2023, 2024].map((year) => (
+              {[null, 2026, 2027, 2028].map((year) => (
                 <button
                   key={year}
                   onClick={() => setSelectedYear(year)}
@@ -520,7 +563,10 @@ export default function Team() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {filteredMembers.map((member, index) => (
-            <div key={index} className="group relative bg-dark-light/50 rounded-xl overflow-hidden transform transition-transform duration-300 hover:-translate-y-2">
+            <div
+              key={index}
+              className="group relative bg-dark-light/50 rounded-xl overflow-hidden transform transition-transform duration-300 hover:-translate-y-2"
+            >
               <div className="aspect-square overflow-hidden">
                 <img
                   src={member.imgSrc}
@@ -529,7 +575,9 @@ export default function Team() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-semibold text-white mb-1">{member.name}</h3>
+                    <h3 className="text-xl font-semibold text-white mb-1">
+                      {member.name}
+                    </h3>
                     <div className="flex flex-wrap gap-2">
                       <span className="inline-block px-3 py-1 bg-primary/20 rounded-full text-sm">
                         {member.batch}
@@ -538,7 +586,6 @@ export default function Team() {
                         {getRole(member.batch)}
                       </span>
                     </div>
-
                   </div>
                 </div>
               </div>
