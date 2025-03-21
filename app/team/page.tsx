@@ -185,15 +185,7 @@ const teamMembers: TeamMember[] = [
     imgSrc:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726944985/IMG_4625-1_xkfqoy.jpg",
   },
-  {
-    name: "Piyush",
-    batch: "2027",
-    // linkedin:
-    // "https://www.linkedin.com/in/piyush-kumar18?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    // instagram: "https://www.instagram.com/piyusx_1",
-    imgSrc:
-      "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945016/24-09-20_14-31-12-521_nop1fo.jpg",
-  },
+
   {
     name: "Prince Khandelwal",
     batch: "2027",
@@ -263,15 +255,7 @@ const teamMembers: TeamMember[] = [
     imgSrc:
       "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738081032/IMG-20240920-WA0002_kxrj0r.jpg",
   },
-  {
-    name: "Aanya Soni",
-    batch: "2027",
-    // linkedin:
-    // "https://www.linkedin.com/in/aanya-soni-8060b32b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    // instagram: "",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738082046/IMG_5200_uwq9wi.jpg",
-  },
+
   {
     name: "Himanshu Mahajan",
     batch: "2027",
@@ -280,15 +264,7 @@ const teamMembers: TeamMember[] = [
     imgSrc:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945205/formal_oi5vpb.jpg",
   },
-  {
-    name: "Ishan Choudhary",
-    batch: "2027",
-    // linkedin:
-    // "https://www.linkedin.com/in/ishan-choudhary-70470a32a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    // instagram:"https://www.instagram.com/ishan_12_02?igsh=MWw3cHoydDB6NThsMw==",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738082088/IMG_20240921_005315_qwh3dd.jpg",
-  },
+
   {
     name: "Harsh Goel",
     batch: "2027",
@@ -369,15 +345,7 @@ const teamMembers: TeamMember[] = [
     imgSrc:
       "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738134087/IMG_20250128_201927_kwt4vg.jpg",
   },
-  {
-    name: "Avadhi",
-    batch: "2028",
-    // linkedin:
-    // "https://www.linkedin.com/in/avadhi-jain-01453b313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    // instagram: "",
-    imgSrc:
-      "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738134129/20250128_204711_h36r6t.jpg",
-  },
+
   {
     name: "Anilove",
     batch: "2028",
@@ -583,9 +551,6 @@ export default function Team() {
                     <div className="flex flex-wrap gap-2">
                       <span className="inline-block px-3 py-1 bg-primary/20 rounded-full text-sm">
                         {member.batch}
-                      </span>
-                      <span className="inline-block px-3 py-1 bg-primary/20 rounded-full text-sm">
-                        {getRole(member.batch)}
                       </span>
                       <span className="inline-block px-3 py-1 bg-primary/20 rounded-full text-sm">
                         {getRole(member.batch)}
