@@ -30,14 +30,14 @@ function App() {
 
                             <TimeSlot
                                 name="Checkin"
-                                time="10:00-2:00 PM"
+                                time="10:00 AM"
                                 location="Auditorium"
                                 highlight={true}
                             />
 
                             <TimeSlot
                                 name="Opening Ceremony"
-                                time="2:00-4:00 PM"
+                                time="2:00 PM"
                                 location="Auditorium"
                             />
 
@@ -53,13 +53,8 @@ function App() {
                                 location="New Lecture Hall"
                             />
                             <TimeSlot
-                                name="Workshop I"
-                                time="6:30 - 6:45 PM"
-                                location="New Lecture Hall"
-                            />
-                            <TimeSlot
-                                name="Talking Time"
-                                time="6:45 - 7:30 PM"
+                                name="Guest Talk"
+                                time="6:00 - 6:45 PM"
                                 location="New Lecture Hall"
                             />
 
@@ -78,7 +73,7 @@ function App() {
                         <div className="space-y-6">
                             <TimeSlot
                                 name="Breakfast"
-                                time="7:30 AM"
+                                time="8:00 AM"
                                 location="Mess"
                             />
 
@@ -95,19 +90,14 @@ function App() {
                             />
 
                             <TimeSlot
-                                name="Talking Time"
-                                time="11:00 AM - 11:40 AM"
-                                location="New Lecture Hall"
-                            />
-                            <TimeSlot
-                                name="Workshop II"
-                                time="11:45 AM - 12:30 AM"
+                                name="Github Workshop"
+                                time="11:30 AM - 12:30 PM"
                                 location="New Lecture Hall"
                             />
 
                             <TimeSlot
                                 name="Lunch"
-                                time="12:00 - 2:00 PM"
+                                time="12:30 - 2:00 PM"
                                 location="Mess"
                             />
                             <TimeSlot
@@ -122,7 +112,7 @@ function App() {
                             />
                             <TimeSlot
                                 name="Evaluation Phase I"
-                                time="4:30 - 5:30 PM"
+                                time="4:00 - 5:30 PM"
                                 location="New Lecture Hall"
                                 highlight={true}
                             />
@@ -132,8 +122,8 @@ function App() {
                                 location="New Lecture Hall"
                             />
                             <TimeSlot
-                                name="Talking Time"
-                                time="6:45 - 7:30 PM"
+                                name="Guest Talk"
+                                time="6:30 - 7:30 PM"
                                 location="New Lecture Hall"
                             />
 
@@ -152,7 +142,7 @@ function App() {
                         <div className="space-y-6">
                             <TimeSlot
                                 name="Breakfast"
-                                time="7:30 AM"
+                                time="7:45 AM"
                                 location="Mess"
                             />
 
@@ -169,10 +159,16 @@ function App() {
                                 location="New Lecture Hall"
                                 highlight={true}
                             />
+                            <TimeSlot
+                                name="Final Evaluation"
+                                time="10:00 AM"
+                                location="New Lecture Hall"
+                                highlight={true}
+                            />
 
                             <TimeSlot
                                 name="Lunch"
-                                time="12:30 PM"
+                                time="1:00 PM"
                                 location="Mess"
                             />
 
