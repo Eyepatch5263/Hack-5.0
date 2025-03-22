@@ -9,7 +9,7 @@ import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import ParticleBackground from "@/components/particle-background";
 import TeamSection from "@/components/team-section";
-// import RunOfShow from "@/components/runOfShow";
+import RunOfShow from "@/components/runOfShow";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       <TimelineSection />
       <PrizeSection />
       <SponsorsSection />
-      {/* <RunOfShow /> */}
+      <RunOfShow />
       <FaqSection />
       <TeamSection />
       <ContactSection />
