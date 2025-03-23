@@ -18,7 +18,7 @@ export default function HeroSection() {
     shake: false,
   })
 
-  const targetDate = new Date("2025-03-22T23:59:00").getTime();
+  const targetDate = new Date("2025-04-04T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
     days: "00",
     hours: "00",
@@ -152,7 +152,7 @@ export default function HeroSection() {
             className="max-w-xs sm:max-w-md md:max-w-2xl mx-auto"
           >
             <motion.div variants={item} className="mb-3 text-center text-sm md:text-base lg:text-lg text-gray-300">
-              Registration Closes in
+            Hack 5.0: The Journey Begins In...
             </motion.div>
 
             <div className="grid grid-cols-4 gap-2 md:gap-3">
