@@ -19,9 +19,9 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <TimelineSection />
+      <RunOfShow />
       <PrizeSection />
       <SponsorsSection />
-      <RunOfShow />
       <FaqSection />
       <TeamSection />
       <ContactSection />
