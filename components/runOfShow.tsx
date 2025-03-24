@@ -37,7 +37,7 @@ function App() {
 
                             <TimeSlot
                                 name="Opening Ceremony"
-                                time="2:00 PM"
+                                time="2:30 PM"
                                 location="Auditorium"
                             />
 
