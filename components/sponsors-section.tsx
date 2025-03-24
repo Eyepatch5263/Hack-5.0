@@ -84,6 +84,10 @@ export default function SponsorsSection() {
           name: "EaseMyTrip",
           logo: "https://res.cloudinary.com/dnbf0uwku/image/upload/v1742214348/White_xa7tsz.png",
         },
+        {
+          name: "Beatover.ai",
+          logo: "https://res.cloudinary.com/dnbf0uwku/image/upload/v1742844488/beatoven_logo_white_nuszob.png",
+        },
       ],
     },
   ];
@@ -120,7 +124,7 @@ export default function SponsorsSection() {
                 tier.sponsors.length === 1 ? "md:grid-cols-1" : ""
               }
 ${tier.sponsors.length === 2 ? "md:grid-cols-2" : ""}
-${tier.sponsors.length === 3 ? "md:grid-cols-3" : ""}
+${tier.sponsors.length === 4 ? "md:grid-cols-4" : ""}
 
 `}
             >
