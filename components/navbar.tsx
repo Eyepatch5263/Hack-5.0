@@ -23,10 +23,11 @@ const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Timeline", href: "#timeline" },
+  { name: "Run Of Show", href: "#runofshow" },
   { name: "Prizes", href: "#prizes" },
   { name: "Sponsors", href: "#sponsors" },
-  { name: "FAQ", href: "#faq" },
   { name: "Organizers", href: "#team-section" },
+  { name: "FAQ", href: "#faq" },
   { name: "Contact", href: "#contact" },
   { name: "Team", href: "/team" },
 ];
@@ -80,7 +81,7 @@ export default function Navbar() {
     console.log(`handleNavLinkClick triggered with href: ${href}`);
     const sectionId = href.substring(1); // Remove the # from the href
     console.log(`Extracted section ID: ${sectionId}`);
-    if(sectionId === "team"){
+    if (sectionId === "team") {
       router.push("/team");
     }
     scrollToSection(sectionId);
@@ -272,7 +273,7 @@ export default function Navbar() {
                       className={cn(
                         "text-lg font-medium text-foreground hover:text-primary transition-colors block py-3",
                         activeSection === link.href.substring(1) &&
-                        "text-primary"
+                          "text-primary"
                       )}
                     >
                       {link.name}

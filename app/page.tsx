@@ -10,6 +10,7 @@ import Footer from "@/components/footer";
 import ParticleBackground from "@/components/particle-background";
 import TeamSection from "@/components/team-section";
 import RunOfShow from "@/components/runOfShow";
+import MentorsAndJudges from "@/components/mentor-judges";
 
 export default function Home() {
   return (
@@ -20,10 +21,11 @@ export default function Home() {
       <AboutSection />
       <TimelineSection />
       <RunOfShow />
+      <MentorsAndJudges />
       <PrizeSection />
       <SponsorsSection />
-      <FaqSection />
       <TeamSection />
+      <FaqSection />
       <ContactSection />
       <Footer />
     </main>
