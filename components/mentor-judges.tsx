@@ -40,7 +40,7 @@ const mentors: Person[] = [
   {
     name: "Sourav Sahoo",
     role: " GSOC contributor and mentor 2018-19",
-    company: "Computer Scientist-1 @ Adobe",
+    company: "Computer Scientist @ Adobe",
     image:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1742227132/IMG_6677_jlwl9b.jpg",
     linkedin: "https://www.weekday.works/people/sourav-sahoo-souravsahoo",
@@ -48,7 +48,7 @@ const mentors: Person[] = [
   {
     name: "Avinal",
     role: "GSOC mentor @ Fossology || GSOD Contributor 2020@VLC ",
-    company: "SDE II @RED HAT",
+    company: "SDE II @ RED HAT",
     image:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1742227115/WhatsApp_Image_2025-03-17_at_21.04.26_b63612c7_wb2qxh.jpg",
     linkedin: "https://githubcampus.expert/avinal/",
@@ -80,7 +80,7 @@ const mentors: Person[] = [
   {
     name: "Vishal Choudhary",
     role: "",
-    company: "Computer Scientist @Adobe",
+    company: "Computer Scientist @ Adobe",
     image:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1742227120/WhatsApp_Image_2025-03-17_at_21.04.30_df660d77_uxjhg5.jpg",
     linkedin: "https://linkedin.com",
@@ -88,7 +88,7 @@ const mentors: Person[] = [
   {
     name: "Amit Yadav",
     role: "",
-    company: "Senior Blockchain Engineer @Elys Network",
+    company: "Senior Blockchain Engineer @ Elys Network",
     image:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1742227116/WhatsApp_Image_2025-03-17_at_21.04.30_f3bbc256_nvtt4d.jpg",
     linkedin: "http://linkedin.com/in/amityadav9",
