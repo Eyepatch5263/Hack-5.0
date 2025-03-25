@@ -56,7 +56,7 @@ const mentors: Person[] = [
   {
     name: "Udit Gulati",
     role: "GSoC 2019",
-    company: "Software Engineer @ Native",
+    company: "",
     image:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1742227112/WhatsApp_Image_2025-03-17_at_21.04.27_d3700681_y7zvf9.jpg",
     linkedin: "https://www.linkedin.com/in/uditgulati0/",
@@ -64,7 +64,7 @@ const mentors: Person[] = [
   {
     name: "Amit Chambial",
     role: "",
-    company: "SDE III @ Netom",
+    company: "SDE III @ Netomi",
     image:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1742227112/WhatsApp_Image_2025-03-17_at_21.04.28_a4067d69_txzega.jpg",
     linkedin: "http://linkedin.com/in/amit-chambial",
@@ -80,7 +80,7 @@ const mentors: Person[] = [
   {
     name: "Vishal Choudhary",
     role: "",
-    company: "SDE III @ Dialpad",
+    company: "Computer Scientist @Adobe",
     image:
       "https://res.cloudinary.com/dnbf0uwku/image/upload/v1742227120/WhatsApp_Image_2025-03-17_at_21.04.30_df660d77_uxjhg5.jpg",
     linkedin: "https://linkedin.com",
