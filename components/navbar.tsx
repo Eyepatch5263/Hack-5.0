@@ -24,6 +24,7 @@ const navLinks = [
   { name: "About", href: "#about" },
   { name: "Timeline", href: "#timeline" },
   { name: "Run Of Show", href: "#runofshow" },
+  { name: "Judges", href: "#judges" },
   { name: "Prizes", href: "#prizes" },
   { name: "Sponsors", href: "#sponsors" },
   { name: "Organizers", href: "#team-section" },
@@ -219,7 +220,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <motion.div
+          {/* <motion.div
             variants={linkVariants}
             custom={navLinks.length}
             whileHover={{ scale: 1.05 }}
@@ -234,7 +235,7 @@ export default function Navbar() {
                 Apply Now
               </Button>
             </a>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* Mobile Navigation Toggle */}

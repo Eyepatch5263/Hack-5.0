@@ -154,7 +154,7 @@ function Section({ people }: { people: Person[] }) {
 
 export default function MentorsAndJudges() {
   return (
-    <div className="min-h-screen bg-gradient text-white">
+    <div className="min-h-screen bg-gradient text-white" id="judges">
       {/* Main Content */}
       <div className="container mx-auto px-6 py-16">
         <div className="text-center mb-8">
