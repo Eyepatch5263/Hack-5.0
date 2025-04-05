@@ -332,6 +332,16 @@ export default function PrizeSection() {
             </motion.div>
           ))}
         </div>
+        <div className="container mx-auto px-4">
+          <motion.div variants={item} className="text-center mb-16">
+            <h2
+              className="text-xl
+ text-gray-300"
+            >
+              Includes Prizes Worth 7k-10k
+            </h2>
+          </motion.div>
+        </div>
 
         {/* Sponsor Tracks Prizes*/}
         <motion.div variants={item} className="text-center mb-16">
@@ -352,15 +362,10 @@ export default function PrizeSection() {
               icon: Github,
               title: "Best use of GitHub",
               amount: "",
-              description:
-                "Chance to win Exicited Prizes by GitHub",
+              description: "Chance to win Exicited Prizes by GitHub",
             },
           ].map((prize, index) => (
-            <motion.div
-              key={index}
-              variants={item}
-              className={`h-full`}
-            >
+            <motion.div key={index} variants={item} className={`h-full`}>
               <div
                 className={`bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700 p-6 md:p-8 text-center transform transition-all hover:-translate-y-2 duration-300 shadow-lg h-full`}
               >
