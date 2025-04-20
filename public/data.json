@@ -1,0 +1,477 @@
+[
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-001",
+    "team_name": "Dezlopers",
+    "member_name": "Lakshay Sharma"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-002",
+    "team_name": "Dezlopers",
+    "member_name": "Himanshu Gupta"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-003",
+    "team_name": "Dezlopers",
+    "member_name": "Subhash Malik"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-004",
+    "team_name": "Dezlopers",
+    "member_name": "Janvi Janvi"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-005",
+    "team_name": "BYTE BENDERS",
+    "member_name": "Aditya Pathania"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-006",
+    "team_name": "BYTE BENDERS",
+    "member_name": "Pratham Kumar"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-007",
+    "team_name": "BYTE BENDERS",
+    "member_name": "Prince Kumar"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-008",
+    "team_name": "BYTE BENDERS",
+    "member_name": "Mukesh Kumar"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-009",
+    "team_name": "FourMenTech",
+    "member_name": "David Goyal"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-010",
+    "team_name": "FourMenTech",
+    "member_name": "Tushar Thakur"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-011",
+    "team_name": "FourMenTech",
+    "member_name": "Amanjot Kaur"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-012",
+    "team_name": "FourMenTech",
+    "member_name": "Ishant Choudhary"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-013",
+    "team_name": "Runtime Terrors",
+    "member_name": "Lakshya Mudgal"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-014",
+    "team_name": "Runtime Terrors",
+    "member_name": "Dinky Kumar"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-015",
+    "team_name": "Runtime Terrors",
+    "member_name": "Abhinav Singh"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-016",
+    "team_name": "Team Airavata",
+    "member_name": "Parth Agarwal"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-017",
+    "team_name": "Team Airavata",
+    "member_name": "Ritik Gupta"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-018",
+    "team_name": "Team Airavata",
+    "member_name": "Sanskar Soni"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-019",
+    "team_name": "Team Airavata",
+    "member_name": "Shivam Singh"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-020",
+    "team_name": "Data Dynamos",
+    "member_name": "Naina Sharma"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-021",
+    "team_name": "Data Dynamos",
+    "member_name": "Khushi Maheshwari"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-022",
+    "team_name": "Data Dynamos",
+    "member_name": "Shalley Sharma"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-023",
+    "team_name": "AgroBotics",
+    "member_name": "Fatimi Bee"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-024",
+    "team_name": "AgroBotics",
+    "member_name": "Dhruv Sharma"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-025",
+    "team_name": "AgroBotics",
+    "member_name": "Bhuvneshwar Kansujiya"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-026",
+    "team_name": "AgroBotics",
+    "member_name": "Harsh Soni"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-027",
+    "team_name": "The Revengers",
+    "member_name": "Manish Choudhary"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-028",
+    "team_name": "The Revengers",
+    "member_name": "Sonu Choubey"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-029",
+    "team_name": "The Revengers",
+    "member_name": "Neeraj Jaiswal"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-030",
+    "team_name": "The Revengers",
+    "member_name": "Karanbir Singh"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-031",
+    "team_name": "NextMED",
+    "member_name": "Vansh Chauhan"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-032",
+    "team_name": "NextMED",
+    "member_name": "Prateek Sharma"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-033",
+    "team_name": "NextMED",
+    "member_name": "Raj Yadav"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-034",
+    "team_name": "NextMED",
+    "member_name": "Mehak Kaur"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-035",
+    "team_name": "Tech-maxxers",
+    "member_name": "Udit Singh"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-036",
+    "team_name": "Tech-maxxers",
+    "member_name": "Yash Singh"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-037",
+    "team_name": "Tech-maxxers",
+    "member_name": "Vaibhav Upadhyay"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-038",
+    "team_name": "NoobCoders",
+    "member_name": "Mehak Garg"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-039",
+    "team_name": "NoobCoders",
+    "member_name": "Mahak."
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-040",
+    "team_name": "Logic Lords",
+    "member_name": "Shrey Shukla"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-041",
+    "team_name": "Logic Lords",
+    "member_name": "Prince Rathi"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-042",
+    "team_name": "Logic Lords",
+    "member_name": "Sunil Verma"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-043",
+    "team_name": "Logic Lords",
+    "member_name": "Vaibhav Madhan"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-044",
+    "team_name": "PartTimeHumans",
+    "member_name": "Deepanshu Lokhande"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-045",
+    "team_name": "PartTimeHumans",
+    "member_name": "Divanshi Jain"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-046",
+    "team_name": "PartTimeHumans",
+    "member_name": "Akarsh Jain"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-047",
+    "team_name": "Null Pointers",
+    "member_name": "Akshit Gupta"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-048",
+    "team_name": "Null Pointers",
+    "member_name": "Govinda"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-049",
+    "team_name": "Null Pointers",
+    "member_name": "Aditya Thakur"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-050",
+    "team_name": "Null Pointers",
+    "member_name": "Keshav Singla"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-051",
+    "team_name": "Code Chronicles",
+    "member_name": "Astha Pandey"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-052",
+    "team_name": "Code Chronicles",
+    "member_name": "Ansh Chaurasia"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-053",
+    "team_name": "Falcons",
+    "member_name": "Pallavi Singh"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-054",
+    "team_name": "Falcons",
+    "member_name": "Achintya Chauhan"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-055",
+    "team_name": "Falcons",
+    "member_name": "Jasmehar Kaur"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-056",
+    "team_name": "Falcons",
+    "member_name": "Kiran Prakash"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-057",
+    "team_name": "Rangiku",
+    "member_name": "Harsh Panwar"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-058",
+    "team_name": "Rangiku",
+    "member_name": "Samarth Bansal"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-059",
+    "team_name": "Rangiku",
+    "member_name": "Devesh Mishra"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-060",
+    "team_name": "Rangiku",
+    "member_name": "Rishabh Dabas"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-061",
+    "team_name": "Aignite",
+    "member_name": "Karunendra Dwivedy"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-062",
+    "team_name": "Aignite",
+    "member_name": "Pankhuri Agrawal"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-063",
+    "team_name": "Aignite",
+    "member_name": "Aeshna Varshney"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-064",
+    "team_name": "Aignite",
+    "member_name": "Om Lakshkar"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-065",
+    "team_name": "Algorithm_ACE",
+    "member_name": "Aman Kapoor"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-066",
+    "team_name": "Algorithm_ACE",
+    "member_name": "Harshal Halgarkar"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-067",
+    "team_name": "Algorithm_ACE",
+    "member_name": "Deepank Rana"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-068",
+    "team_name": "Codeblocks",
+    "member_name": "Vinit Kumar"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-069",
+    "team_name": "Codeblocks",
+    "member_name": "Yashika Chaudhary"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-070",
+    "team_name": "Codeblocks",
+    "member_name": "Raj Verma"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-071",
+    "team_name": "Vortex",
+    "member_name": "Shagun Rana"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-072",
+    "team_name": "Vortex",
+    "member_name": "Rahul Sharma"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-073",
+    "team_name": "Vortex",
+    "member_name": "Abhishek Sharma"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-074",
+    "team_name": "Vortex",
+    "member_name": "Aditya Khurana"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-075",
+    "team_name": "Nezuko",
+    "member_name": "Ananya Pal"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-076",
+    "team_name": "Nezuko",
+    "member_name": "Bhumika"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-077",
+    "team_name": "Nezuko",
+    "member_name": "Shubham"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-078",
+    "team_name": "Nova_Stars",
+    "member_name": "Aryan Sheoran"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-079",
+    "team_name": "Nova_Stars",
+    "member_name": "Priyanshu Mewa"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-080",
+    "team_name": "Nova_Stars",
+    "member_name": "Yuvraj Chauhan"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-081",
+    "team_name": "Nova_Stars",
+    "member_name": "Deep Singh"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-082",
+    "team_name": "Committed",
+    "member_name": "Ashwin Toppo"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-083",
+    "team_name": "Committed",
+    "member_name": "Vinit Agarwal"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-084",
+    "team_name": "Committed",
+    "member_name": "Harshvardhan Yadav"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-085",
+    "team_name": "Committed",
+    "member_name": "Ayush Das"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-086",
+    "team_name": "Cognitive Coders",
+    "member_name": "Ishan Kashyap"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-087",
+    "team_name": "Cognitive Coders",
+    "member_name": "Nandeesh Jain"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-088",
+    "team_name": "Deadline Mavericks",
+    "member_name": "Daljinder Singh"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-089",
+    "team_name": "Deadline Mavericks",
+    "member_name": "Pawan Kumar"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-090",
+    "team_name": "Deadline Mavericks",
+    "member_name": "Mankirat Singh"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-091",
+    "team_name": "Deadline Mavericks",
+    "member_name": "Mandeep Singh Mankoo"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-092",
+    "team_name": "Action Kamen",
+    "member_name": "Akshit Dogra"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-092",
+    "team_name": "Action Kamen",
+    "member_name": "Abhishek Gautam"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-092",
+    "team_name": "Action Kamen",
+    "member_name": "Aryan Chaudhary"
+  },
+  {
+    "id": "NIT/HMR/CSE/CSEC/HACK5.0/PARTICIPANT-092",
+    "team_name": "Action Kamen",
+    "member_name": "Akshat Singh"
+  }
+]
