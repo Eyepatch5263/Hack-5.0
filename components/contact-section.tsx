@@ -3,15 +3,7 @@
 import type React from "react";
 
 import { useRef, useState } from "react";
-import {
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-  User,
-  AtSign,
-  MessageSquare,
-} from "lucide-react";
+import { Mail, MapPin, Phone, Send, User, AtSign, MessageSquare } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import emailjs from "@emailjs/browser";
@@ -160,11 +152,10 @@ export default function ContactSection() {
                 <div className="relative">
                   <label
                     htmlFor="name"
-                    className={`absolute left-12 bg-gray-900 px-2 transition-all duration-300 z-10 ${
-                      focusedField === "name" || formData.name
+                    className={`absolute left-12 bg-gray-900 px-2 transition-all duration-300 z-10 ${focusedField === "name" || formData.name
                         ? "-top-2.5 text-xs text-primary"
                         : "top-3 text-gray-400"
-                    }`}
+                      }`}
                   >
                     Your Name
                   </label>
@@ -187,11 +178,10 @@ export default function ContactSection() {
                 <div className="relative">
                   <label
                     htmlFor="email"
-                    className={`absolute left-12 bg-gray-900 px-2 transition-all duration-300 z-10 ${
-                      focusedField === "email" || formData.email
+                    className={`absolute left-12 bg-gray-900 px-2 transition-all duration-300 z-10 ${focusedField === "email" || formData.email
                         ? "-top-2.5 text-xs text-primary"
                         : "top-3 text-gray-400"
-                    }`}
+                      }`}
                   >
                     Your Email
                   </label>
@@ -215,11 +205,10 @@ export default function ContactSection() {
               <div className="relative text-gray-600">
                 <label
                   htmlFor="subject"
-                  className={`absolute left-4 bg-gray-900 text-gray-600 px-2 transition-all duration-300 z-10 ${
-                    focusedField === "subject" || formData.subject
+                  className={`absolute left-4 bg-gray-900 text-gray-600 px-2 transition-all duration-300 z-10 ${focusedField === "subject" || formData.subject
                       ? "-top-2.5 text-xs text-primary"
                       : "top-3 text-gray-400"
-                  }`}
+                    }`}
                 ></label>
                 <select
                   id="subject"
@@ -268,11 +257,10 @@ export default function ContactSection() {
               <div className="relative">
                 <label
                   htmlFor="message"
-                  className={`absolute left-12 bg-gray-900 px-2 transition-all duration-300 z-10 ${
-                    focusedField === "message" || formData.message
+                  className={`absolute left-12 bg-gray-900 px-2 transition-all duration-300 z-10 ${focusedField === "message" || formData.message
                       ? "-top-2.5 text-xs text-primary"
                       : "top-3 text-gray-400"
-                  }`}
+                    }`}
                 >
                   Message
                 </label>

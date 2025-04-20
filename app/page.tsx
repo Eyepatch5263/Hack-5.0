@@ -11,6 +11,7 @@ import ParticleBackground from "@/components/particle-background";
 import TeamSection from "@/components/team-section";
 import RunOfShow from "@/components/runOfShow";
 import MentorsAndJudges from "@/components/mentor-judges";
+import Certificate from "@/components/certificate";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <TeamSection />
       <FaqSection />
       <ContactSection />
+      <Certificate />
       <Footer />
     </main>
   );
