@@ -90,7 +90,9 @@ const CertificateForm: React.FC<CertificateFormProps> = ({ onSubmit, error }) =>
   };
 
   return (
-    <motion.section className="container mx-auto px-4 py-8 flex flex-col items-center mb-4"
+    <motion.section 
+    className="container mx-auto px-4 py-8 flex flex-col items-center mb-4"
+    id = "certificate"
     ref={ref}
     variants={container}
     initial="hidden"

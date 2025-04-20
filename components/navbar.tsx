@@ -23,13 +23,13 @@ const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Timeline", href: "#timeline" },
-  { name: "Run Of Show", href: "#runofshow" },
   { name: "Judges", href: "#judges" },
   { name: "Prizes", href: "#prizes" },
   { name: "Sponsors", href: "#sponsors" },
   { name: "Organizers", href: "#team-section" },
   { name: "FAQ", href: "#faq" },
   { name: "Contact", href: "#contact" },
+  {name:"Certificates", href: "#certificate"},
   { name: "Team", href: "/team" },
 ];
 
