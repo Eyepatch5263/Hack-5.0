@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server';
 type User = {
   id: string;
   team_name: string;
-  member_name: string;
+  name: string;
 };
 
 export async function POST(request: Request) {
@@ -27,14 +27,14 @@ export async function POST(request: Request) {
     const matchedUser = data.find(
       entry =>
         entry.team_name.toLowerCase().trim() === teamName.toLowerCase().trim() &&
-        entry.member_name.toLowerCase().trim() === name.toLowerCase().trim()
+        entry.name.toLowerCase().trim() === name.toLowerCase().trim()
     );
 
     if (matchedUser) {
       return NextResponse.json(
         {
           status: 'allowed',
-          name: matchedUser.member_name,
+          name: matchedUser.name,
           teamName: matchedUser.team_name,
           id: matchedUser.id
         },
