@@ -22,7 +22,7 @@ const Certificate: React.FC<CertificateProps> = ({ name, teamName, id }) => {
           crossorigin="anonymous"
         />
         <div style="position: absolute; top: 24px; right: 32px; text-align: right;">
-          <p style="font-size: 14px; font-weight: 600; color: #1f2937;">${id}</p>
+          <p style="font-size: 14px; font-weight: 900; color: #1f2937;">${id}</p>
         </div>
         <div style="position: absolute; top: 51%; left: 48%; transform: translate(-50%, -50%); text-align: center; width: 100%; padding: 0 48px;">
           <h2 style="font-size: 22px; font-weight: 700; color: #4b4563; margin-bottom: 16px; ">
