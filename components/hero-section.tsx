@@ -128,16 +128,6 @@ export default function HeroSection() {
                 <span className={Hacked_KerX.className}>5.0</span>
               </h1>
             </motion.div>
-
-            <motion.div variants={item} className="flex justify-center mt-12 ">
-              {/* Devfolio button */}
-              <div
-                className="apply-button"
-                data-hackathon-slug="hack-1158" 
-                data-button-theme="dark-inverted"
-                style={{ height: "44px", width: "312px" }}
-              >Apply with Devfolio</div>
-            </motion.div>
           </motion.div>
         </div>
 
@@ -151,9 +141,10 @@ export default function HeroSection() {
             animate="show"
             className="max-w-xs sm:max-w-md md:max-w-2xl mx-auto"
           >
-            <motion.div variants={item} className="mb-3 text-center text-sm md:text-base lg:text-lg text-gray-300">
-            Hack 5.0: The Journey Begins In...
+            <motion.div variants={item} className="mb-3 text-center text-lg md:text-xl  lg:text-lg text-gray-300">
+              Hack 5.0: The Journey Has Ended — Thanks for Joining Us!
             </motion.div>
+
 
             <div className="grid grid-cols-4 gap-2 md:gap-3">
               {Object.entries(timeLeft).map(([key, value], index) => (
