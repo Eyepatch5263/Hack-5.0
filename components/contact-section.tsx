@@ -125,7 +125,7 @@ export default function ContactSection() {
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl max-w-2xl mx-auto text-gray-300">
-            Have questions about HACK 5.0? We're here to help! Reach out to us
+            Have questions about HACK 6.0? We're here to help! Reach out to us
             through any of the channels below.
           </p>
         </motion.div>

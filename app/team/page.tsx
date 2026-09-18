@@ -499,7 +499,7 @@ export default function Team() {
             <span ref={glitch.ref} className="text-primary inline-block">
               HACK
             </span>{" "}
-            <span className={Hacked_KerX.className}>5.0</span>
+            <span className={Hacked_KerX.className}>6.0</span>
           </span>
         </div>
       </nav>

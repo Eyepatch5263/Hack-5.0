@@ -51,7 +51,7 @@ export default function Navbar() {
       const isScrolled = window.scrollY > 10;
       setScrolled(isScrolled);
 
-      // Show HACK 5.0 text only when scrolled away from hero section
+      // Show HACK 6.0 text only when scrolled away from hero section
       const heroSection = document.getElementById("home");
       if (heroSection) {
         const heroHeight = heroSection.offsetHeight;
@@ -189,7 +189,7 @@ export default function Navbar() {
                   onClick={(e) => handleNavLinkClick(e, "#home")}
                   className="text-2xl md:text-5xl font-bold text-primary drop-shadow-glow ml-1"
                 >
-                  HACK<span className="text-white"> 5.0</span>
+                  HACK<span className="text-white"> 6.0</span>
                 </a>
               </motion.div>
             )}

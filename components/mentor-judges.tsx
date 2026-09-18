@@ -167,7 +167,7 @@ export default function MentorsAndJudges() {
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Meet our distinguished panel of mentors and judges who will guide
-            and evaluate your innovations during HACK 5.0
+            and evaluate your innovations during HACK 6.0
           </p>
         </div>
 

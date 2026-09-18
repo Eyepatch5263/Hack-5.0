@@ -86,13 +86,13 @@ function Page() {
       icon: <Gavel className="w-8 h-8 text-tango" />,
       title: "Reporting Violations",
       content:
-        "If any participant experiences or witnesses a violation of this Code of Conduct, they should report it immediately to HACK 5.0 staff. The safety and well-being of all attendees are our top priorities.",
+        "If any participant experiences or witnesses a violation of this Code of Conduct, they should report it immediately to HACK 6.0 staff. The safety and well-being of all attendees are our top priorities.",
     },
     {
       icon: <Terminal className="w-8 h-8 text-tango" />,
       title: "Consequences of Violations",
       content:
-        "The HACK 5.0 organizers reserve the right to take appropriate actions against individuals who violate the Code of Conduct. Consequences may include warnings, disqualification, removal from the event, or further legal action if necessary.",
+        "The HACK 6.0 organizers reserve the right to take appropriate actions against individuals who violate the Code of Conduct. Consequences may include warnings, disqualification, removal from the event, or further legal action if necessary.",
     },
     {
       icon: <Users className="w-8 h-8 text-tango" />,
@@ -147,7 +147,7 @@ function Page() {
           </motion.a>
         </div>
 
-        {/* HACK 5.0 Text */}
+        {/* HACK 6.0 Text */}
         <div className="flex items-center">
           <span
             className={`relative z-10 font-bold text-3xl md:text-5xl lg:text-6xl text-white ${Hacked_KerX.className}`}
@@ -155,7 +155,7 @@ function Page() {
             <span ref={glitch.ref} className="text-primary inline-block">
               HACK
             </span>{" "}
-            <span className={Hacked_KerX.className}>5.0</span>
+            <span className={Hacked_KerX.className}>6.0</span>
           </span>
         </div>
       </nav>
@@ -170,7 +170,7 @@ function Page() {
           <p className="text-xl text-gray-300 w-full text-balance mb-2">
             We, as members of the Computer Science and Engineers' Community
             (CSEC) at NIT Hamirpur, pledge to create an inclusive, respectful,
-            and secure environment for all participants of HACK 5.0. We are
+            and secure environment for all participants of HACK 6.0. We are
             committed to ensuring that involvement in our community is free from
             harassment and is based on mutual dignity and respect.
           </p>
@@ -179,7 +179,7 @@ function Page() {
             educational background, nationality, race, ethnicity, religion,
             political beliefs, disabilities (visible or invisible), gender
             identity, gender expression, or sexual orientation. To maintain a
-            smooth experience and uphold the values of HACK 5.0, all
+            smooth experience and uphold the values of HACK 6.0, all
             participants are expected to adhere to the following guidelines:
           </p>
         </div>

@@ -28,7 +28,7 @@ export default function TimelineSection() {
     {
       date: "February 21, 2025",
       title: "Registration Opens",
-      description: "Sign up and secure your spot for HACK 5.0",
+      description: "Sign up and secure your spot for HACK 6.0",
     },
     {
       date: "March 21, 2025",
@@ -38,7 +38,7 @@ export default function TimelineSection() {
     {
       date: "March 22, 2025",
       title: "Screening Round",
-      description: "Screening round for the Hack-5.0",
+      description: "Screening round for the Hack-6.0",
     },
     {
       date: "April 4, 2025",

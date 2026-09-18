@@ -12,7 +12,7 @@ const Hacked_KerX = localFont({
 })
 const faqs = [
   {
-    question: "What exactly is Hack 5.0 - Obsidian Saga?",
+    question: "What exactly is Hack 6.0 - Obsidian Saga?",
     answer:
       "It is not just a hackathon—it is an epic fusion of creativity, caffeine, and code! Think of it as a 48-hour sprint where brilliant minds come together to solve real problems, build cool stuff, and maybe win some brag-worthy prizes",
   },
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     question: "Is there a registration fee?",
-    answer: "No, Hack 5.0 is completely free! Just register and you are in. There are no registration fees or hidden charges.",
+    answer: "No, Hack 6.0 is completely free! Just register and you are in. There are no registration fees or hidden charges.",
   },
 ]
 

@@ -112,7 +112,7 @@ export default function SponsorsSection() {
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl max-w-2xl mx-auto text-gray-300">
-            HACK 5.0 is made possible by the generous support of our sponsors
+            HACK 6.0 is made possible by the generous support of our sponsors
           </p>
         </motion.div>
 
