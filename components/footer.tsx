@@ -198,7 +198,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-primary/10 pt-8 text-center text-gray-400 text-sm">
-          <p>Designed with ❤️ by the HACK 5.0 Team | Powered by innovation and creativity</p>
+          <p>Designed with ❤️ by the HACK 6.0 Team | Powered by innovation and creativity</p>
         </div>
       </div>
     </footer>

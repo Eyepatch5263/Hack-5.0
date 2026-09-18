@@ -48,7 +48,7 @@ const Certificate: React.FC<CertificateProps> = ({ name, teamName, id }) => {
       const image = canvas.toDataURL('image/png');
       const link = document.createElement('a');
       link.href = image;
-      link.download = `HACK5.0-Certificate-${id.split('-')[1]}.png`;
+      link.download = `HACK6.0-Certificate-${id.split('-')[1]}.png`;
       link.click();
     } catch (error) {
       console.error('Error generating certificate:', error);

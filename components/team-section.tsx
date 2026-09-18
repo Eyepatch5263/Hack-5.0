@@ -213,7 +213,7 @@ export default function TeamSection() {
             Lead <span className="text-primary">Organizers</span>
           </h2>
           <p className="text-xl max-w-2xl mx-auto text-gray-300">
-            Meet the passionate individuals who made HACK 5.0 possible
+            Meet the passionate individuals who made HACK 6.0 possible
           </p>
         </motion.div>
 

@@ -125,7 +125,7 @@ export default function HeroSection() {
                 <span ref={glitch.ref} className="text-primary inline-block">
                   HACK
                 </span>{" "}
-                <span className={Hacked_KerX.className}>5.0</span>
+                <span className={Hacked_KerX.className}>6.0</span>
               </h1>
             </motion.div>
           </motion.div>
@@ -142,7 +142,7 @@ export default function HeroSection() {
             className="max-w-xs sm:max-w-md md:max-w-2xl mx-auto"
           >
             <motion.div variants={item} className="mb-3 text-center text-lg md:text-xl  lg:text-lg text-gray-300">
-              Hack 5.0: The Journey Has Ended — Thanks for Joining Us!
+              Hack 6.0: The Journey Has Ended — Thanks for Joining Us!
             </motion.div>
 
 

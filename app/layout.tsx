@@ -17,9 +17,9 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "HACK 5.0 - The Ultimate Hackathon Experience",
+  title: "HACK 6.0 - The Ultimate Hackathon Experience",
   description:
-    "Join HACK 5.0, the premier hackathon event for innovators, builders, and dreamers. Compete for prizes, network with industry leaders, and showcase your skills.",
+    "Join HACK 6.0, the premier hackathon event for innovators, builders, and dreamers. Compete for prizes, network with industry leaders, and showcase your skills.",
 }
 
 export default function RootLayout({
