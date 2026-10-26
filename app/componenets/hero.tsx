@@ -68,6 +68,19 @@ export default function HeroSection() {
     return () => clearInterval(timer)
   }, [])
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+  
+    document.body.appendChild(script);
+  
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const container: Variants = {
     hidden: { opacity: 0 },
     show: {
@@ -172,48 +185,12 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div variants={item} className="relative z-20 flex justify-center w-full px-4">
-            <a
-              href="https://hack-1736.devfolio.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-                relative group overflow-hidden
-                w-full max-w-xs sm:max-w-md md:max-w-lg
-                min-w-[280px] sm:min-w-[360px] md:min-w-[420px]
-                px-6 sm:px-16 py-3.5 sm:py-4 md:py-4.5
-                rounded-xl
-                bg-gradient-to-r from-[#ff2a85] via-[#ff007f] to-[#7928ca]
-                text-white
-                font-pricedown
-                text-xl md:text-3xl
-                tracking-wider
-                uppercase
-                border border-[#ff75c3]/60
-                shadow-[0_0_20px_rgba(255,42,133,0.5),_4px_4px_0px_#00f0ff]
-                hover:shadow-[0_0_35px_rgba(255,42,133,0.9),_6px_6px_0px_#00f0ff]
-                hover:-translate-y-1
-                active:translate-y-0.5
-                active:shadow-[0_0_15px_rgba(255,42,133,0.4),_2px_2px_0px_#00f0ff]
-                transition-all duration-300
-                flex items-center justify-center gap-4
-                select-none whitespace-nowrap
-              "
-            >
-              <span className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/35 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-[350%] transition-transform duration-1000 ease-out pointer-events-none" />
-
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00f0ff] opacity-75" />
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00f0ff]" />
-              </span>
-
-              <span className="relative z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
-                Register Now
-              </span>
-
-              <span className="relative z-10 text-[#00f0ff] text-sm md:text-base transition-transform duration-300 group-hover:translate-x-2 drop-shadow-[0_0_6px_rgba(0,240,255,0.8)]">
-                ▶
-              </span>
-            </a>
+            <div
+              className="apply-button"
+              data-hackathon-slug="hack-1736"
+              data-button-theme="light"
+              style={{ height: "44px", width: "312px" }}
+            />
           </motion.div>
 
           <motion.div variants={item} className="w-full max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl mx-auto mt-1 sm:mt-3 relative z-20">

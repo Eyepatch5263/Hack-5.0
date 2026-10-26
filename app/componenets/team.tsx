@@ -404,11 +404,11 @@ const teamMembers: TeamMember[] = [
   
   // Batch of 2025 — imported from second.csv
   {
-    name: "Himanshi Mahajan",
+    name: "Lakshit Karwa",
     batch: "2025",
-    imgSrc: "",
-    instagram: "https://www.instagram.com/_mist_veil_?igsh=MTY2Y2ZudzN6OTh6OQ==",
-    linkedin: "https://www.linkedin.com/in/himanshi-mahajan-567013388?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    imgSrc: "https://drive.google.com/file/d/1CQ_-AsdWmACIlZ6YijuOLuZKv2WiwwCM/view?usp=drivesdk",
+    instagram: "https://www.instagram.com/karwalakshit/?__pwa=1",
+    linkedin: "https://www.linkedin.com/in/lakshit-karwa-7982b6369/"
   },
   {
     name: "Bhanu Uday Singh Dattal",
@@ -424,13 +424,7 @@ const teamMembers: TeamMember[] = [
     instagram: "https://www.instagram.com/piyuxhthakur?igsh=bTFqaWp0YXB4ZWpy",
     linkedin: "https://www.linkedin.com/in/piyush-thakur-6a39943a4?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   },
-  {
-    name: "SHIVANK AGGARWAL",
-    batch: "2025",
-    imgSrc: "",
-    instagram: "https://www.instagram.com/shivaankkk__?igsh=MWU2N2Fod2JjbDI5ZA==&igsi=MWU2N2Fod2JjbDI5ZA==",
-    linkedin: "www.linkedin.com/in/shivank009911"
-  },
+  
   {
     name: "Manvi Vyas",
     batch: "2025",
@@ -530,25 +524,33 @@ const teamMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/priyansh-sood-57681a372"
   },
   {
+    name: "Himanshi Mahajan",
+    batch: "2025",
+    imgSrc: "",
+    instagram: "https://www.instagram.com/_mist_veil_?igsh=MTY2Y2ZudzN6OTh6OQ==",
+    linkedin: "https://www.linkedin.com/in/himanshi-mahajan-567013388?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+  },
+  {
     name: "Tanishka",
     batch: "2025",
     imgSrc: "",
     instagram: "https://www.instagram.com/tanishka_verma12?igsi=MXUxeXVyanF0aDhjdQ%3D%3D&utm_source=qr",
     linkedin: "https://www.linkedin.com/in/tanishka-verma-71935b3a7?"
   },
-  {
-    name: "Lakshit Karwa",
-    batch: "2025",
-    imgSrc: "https://drive.google.com/file/d/1CQ_-AsdWmACIlZ6YijuOLuZKv2WiwwCM/view?usp=drivesdk",
-    instagram: "https://www.instagram.com/karwalakshit/?__pwa=1",
-    linkedin: "https://www.linkedin.com/in/lakshit-karwa-7982b6369/"
-  },
+  
   {
     name: "Aashi Aggarwal",
     batch: "2025",
     imgSrc: "https://drive.google.com/file/d/1nbrTjBa8PJsPKBfYnokMz-glmZRkjqeV/view?usp=sharing",
     instagram: "https://www.instagram.com/aaashhhii_?cplk=MXNuMmd5anlxYjN5&utm_source=qr",
     linkedin: "https://www.linkedin.com/in/aashi-aggarwal-a9a118385"
+  },
+  {
+    name: "SHIVANK AGGARWAL",
+    batch: "2025",
+    imgSrc: "",
+    instagram: "https://www.instagram.com/shivaankkk__?igsh=MWU2N2Fod2JjbDI5ZA==&igsi=MWU2N2Fod2JjbDI5ZA==",
+    linkedin: "www.linkedin.com/in/shivank009911"
   },
 ];
 
