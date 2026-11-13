@@ -53,149 +53,16 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
 
   {
-    name: "Isha",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738080640/IMG_5198_xz4pzl.jpg",
-  },
-  {
-    name: "Chhavi Thakur",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726944805/IMG-20240308-WA0077_nq107z.jpg",
-  },
-  {
-    name: "Lakshay Lalia",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738080749/IMG_20241101_171749_392_auyw2u.jpg",
-  },
-  {
-    name: "Saksham Chhabra",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dnbf0uwku/image/upload/v1741525859/IMG-20240323-WA0015_dcsbh7_exdrze.jpg",
-  },
-  {
-    name: "Navdeep Singh",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726944985/IMG_4625-1_xkfqoy.jpg",
-  },
-  {
-    name: "Piyush",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945016/24-09-20_14-31-12-521_nop1fo.jpg",
-  },
-  {
-    name: "Prince Khandelwal",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945058/IMG-20240920-WA0013_l6p9tg.jpg",
-  },
-  {
-    name: "Piyush Mishra",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738138149/IMG-20250112-WA0084_akkh6m.jpg",
-  },
-  {
-    name: "Ayush Sharma",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945095/IMG-20240513-WA0233_jgmvog.jpg",
-  },
-  {
-    name: "Avirat Mahajan",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945139/IMG-20240410-WA0016_eow17z.jpg",
-  },
-  {
-    name: "Vansh Pal",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738080858/WIN_20240415_20_11_54_Pro_zw1squ.jpg",
-  },
-  {
-    name: "Sujal Choudhary",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738091293/sujal_sosrec_ghouip.jpg",
-  },
-  {
-    name: "Anshuman Kapoor",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dvnrlqqpq/image/upload/v1728535411/anshuman_ugy7ne.jpg",
-  },
-  {
-    name: "Abhay Chaudhary",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738081032/IMG-20240920-WA0002_kxrj0r.jpg",
-  },
-  {
-    name: "Aanya Soni",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738082046/IMG_5200_uwq9wi.jpg",
-  },
-  {
-    name: "Himanshu Mahajan",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dnbf0uwku/image/upload/v1726945205/formal_oi5vpb.jpg",
-  },
-  {
-    name: "Ishan Choudhary",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738082088/IMG_20240921_005315_qwh3dd.jpg",
-  },
-  {
-    name: "Harsh Goel",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dvnrlqqpq/image/upload/v1731838897/WhatsApp_Image_2024-11-17_at_15.51.00_2b583045_kqcd5x.jpg",
-  },
-  {
-    name: "pratyush pragyey",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dvnrlqqpq/image/upload/v1721114549/rptdgsgi7qzijyojnja0.jpg",
-  },
-  {
-    name: "Rudesh Kumar",
-    batch: "2023",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738082144/photo_k91tqe.jpg",
-  },
-
-  {
     name: "Lavish",
     batch: "2024",
     imgSrc:
-        "https://res.cloudinary.com/duezus2xn/image/upload/v1738075460/lavish_mupjh3.jpg",
-  },
-  {
-    name: "Prashant Thakur",
-    batch: "2024",
-    imgSrc:
-        "https://res.cloudinary.com/duezus2xn/image/upload/v1738075650/prashant_2_vsdpsb.jpg",
+        "https://res.cloudinary.com/dtrv7xbm5/image/upload/v1768491424/lavish_peoxgv.jpg",
   },
   {
     name: "Aryan Sharma",
     batch: "2024",
     imgSrc:
         "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738087174/IMG_20241120_152145246_HDR_pavhc9.jpg",
-  },
-  {
-    name: "Sanket Singh Sameer",
-    batch: "2024",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738087686/1000156654-01_ridyfs.jpg",
   },
   {
     name: "Raman Bansal",
@@ -210,34 +77,22 @@ const teamMembers: TeamMember[] = [
         "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738088144/IMG-20241220-WA0110_qptedf.jpg",
   },
   {
-    name: "Anshu Kumari",
-    batch: "2024",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738134087/IMG_20250128_201927_kwt4vg.jpg",
-  },
-  {
-    name: "Avadhi",
-    batch: "2024",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738134129/20250128_204711_h36r6t.jpg",
-  },
-  {
     name: "Anilove",
     batch: "2024",
     imgSrc:
         "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738088682/IMG20241110215944_qx4ejt.jpg",
   },
   {
+    name: "Sameer Varshney",
+    batch: "2024",
+    imgSrc:
+        "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051518/IMG_20240919_214713_277_Original_t9f7dp.jpg",
+  },
+  {
     name: "Bhola Prasad Sah",
     batch: "2024",
     imgSrc:
         "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738088411/1738076772514_ql73vg.jpg",
-  },
-  {
-    name: "Tanmay Singh",
-    batch: "2024",
-    imgSrc:
-        "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738088737/IMG-20240919-WA0001_s3wwhi.jpg",
   },
   {
     name: "Chetna Singh",
@@ -555,10 +410,9 @@ const teamMembers: TeamMember[] = [
 ];
 
 const batchThemes: Record<string, { accent: string; secondary: string; fileLabel: string }> = {
-  "2023": { accent: "#00ffff", secondary: "#ff2a85", fileLabel: "CORE_LEAD" },
-  "2024": { accent: "#b967ff", secondary: "#00ffff", fileLabel: "DEV_OPERATIVE" },
-  "2025": { accent: "#ffd319", secondary: "#ff2a85", fileLabel: "JUNIOR_ENG" },
-  "2026": { accent: "#00ff9d", secondary: "#ff2a85", fileLabel: "NEW_OPERATIVE" },
+  "2024": { accent: "#b967ff", secondary: "#00ffff", fileLabel: "ORGANISERS" },
+  "2025": { accent: "#ffd319", secondary: "#ff2a85", fileLabel: "EXECUTIVES" },
+  "2026": { accent: "#00ff9d", secondary: "#ff2a85", fileLabel: "VOLUNTEERS" },
 };
 
 function MemberCard({ member, index }: { member: TeamMember; index: number }) {
@@ -642,7 +496,6 @@ export default function TeamSection() {
   const yearFilters = useMemo(() => {
     return [
       { label: "ALL", value: "all", count: teamMembers.length },
-      { label: "2023", value: "2023", count: teamMembers.filter((m) => m.batch === "2023").length },
       { label: "2024", value: "2024", count: teamMembers.filter((m) => m.batch === "2024").length },
       { label: "2025", value: "2025", count: teamMembers.filter((m) => m.batch === "2025").length },
       { label: "2026", value: "2026", count: teamMembers.filter((m) => m.batch === "2026").length },
@@ -650,8 +503,11 @@ export default function TeamSection() {
   }, []);
 
   const filteredMembers = useMemo(() => {
-    if (selectedYear === "all") return teamMembers;
-    return teamMembers.filter((member) => member.batch === selectedYear);
+    const members =
+      selectedYear === "all"
+        ? teamMembers
+        : teamMembers.filter((member) => member.batch === selectedYear);
+    return [...members].sort((a, b) => Number(a.batch) - Number(b.batch));
   }, [selectedYear]);
 
   return (

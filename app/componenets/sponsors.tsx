@@ -14,6 +14,7 @@ import { pricedown } from "@/lib/fonts";
 interface Sponsor {
   name: string;
   logo: string;
+  website?: string;
 }
 
 interface SponsorTier {
@@ -44,6 +45,17 @@ const sponsorTiers: SponsorTier[] = [
       {
         name: "n8n",
         logo: "/sponsors/n8n.svg",
+      },
+    ],
+  },
+  {
+    tier: "Media Partner",
+    level: "inkind",
+    sponsors: [
+      {
+        name: "LNC Community",
+        logo: "/sponsors/lnc-community.png",
+        website: "https://lnccommunity.in/",
       },
     ],
   },
@@ -145,16 +157,16 @@ function SponsorCard({
 
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:15px_15px] pointer-events-none" />
 
-        {sponsor.name === "Devfolio" ? (
+        {sponsor.name === "Devfolio" || sponsor.website ? (
           <a
-            href="https://devfolio.co"
+            href={sponsor.website ?? "https://devfolio.co"}
             target="_blank"
             rel="noopener noreferrer"
             className="relative z-10 block w-full h-full transition-transform duration-500 group-hover:scale-[1.08]"
           >
             <Image
               src={sponsor.logo}
-              alt="DEVFOLIO LOGO"
+              alt={sponsor.name}
               fill
               sizes="(max-width: 768px) 100vw, 400px"
               className="object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.2)]"

@@ -250,31 +250,6 @@ export default function Navbar() {
             })}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3 shrink-0">
-            <a
-              href="https://hack-1736.devfolio.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative group overflow-hidden px-5 py-2 rounded-lg bg-gradient-to-r from-[#ff2a85] via-[#ff007f] to-[#7928ca] text-white font-pricedown text-xl tracking-wider uppercase border border-[#ff75c3]/60 shadow-[0_0_15px_rgba(255,42,133,0.45),_3px_3px_0px_#00f0ff] hover:shadow-[0_0_25px_rgba(255,42,133,0.85),_4px_4px_0px_#00f0ff] hover:-translate-y-0.5 active:translate-y-0.5 active:shadow-[0_0_10px_rgba(255,42,133,0.4),_1px_1px_0px_#00f0ff] transition-all duration-300 flex items-center gap-2.5 whitespace-nowrap"
-            >
-
-              <span className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/35 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-[350%] transition-transform duration-1000 ease-out pointer-events-none" />
-
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00f0ff] opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00f0ff]" />
-              </span>
-
-              <span className="relative z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
-                Register
-              </span>
-
-              <span className="relative z-10 text-[#00f0ff] text-xs transition-transform duration-300 group-hover:translate-x-1 drop-shadow-[0_0_6px_rgba(0,240,255,0.8)]">
-                ▶
-              </span>
-            </a>
-          </div>
-
           <div className="lg:hidden">
             <button
               type="button"
@@ -329,23 +304,6 @@ export default function Navbar() {
                 );
               })}
 
-              <a
-                href="https://hack-1736.devfolio.co/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative group overflow-hidden mt-3 py-3 rounded-lg bg-gradient-to-r from-[#ff2a85] via-[#ff007f] to-[#7928ca] text-white font-pricedown text-xl tracking-wider uppercase border border-[#ff75c3]/60 shadow-[0_0_15px_rgba(255,42,133,0.5),_3px_3px_0px_#00f0ff] flex items-center justify-center gap-2.5 transition-all duration-300"
-              >
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00f0ff] opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00f0ff]" />
-                </span>
-                <span className="relative z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
-                  Register on Devfolio
-                </span>
-                <span className="relative z-10 text-[#00f0ff] text-xs drop-shadow-[0_0_6px_rgba(0,240,255,0.8)]">
-                  ▶
-                </span>
-              </a>
             </div>
           </motion.div>
         )}

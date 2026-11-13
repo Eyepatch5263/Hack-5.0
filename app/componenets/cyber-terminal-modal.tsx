@@ -113,6 +113,7 @@ const ORGANIZERS_DATA = [
       { name: "Aryan", role: "Lead Organiser", image: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051509/PFP_orcdec.jpg" },
       { name: "Sameer Varshney", role: "Media Lead", image: "https://res.cloudinary.com/dqftjf73g/image/upload/v1770051518/IMG_20240919_214713_277_Original_t9f7dp.jpg" },
       { name: "Sujal", role: "Web Dev Lead", image: "https://res.cloudinary.com/dkpnbush2/image/upload/v1771082595/WhatsApp_Image_2026-02-14_at_8.52.00_PM_gpv3h8.jpg" },
+      { name: "Anilove", role: "External affair Lead", image: "https://res.cloudinary.com/dkcrhkz4m/image/upload/v1738088682/IMG20241110215944_qx4ejt.jpg" },
     ],
   },
   {
@@ -259,6 +260,14 @@ export default function CyberTerminalModal({
                 <span>[■]</span>
                 <span>ORGANIZERS ROSTER</span>
               </button>
+
+              <a
+                href="/team"
+                className="px-3 py-1 text-[11px] sm:text-xs border uppercase tracking-wider font-bold transition-all flex items-center gap-1.5 bg-black/60 border-[#a855f7]/50 text-[#c084fc] hover:bg-[#a855f7]/20"
+              >
+                <span>[■]</span>
+                <span>TEAM</span>
+              </a>
             </div>
           </div>
 

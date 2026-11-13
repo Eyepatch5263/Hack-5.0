@@ -184,7 +184,7 @@ export default function HeroSection() {
             </h1>
           </motion.div>
 
-          <motion.div variants={item} className="relative z-20 flex justify-center w-full px-4">
+          <motion.div variants={item} className="relative z-20 mt-4 sm:mt-6 flex justify-center w-full px-4">
             <div
               className="apply-button"
               data-hackathon-slug="hack-1736"
